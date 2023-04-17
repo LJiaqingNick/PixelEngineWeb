@@ -1,0 +1,330 @@
+\hypertarget{class_transform_component}{}\doxysection{Transform\+Component Class Reference}
+\label{class_transform_component}\index{TransformComponent@{TransformComponent}}
+
+
+\mbox{\hyperlink{class_component}{Component}} that manages position, scale, and dimensions of a game object.  
+
+
+
+
+{\ttfamily \#include $<$Transform\+Component.\+hpp$>$}
+
+Inheritance diagram for Transform\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_transform_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transform_component_a675bfce5251f82a0f775d455a1195b27}{Transform\+Component}} (\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$game\+Object\+State, int x, int y, std\+::string obj\+Name)
+\begin{DoxyCompactList}\small\item\em Construct a \mbox{\hyperlink{class_transform_component}{Transform\+Component}} with given position and object name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_transform_component_ace1cf2d7d2a7468e9cb3eb0ce382f446}{Transform\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_transform_component}{Transform\+Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_transform_component_a37d5d34a3695eafc8b8cbf37905e756f}{$\sim$\+Transform\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_transform_component}{Transform\+Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transform_component_a9f754d018fa44456e7778b29f48f8b63}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State) override
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transform_component_aedc094eb1922c3cfe116e6d67191400e}{Render}} (SDL\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transform_component_a9f28d6ab8b46bc221a6eb73a5dee9f09}{Start}} () override
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transform_component_a42e9e70582f82a9194e634b12fd6b39c}{Shutdown}} () override
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_transform_component_a570f35fce525cdf405d141b43e7fdcf5}{get\+Tag}} () override
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_transform_component_ac20f384bcaa3566e1dc122eaccb82ca5}{get\+Compo\+Name}} () override
+\begin{DoxyCompactList}\small\item\em Sets the tag of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transform_component_a0dda8cae1ac52659ce5ecdd7b4227214}{set\+Compo\+Name}} (std\+::string name) override
+\begin{DoxyCompactList}\small\item\em Sets the name of the component. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_transform_component_a79fff2f3aa44f27b4d860764f9f8d4fe}{Get\+PosX}} ()
+\item 
+int \mbox{\hyperlink{class_transform_component_aa724f5c0f96e8030c65a1c21c5b45369}{Get\+PosY}} ()
+\item 
+int \mbox{\hyperlink{class_transform_component_a8357d4a361c2380d82d9aaf41511bedc}{Get\+Height}} ()
+\item 
+int \mbox{\hyperlink{class_transform_component_a6127c35034a7712c251457b2083be1b0}{Get\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_transform_component_a735ff0408972a74b2e2db4637a1f155e}{get\+Scale}} ()
+\item 
+void \mbox{\hyperlink{class_transform_component_a000a6f09b1bd34c98d896a3e8ac78bfa}{set\+PosX}} (int x)
+\item 
+void \mbox{\hyperlink{class_transform_component_ac8a7a3fe1ea7bd74dbb0c69cb2611cc1}{set\+PosY}} (int y)
+\item 
+void \mbox{\hyperlink{class_transform_component_a68c7aa57951d23a3742b0aa49501afd8}{set\+Height}} (int h)
+\item 
+void \mbox{\hyperlink{class_transform_component_a6e660c2316b68bcdf8577f678f3da6eb}{set\+Width}} (int w)
+\item 
+void \mbox{\hyperlink{class_transform_component_a3d119262d43d0c75573f5a1ed5deff39}{set\+Scale}} (int scale\+Val)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_component_ab8378fa275af98e568a7e91d33d867af}{$\sim$\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State)
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{get\+Tag}} ()
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_component_ae89a01592cf673591afa652f06211328}{set\+Comp\+Removed}} ()
+\begin{DoxyCompactList}\small\item\em Sets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{get\+Compo\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{set\+Compo\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a3f85fc409bdfe4968f91893f888d41b0}{tag}}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a085fdb125d2c7d24a6f8a672ae6af2c8}{compo\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_component}{Component}} that manages position, scale, and dimensions of a game object. 
+
+This class is responsible for handling the transformation properties of game objects, such as position, scale, width, and height. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_transform_component_a675bfce5251f82a0f775d455a1195b27}\label{class_transform_component_a675bfce5251f82a0f775d455a1195b27}} 
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{TransformComponent()}{TransformComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Transform\+Component\+::\+Transform\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$}]{game\+Object\+State,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{std\+::string}]{obj\+Name }\end{DoxyParamCaption})}
+
+
+
+Construct a \mbox{\hyperlink{class_transform_component}{Transform\+Component}} with given position and object name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Object\+State} & Pointer to the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}}. \\
+\hline
+{\em x} & X-\/coordinate of the object\textquotesingle{}s position. \\
+\hline
+{\em y} & Y-\/coordinate of the object\textquotesingle{}s position. \\
+\hline
+{\em obj\+Name} & Name of the object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transform_component_ace1cf2d7d2a7468e9cb3eb0ce382f446}\label{class_transform_component_ace1cf2d7d2a7468e9cb3eb0ce382f446}} 
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{TransformComponent()}{TransformComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Transform\+Component\+::\+Transform\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_transform_component}{Transform\+Component}} class. 
+
+\mbox{\Hypertarget{class_transform_component_a37d5d34a3695eafc8b8cbf37905e756f}\label{class_transform_component_a37d5d34a3695eafc8b8cbf37905e756f}} 
+\index{TransformComponent@{TransformComponent}!````~TransformComponent@{$\sim$TransformComponent}}
+\index{````~TransformComponent@{$\sim$TransformComponent}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$TransformComponent()}{~TransformComponent()}}
+{\footnotesize\ttfamily Transform\+Component\+::$\sim$\+Transform\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{class_transform_component}{Transform\+Component}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_transform_component_ac20f384bcaa3566e1dc122eaccb82ca5}\label{class_transform_component_ac20f384bcaa3566e1dc122eaccb82ca5}} 
+\index{TransformComponent@{TransformComponent}!getCompoName@{getCompoName}}
+\index{getCompoName@{getCompoName}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{getCompoName()}{getCompoName()}}
+{\footnotesize\ttfamily std\+::string Transform\+Component\+::get\+Compo\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the tag of the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag} & The tag to set. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{Component}}.
+
+\mbox{\Hypertarget{class_transform_component_a8357d4a361c2380d82d9aaf41511bedc}\label{class_transform_component_a8357d4a361c2380d82d9aaf41511bedc}} 
+\index{TransformComponent@{TransformComponent}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily int Transform\+Component\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the height of the object. \mbox{\Hypertarget{class_transform_component_a79fff2f3aa44f27b4d860764f9f8d4fe}\label{class_transform_component_a79fff2f3aa44f27b4d860764f9f8d4fe}} 
+\index{TransformComponent@{TransformComponent}!GetPosX@{GetPosX}}
+\index{GetPosX@{GetPosX}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{GetPosX()}{GetPosX()}}
+{\footnotesize\ttfamily int Transform\+Component\+::\+Get\+PosX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the X-\/coordinate of the object\textquotesingle{}s position. \mbox{\Hypertarget{class_transform_component_aa724f5c0f96e8030c65a1c21c5b45369}\label{class_transform_component_aa724f5c0f96e8030c65a1c21c5b45369}} 
+\index{TransformComponent@{TransformComponent}!GetPosY@{GetPosY}}
+\index{GetPosY@{GetPosY}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{GetPosY()}{GetPosY()}}
+{\footnotesize\ttfamily int Transform\+Component\+::\+Get\+PosY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the Y-\/coordinate of the object\textquotesingle{}s position. \mbox{\Hypertarget{class_transform_component_a735ff0408972a74b2e2db4637a1f155e}\label{class_transform_component_a735ff0408972a74b2e2db4637a1f155e}} 
+\index{TransformComponent@{TransformComponent}!getScale@{getScale}}
+\index{getScale@{getScale}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
+{\footnotesize\ttfamily int Transform\+Component\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the scale of the object. \mbox{\Hypertarget{class_transform_component_a570f35fce525cdf405d141b43e7fdcf5}\label{class_transform_component_a570f35fce525cdf405d141b43e7fdcf5}} 
+\index{TransformComponent@{TransformComponent}!getTag@{getTag}}
+\index{getTag@{getTag}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{getTag()}{getTag()}}
+{\footnotesize\ttfamily std\+::string Transform\+Component\+::get\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the tag of the component. 
+
+\begin{DoxyReturn}{Returns}
+The tag of the component. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{Component}}.
+
+\mbox{\Hypertarget{class_transform_component_a6127c35034a7712c251457b2083be1b0}\label{class_transform_component_a6127c35034a7712c251457b2083be1b0}} 
+\index{TransformComponent@{TransformComponent}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily int Transform\+Component\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the width of the object. \mbox{\Hypertarget{class_transform_component_aedc094eb1922c3cfe116e6d67191400e}\label{class_transform_component_aedc094eb1922c3cfe116e6d67191400e}} 
+\index{TransformComponent@{TransformComponent}!Render@{Render}}
+\index{Render@{Render}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Renders the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ren} & The renderer to use. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Component}}.
+
+\mbox{\Hypertarget{class_transform_component_a0dda8cae1ac52659ce5ecdd7b4227214}\label{class_transform_component_a0dda8cae1ac52659ce5ecdd7b4227214}} 
+\index{TransformComponent@{TransformComponent}!setCompoName@{setCompoName}}
+\index{setCompoName@{setCompoName}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{setCompoName()}{setCompoName()}}
+{\footnotesize\ttfamily void Transform\+Component\+::set\+Compo\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the name of the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to set. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{Component}}.
+
+\mbox{\Hypertarget{class_transform_component_a68c7aa57951d23a3742b0aa49501afd8}\label{class_transform_component_a68c7aa57951d23a3742b0aa49501afd8}} 
+\index{TransformComponent@{TransformComponent}!setHeight@{setHeight}}
+\index{setHeight@{setHeight}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{setHeight()}{setHeight()}}
+{\footnotesize\ttfamily void Transform\+Component\+::set\+Height (\begin{DoxyParamCaption}\item[{int}]{h }\end{DoxyParamCaption})}
+
+Set the height of the object. \mbox{\Hypertarget{class_transform_component_a000a6f09b1bd34c98d896a3e8ac78bfa}\label{class_transform_component_a000a6f09b1bd34c98d896a3e8ac78bfa}} 
+\index{TransformComponent@{TransformComponent}!setPosX@{setPosX}}
+\index{setPosX@{setPosX}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{setPosX()}{setPosX()}}
+{\footnotesize\ttfamily void Transform\+Component\+::set\+PosX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+Set the X-\/coordinate of the object\textquotesingle{}s position. \mbox{\Hypertarget{class_transform_component_ac8a7a3fe1ea7bd74dbb0c69cb2611cc1}\label{class_transform_component_ac8a7a3fe1ea7bd74dbb0c69cb2611cc1}} 
+\index{TransformComponent@{TransformComponent}!setPosY@{setPosY}}
+\index{setPosY@{setPosY}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{setPosY()}{setPosY()}}
+{\footnotesize\ttfamily void Transform\+Component\+::set\+PosY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+Set the Y-\/coordinate of the object\textquotesingle{}s position. \mbox{\Hypertarget{class_transform_component_a3d119262d43d0c75573f5a1ed5deff39}\label{class_transform_component_a3d119262d43d0c75573f5a1ed5deff39}} 
+\index{TransformComponent@{TransformComponent}!setScale@{setScale}}
+\index{setScale@{setScale}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{setScale()}{setScale()}}
+{\footnotesize\ttfamily void Transform\+Component\+::set\+Scale (\begin{DoxyParamCaption}\item[{int}]{scale\+Val }\end{DoxyParamCaption})}
+
+Set the scale of the object. \mbox{\Hypertarget{class_transform_component_a6e660c2316b68bcdf8577f678f3da6eb}\label{class_transform_component_a6e660c2316b68bcdf8577f678f3da6eb}} 
+\index{TransformComponent@{TransformComponent}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{setWidth()}{setWidth()}}
+{\footnotesize\ttfamily void Transform\+Component\+::set\+Width (\begin{DoxyParamCaption}\item[{int}]{w }\end{DoxyParamCaption})}
+
+Set the width of the object. \mbox{\Hypertarget{class_transform_component_a42e9e70582f82a9194e634b12fd6b39c}\label{class_transform_component_a42e9e70582f82a9194e634b12fd6b39c}} 
+\index{TransformComponent@{TransformComponent}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Shuts down the component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Component}}.
+
+\mbox{\Hypertarget{class_transform_component_a9f28d6ab8b46bc221a6eb73a5dee9f09}\label{class_transform_component_a9f28d6ab8b46bc221a6eb73a5dee9f09}} 
+\index{TransformComponent@{TransformComponent}!Start@{Start}}
+\index{Start@{Start}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Starts the component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Component}}.
+
+\mbox{\Hypertarget{class_transform_component_a9f754d018fa44456e7778b29f48f8b63}\label{class_transform_component_a9f754d018fa44456e7778b29f48f8b63}} 
+\index{TransformComponent@{TransformComponent}!Update@{Update}}
+\index{Update@{Update}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$}]{game\+Play\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Play\+State} & The current game play state. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_transform_component_8hpp}{Transform\+Component.\+hpp}}\item 
+src/\mbox{\hyperlink{_transform_component_8cpp}{Transform\+Component.\+cpp}}\end{DoxyCompactItemize}

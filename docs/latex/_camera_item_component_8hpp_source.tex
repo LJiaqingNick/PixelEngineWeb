@@ -1,0 +1,59 @@
+\hypertarget{_camera_item_component_8hpp_source}{}\doxysection{Camera\+Item\+Component.\+hpp}
+\label{_camera_item_component_8hpp_source}\index{include/CameraItemComponent.hpp@{include/CameraItemComponent.hpp}}
+\mbox{\hyperlink{_camera_item_component_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ CAMERAITEMCOMPO\_HPP\ }}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ CAMERAITEMCOMPO\_HPP}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <unordered\_set>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_game_object_state_8hpp}{GameObjectState.hpp}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8hpp}{Component.hpp}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_game_object_8hpp}{GameObject.hpp}}"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_camera_item_component}{CameraItemComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_camera_item_component_a72368a1b4092ea859b5bd2528a07971f}{CameraItemComponent}}(\mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ gameObjStatePtr);}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_camera_item_component_a72368a1b4092ea859b5bd2528a07971f}{CameraItemComponent}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_camera_item_component_a4a43670bdfb7bc7d56e87f8e0fdad83a}{\string~CameraItemComponent}}();\ \ \ \ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_item_component_aac77989933cda0940d4f308899630dc4}{Update}}(\mbox{\hyperlink{class_game_play_state}{GamePlayState}}*\ gamePlayState)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_item_component_a3ee646620ec6ed48fe7bcea3179f7198}{Render}}(SDL\_Renderer*\ ren)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_item_component_ad8de0a7e2a1aa1e4be61662f2779c2f5}{Start}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_item_component_a71107ead3dfb9bffbe1c38fb62fd0782}{Shutdown}}()\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_camera_item_component_ac2d805d40aa9cec50064a6b8ecd67a3a}{getTag}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_camera_item_component_a1d4c85b8a9fd13ddd9d4873d0d0fd587}{getCompoName}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_item_component_a920aef1abe00c28e3e5fd24fa65a19cc}{setCompoName}}(std::string\ name)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_object}{GameObject}}*\ \mbox{\hyperlink{class_camera_item_component_a0435c265ce9df94724c83c04683c9a12}{getAttachTargetGameObj}}();}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_item_component_a6fabae21049858d59de7f69f497e73d9}{setAttachTargetGameObj}}(\mbox{\hyperlink{class_game_object}{GameObject}}*\ gameObj);}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_camera_item_component_ac1727bf01c743e14bae20ee4e0e88a6b}{getMovingLine}}();}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_item_component_a828c72589470a1ece506fba3fe54c165}{setMovingLine}}(\textcolor{keywordtype}{double}\ moveLinePlace);}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_camera_item_component_a6b28f48de658f6c667d15250047c49df}{getCamX}}(\textcolor{keywordtype}{int}\ windowWidth,\ \textcolor{keywordtype}{int}\ windowHeight,\ \textcolor{keywordtype}{int}\ worldWidth,\ \textcolor{keywordtype}{int}\ worldHeight);}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_camera_item_component_a6a0ee67af6e7395fe17baa66cfa7d16b}{getCamY}}(\textcolor{keywordtype}{int}\ windowWidth,\ \textcolor{keywordtype}{int}\ windowHeight,\ \textcolor{keywordtype}{int}\ worldWidth,\ \textcolor{keywordtype}{int}\ worldHeight);}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ std::string\ tag;\ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ std::string\ compoName;\ }
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ gameObjStatePtr\ =\ \textcolor{keyword}{nullptr};\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ SDL\_Rect\ cameraRect;\ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_object}{GameObject}}*\ attachedTarget\ =\ \textcolor{keyword}{nullptr};\ }
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ movingPlace;\ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ characterX;\ }
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ characterY;\ }
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ camX;\ }
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ camY;\ }
+\DoxyCodeLine{00116\ \};}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

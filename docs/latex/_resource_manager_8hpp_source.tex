@@ -1,0 +1,41 @@
+\hypertarget{_resource_manager_8hpp_source}{}\doxysection{Resource\+Manager.\+hpp}
+\label{_resource_manager_8hpp_source}\index{include/ResourceManager.hpp@{include/ResourceManager.hpp}}
+\mbox{\hyperlink{_resource_manager_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESOURCE\_MANAGER\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESOURCE\_MANAGER\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ This\ works\ for\ Mac}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ I\ recommend\ a\ map\ for\ filling\ in\ the\ resource\ manager}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_resource_manager}{ResourceManager}}\{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_resource_manager}{ResourceManager}}();\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_resource_manager}{\string~ResourceManager}}();\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_resource_manager}{ResourceManager}}(\mbox{\hyperlink{class_resource_manager}{ResourceManager}}\ \textcolor{keyword}{const}\&);\ \textcolor{comment}{//\ Avoid\ copy\ constructor.}}
+\DoxyCodeLine{00043\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{void}\ operator=(\mbox{\hyperlink{class_resource_manager}{ResourceManager}}\ \textcolor{keyword}{const}\&);\ \textcolor{comment}{//\ Don't\ allow\ assignment.}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ Members:\ Need\ an\ unorderd\ map\ to\ book\ keep\ if\ the\ resource\ is\ loarded\ or\ not.}}
+\DoxyCodeLine{00048\ \textcolor{comment}{}\ \ \ \ \textcolor{keyword}{static}\ std::unordered\_map<std::string,\ SDL\_Surface*>\ m\_surfaces;}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{static}\ std::unordered\_map<std::string,\ SDL\_Texture*>\ m\_textures;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_resource_manager}{ResourceManager}}*\ \mbox{\hyperlink{class_resource_manager_ab15d2c21ddb0c41dd45201dacacc628d}{GetInstance}}();}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_resource_manager_aeba474690a0abed7501d3ac35a501412}{StartUP}}();\ \textcolor{comment}{//\ 'equivalent\ to\ our\ constructor}}
+\DoxyCodeLine{00069\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_resource_manager_ae5ed3ee26a3de63a04d4bb6542d5bbb0}{ShutDown}}();\ \textcolor{comment}{//\ 'equivalent'\ to\ destructor}}
+\DoxyCodeLine{00074\ \textcolor{comment}{}\ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_resource_manager_a3b06d0a1c44dcccadd3fa3da36514579}{LoadResource}}(std::string\ image\_filename);}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{static}\ SDL\_Surface*\ \mbox{\hyperlink{class_resource_manager_a02db32275477bd91425cb5dddedd935f}{GetResource}}(std::string\ image\_filename);}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{static}\ SDL\_Texture*\ \mbox{\hyperlink{class_resource_manager_a3f0b7c7cc575e0e6cfad146123d01c30}{GetTexture}}(SDL\_Renderer*\&\ renderer,\ std::string\ image\_filename);}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_resource_manager}{ResourceManager}}*\ \mbox{\hyperlink{class_resource_manager_a50fe9e5e505b5fc1e8219ad71068d876}{instance}};\ }
+\DoxyCodeLine{00089\ \};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

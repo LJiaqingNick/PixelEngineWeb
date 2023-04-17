@@ -1,0 +1,252 @@
+\hypertarget{class_controller_component}{}\doxysection{Controller\+Component Class Reference}
+\label{class_controller_component}\index{ControllerComponent@{ControllerComponent}}
+
+
+A component for handling user input and controlling game objects.  
+
+
+
+
+{\ttfamily \#include $<$Controller\+Component.\+hpp$>$}
+
+Inheritance diagram for Controller\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_controller_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller_component_a9064c07f2854cb4bb8b76ad0dfd176b6}{Controller\+Component}} (\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$game\+Obj\+State\+Ptr)
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_controller_component}{Controller\+Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_controller_component_a2a874e5d561bdc75d5f8e75603135b0f}{$\sim$\+Controller\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_controller_component}{Controller\+Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_controller_component_adf8368acefc92ad7e69a6e4037f11347}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State) override
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_controller_component_ac8b70de72a87fb803501f3c3eb85b0b2}{Render}} (SDL\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_controller_component_ad5025ff740297190d46fd2e9cd296701}{Start}} () override
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_controller_component_a96dd7f86ed8d9b5267d77fc8ba1c30ad}{Shutdown}} () override
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_controller_component_aa67cca849f36308255aa610ad4e92a16}{get\+Tag}} () override
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_controller_component_a3eb80aa5900636778f1709a1184b01c2}{add\+Keyboard\+Control}} (std\+::string key\+Input, std\+::string game\+Obj\+State\+Item, int specified\+Change)
+\begin{DoxyCompactList}\small\item\em Add a keyboard control binding to the \mbox{\hyperlink{class_controller_component}{Controller\+Component}}. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_controller_component_ae1d52c1f919817567940b5257e53bd00}{get\+Compo\+Name}} () override
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_controller_component_a44b2427dcf83c06b39dbd9bdb61fbc8f}{set\+Compo\+Name}} (std\+::string name) override
+\begin{DoxyCompactList}\small\item\em Sets the name of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_component_ab8378fa275af98e568a7e91d33d867af}{$\sim$\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State)
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{get\+Tag}} ()
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_component_ae89a01592cf673591afa652f06211328}{set\+Comp\+Removed}} ()
+\begin{DoxyCompactList}\small\item\em Sets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{get\+Compo\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{set\+Compo\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a3f85fc409bdfe4968f91893f888d41b0}{tag}}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a085fdb125d2c7d24a6f8a672ae6af2c8}{compo\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component for handling user input and controlling game objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_controller_component_a9064c07f2854cb4bb8b76ad0dfd176b6}\label{class_controller_component_a9064c07f2854cb4bb8b76ad0dfd176b6}} 
+\index{ControllerComponent@{ControllerComponent}!ControllerComponent@{ControllerComponent}}
+\index{ControllerComponent@{ControllerComponent}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{ControllerComponent()}{ControllerComponent()}}
+{\footnotesize\ttfamily Controller\+Component\+::\+Controller\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$}]{game\+Obj\+State\+Ptr }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_controller_component}{Controller\+Component}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Obj\+State\+Ptr} & Pointer to the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_controller_component_a2a874e5d561bdc75d5f8e75603135b0f}\label{class_controller_component_a2a874e5d561bdc75d5f8e75603135b0f}} 
+\index{ControllerComponent@{ControllerComponent}!````~ControllerComponent@{$\sim$ControllerComponent}}
+\index{````~ControllerComponent@{$\sim$ControllerComponent}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$ControllerComponent()}{~ControllerComponent()}}
+{\footnotesize\ttfamily Controller\+Component\+::$\sim$\+Controller\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_controller_component}{Controller\+Component}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_controller_component_a3eb80aa5900636778f1709a1184b01c2}\label{class_controller_component_a3eb80aa5900636778f1709a1184b01c2}} 
+\index{ControllerComponent@{ControllerComponent}!addKeyboardControl@{addKeyboardControl}}
+\index{addKeyboardControl@{addKeyboardControl}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{addKeyboardControl()}{addKeyboardControl()}}
+{\footnotesize\ttfamily bool Controller\+Component\+::add\+Keyboard\+Control (\begin{DoxyParamCaption}\item[{std\+::string}]{key\+Input,  }\item[{std\+::string}]{game\+Obj\+State\+Item,  }\item[{int}]{specified\+Change }\end{DoxyParamCaption})}
+
+
+
+Add a keyboard control binding to the \mbox{\hyperlink{class_controller_component}{Controller\+Component}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Input} & The key binding as a string (e.\+g., \char`\"{}\+SDLK\+\_\+\+UP\char`\"{}). \\
+\hline
+{\em game\+Obj\+State\+Item} & The game object state item to modify (e.\+g., \char`\"{}position\+\_\+x\char`\"{}). \\
+\hline
+{\em specified\+Change} & The change to apply when the key is pressed (e.\+g., 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean indicating whether the control binding was successfully added. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_controller_component_ae1d52c1f919817567940b5257e53bd00}\label{class_controller_component_ae1d52c1f919817567940b5257e53bd00}} 
+\index{ControllerComponent@{ControllerComponent}!getCompoName@{getCompoName}}
+\index{getCompoName@{getCompoName}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{getCompoName()}{getCompoName()}}
+{\footnotesize\ttfamily std\+::string Controller\+Component\+::get\+Compo\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the name of the component. 
+
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{Component}}.
+
+\mbox{\Hypertarget{class_controller_component_aa67cca849f36308255aa610ad4e92a16}\label{class_controller_component_aa67cca849f36308255aa610ad4e92a16}} 
+\index{ControllerComponent@{ControllerComponent}!getTag@{getTag}}
+\index{getTag@{getTag}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{getTag()}{getTag()}}
+{\footnotesize\ttfamily std\+::string Controller\+Component\+::get\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the tag of the component. 
+
+\begin{DoxyReturn}{Returns}
+The tag of the component. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{Component}}.
+
+\mbox{\Hypertarget{class_controller_component_ac8b70de72a87fb803501f3c3eb85b0b2}\label{class_controller_component_ac8b70de72a87fb803501f3c3eb85b0b2}} 
+\index{ControllerComponent@{ControllerComponent}!Render@{Render}}
+\index{Render@{Render}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Controller\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Renders the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ren} & The renderer to use. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Component}}.
+
+\mbox{\Hypertarget{class_controller_component_a44b2427dcf83c06b39dbd9bdb61fbc8f}\label{class_controller_component_a44b2427dcf83c06b39dbd9bdb61fbc8f}} 
+\index{ControllerComponent@{ControllerComponent}!setCompoName@{setCompoName}}
+\index{setCompoName@{setCompoName}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{setCompoName()}{setCompoName()}}
+{\footnotesize\ttfamily void Controller\+Component\+::set\+Compo\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the name of the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the component. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{Component}}.
+
+\mbox{\Hypertarget{class_controller_component_a96dd7f86ed8d9b5267d77fc8ba1c30ad}\label{class_controller_component_a96dd7f86ed8d9b5267d77fc8ba1c30ad}} 
+\index{ControllerComponent@{ControllerComponent}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Controller\+Component\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Shuts down the component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Component}}.
+
+\mbox{\Hypertarget{class_controller_component_ad5025ff740297190d46fd2e9cd296701}\label{class_controller_component_ad5025ff740297190d46fd2e9cd296701}} 
+\index{ControllerComponent@{ControllerComponent}!Start@{Start}}
+\index{Start@{Start}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Controller\+Component\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Starts the component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Component}}.
+
+\mbox{\Hypertarget{class_controller_component_adf8368acefc92ad7e69a6e4037f11347}\label{class_controller_component_adf8368acefc92ad7e69a6e4037f11347}} 
+\index{ControllerComponent@{ControllerComponent}!Update@{Update}}
+\index{Update@{Update}!ControllerComponent@{ControllerComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Controller\+Component\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$}]{game\+Play\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Play\+State} & The current game play state. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_controller_component_8hpp}{Controller\+Component.\+hpp}}\item 
+src/\mbox{\hyperlink{_controller_component_8cpp}{Controller\+Component.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,66 @@
+\hypertarget{_i_graphics_engine_renderer_8hpp_source}{}\doxysection{IGraphics\+Engine\+Renderer.\+hpp}
+\label{_i_graphics_engine_renderer_8hpp_source}\index{include/IGraphicsEngineRenderer.hpp@{include/IGraphicsEngineRenderer.hpp}}
+\mbox{\hyperlink{_i_graphics_engine_renderer_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GRAPHICS\_ENGINE\_RENDERER\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GRAPHICS\_ENGINE\_RENDERER\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ ====================\ Libraries\ ==================}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ Depending\ on\ the\ operating\ system\ we\ use}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ The\ paths\ to\ SDL\ are\ actually\ different.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ The\ \#define\ statement\ should\ be\ passed\ in}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ when\ compiling\ using\ the\ -\/D\ argument.}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ This\ gives\ an\ example\ of\ how\ a\ programmer}}
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ may\ support\ multiple\ platforms\ with\ different}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ dependencies.}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ Note\ that\ your\ path\ may\ be\ different\ depending\ on\ where\ you\ intalled\ things}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//}}
+\DoxyCodeLine{00014\ \textcolor{comment}{//}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ This\ works\ for\ Mac}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_i_graphics_engine_renderer}{IGraphicsEngineRenderer}}\{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_graphics_engine_renderer_abb88d7c12a88418c05d53673b782bfa7}{IGraphicsEngineRenderer}}(\textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ std::string\ title)\ :\ \mbox{\hyperlink{class_i_graphics_engine_renderer_a5fc1eeeea4c45bac9a30b04380200632}{mScreenWidth}}(w),\ \mbox{\hyperlink{class_i_graphics_engine_renderer_a53ad0e9c3338aeb89ec73dda3b7f9a3d}{mScreenHeight}}(h)\ \{\};}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_i_graphics_engine_renderer_a1b5219e8b718d38b4e54be31557eee17}{\string~IGraphicsEngineRenderer}}()\ \{\};}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_graphics_engine_renderer_acf62a15fc0e1c52356b09c57e2628529}{SetRenderDrawColor}}(\textcolor{keywordtype}{int}\ r,\ \textcolor{keywordtype}{int}\ g,\ \textcolor{keywordtype}{int}\ b,\ \textcolor{keywordtype}{int}\ a)=0;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_graphics_engine_renderer_a33dc89efb652168680736dc4871df48e}{RenderClear}}()=0;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_graphics_engine_renderer_aae42681e8163b9321b6b742c47365012}{RenderPresent}}()=0;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Screen\ dimension\ constants}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_graphics_engine_renderer_a5fc1eeeea4c45bac9a30b04380200632}{mScreenWidth}}\{0\};}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_graphics_engine_renderer_a53ad0e9c3338aeb89ec73dda3b7f9a3d}{mScreenHeight}}\{0\};}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_s_d_l_graphics_engine_renderer}{SDLGraphicsEngineRenderer}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_graphics_engine_renderer}{IGraphicsEngineRenderer}}\{}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer}{SDLGraphicsEngineRenderer}}(\textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ std::string\ title);}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_a1420b7422b6cbaadae4490c554716117}{\string~SDLGraphicsEngineRenderer}}();}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_a91b29bf19986c6ad8710238778312277}{SetRenderDrawColor}}(\textcolor{keywordtype}{int}\ r,\ \textcolor{keywordtype}{int}\ g,\ \textcolor{keywordtype}{int}\ b,\ \textcolor{keywordtype}{int}\ a)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_ae6edfc67a39076c0c12101ad85be4f6a}{RenderClear}}()\ \textcolor{keyword}{override}\ ;}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_acddd7c456e4311d71fc1d43f29343d81}{RenderPresent}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ SDL\_Window*\ \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_abd24deb029577fc237b47a3cbf30c121}{GetWindow}}();}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ SDL\_Renderer*\ \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_a93e5f435d003933cf3304e44c5aa7324}{GetRenderer}}();}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ SDL\ Window}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ SDL\_Window*\ \ \ \ \ mWindow\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ SDL\ Renderer}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ SDL\_Renderer*\ \ \ mRenderer\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00094\ \};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{comment}{/*\ Reference:}}
+\DoxyCodeLine{00099\ \textcolor{comment}{starter\ code\ of\ assignmnet\ 5}}
+\DoxyCodeLine{00100\ \textcolor{comment}{*/}}
+
+\end{DoxyCode}

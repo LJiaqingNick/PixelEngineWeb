@@ -1,0 +1,88 @@
+\hypertarget{_tile_map_component_8hpp_source}{}\doxysection{Tile\+Map\+Component.\+hpp}
+\label{_tile_map_component_8hpp_source}\index{include/TileMapComponent.hpp@{include/TileMapComponent.hpp}}
+\mbox{\hyperlink{_tile_map_component_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TILE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TILE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8hpp}{Component.hpp}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_game_object_8hpp}{GameObject.hpp}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_graphics_engine_renderer_8hpp}{IGraphicsEngineRenderer.hpp}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tile_map_component}{TileMapComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_tile_map_component_ac4691ecf844fa8fe077ab5a56663861d}{TileMapComponent}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_tile_map_component_ac4691ecf844fa8fe077ab5a56663861d}{TileMapComponent}}(\mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ givenGameObjStatePtr,\ SDL\_Renderer*\ ren);}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_tile_map_component_a3d8289074c6943aee6194df04a28cd5b}{\string~TileMapComponent}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tile_map_component_acf95bb17b363953209149203b72cdbd5}{AddTileMapInfo}}(std::string\ filePath,\ \textcolor{keywordtype}{int}\ rows,\ \textcolor{keywordtype}{int}\ cols,\ \textcolor{keywordtype}{int}\ tileWidth,\ \textcolor{keywordtype}{int}\ tileHeight,\ \textcolor{keywordtype}{int}\ mapX,\ \textcolor{keywordtype}{int}\ mapY,\ \textcolor{keywordtype}{int}\ tileWidthInMap,\ \textcolor{keywordtype}{int}\ tileHeightInMap,\ \textcolor{keywordtype}{int}\ redKey,\ \textcolor{keywordtype}{int}\ greenKey,\ \textcolor{keywordtype}{int}\ bludKey\ ,\ \textcolor{keywordtype}{int}*\ tileMatrix,\ \mbox{\hyperlink{class_resource_manager}{ResourceManager}}*\ resourceManager,\ SDL\_Renderer*\ ren);}
+\DoxyCodeLine{00053\ \ \ \ \ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tile_map_component_ad74bd890fb494d89958b4bc67686bdc6}{PrintMap}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tile_map_component_aa663981f62c649650617475c2d2e03e3}{SetTile}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ type);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_tile_map_component_adb24ff5494a792ccefb9b2cf95bc9f28}{GetTileType}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tile_map_component_a76dc9312b1d3c4b0193598e55661749f}{Render}}(SDL\_Renderer*\ ren)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tile_map_component_ab6b70b9ace5918c1c68c5cf093c025f8}{Update}}(\mbox{\hyperlink{class_game_play_state}{GamePlayState}}*\ gamePlayState)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tile_map_component_af23978ca8ccefc9712d286cb79033ea7}{Start}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00090\ \ \ \ \ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tile_map_component_ad4d173de3958abd9e20a1f77e36716c4}{Shutdown}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_tile_map_component_ac5f616069a95fa76544b79c7bdf0990c}{getTag}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00101\ \ \ \ \ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_tile_map_component_a0838d65899d15993f9ec7a2605e1ff5e}{getCompoName}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tile_map_component_a3138b7cafe8222477ac0ae994b89f555}{setCompoName}}(std::string\ name)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00118\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{class_tile_map_component_a918d06588ee3ea6fa1702ebfac3c1657}{getWorldTileMap}}();}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{int}*\ \mbox{\hyperlink{class_tile_map_component_a6b46609f51a0537d767939b20d9af0f8}{getTiles}}();}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_tile_map_component_ab754fd3ec7a026ac6431c92b99487733}{getOneTileWidth}}();}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_tile_map_component_a207b57cce51fa420865f25d0bec5f164}{getOneTileHeight}}();}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_tile_map_component_a920efc3a1ffb518857c9b31def3c8f02}{getTileMapX}}();}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_tile_map_component_a61a8ecd92c7c3e90195a12280c12894f}{getTileMapY}}();}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ }
+\DoxyCodeLine{00151\ \ \ \ \ }
+\DoxyCodeLine{00152\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_Rows;\ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_Cols;\ }
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{comment}{//\ How\ big\ each\ tile\ is.}}
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_TileWidth;\ }
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_TileHeight;\ }
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_tileWidthInMap;\ }
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_tileHeightInMap;\ }
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{comment}{//\ size\ of\ our\ tilemap}}
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_MapX;\ }
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_MapY;\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{comment}{//\ Where\ our\ TileMap\ is\ rendered}}
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{comment}{//\ An\ SDL\ Surface\ contains\ pixel\ data\ to\ draw\ our\ TileMap}}
+\DoxyCodeLine{00166\ \ \ \ \ SDL\_Surface\ *m\_TileSpriteSheet;\ }
+\DoxyCodeLine{00167\ \ \ \ \ SDL\_Texture\ *m\_Texture;\ }
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{comment}{//\ Stores\ our\ tile\ types}}
+\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keywordtype}{int}*\ m\_Tiles;\ }
+\DoxyCodeLine{00170\ \ \ \ \ std::string\ tag;\ }
+\DoxyCodeLine{00171\ \ \ \ \ std::string\ compoName;\ }
+\DoxyCodeLine{00172\ \ \ \ \ SDL\_Renderer*\ renderer;\ }
+\DoxyCodeLine{00173\ \ \ \ \ std::string\ tileSheetFileName;\ }
+\DoxyCodeLine{00174\ \ \ \ \ \mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ gameObjStatePtr;\ }
+\DoxyCodeLine{00176\ \ \ \ \ SDL\_Texture\ *worldMapTexture;\ }
+\DoxyCodeLine{00178\ \};}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00180\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \textcolor{comment}{/*\ Reference:\ }}
+\DoxyCodeLine{00185\ \textcolor{comment}{Assignment\ 5\ starter\ code\ +\ implementation\ as\ foundation}}
+\DoxyCodeLine{00186\ \textcolor{comment}{*/}}
+
+\end{DoxyCode}

@@ -1,0 +1,398 @@
+\hypertarget{class_rectangle_component}{}\doxysection{Rectangle\+Component Class Reference}
+\label{class_rectangle_component}\index{RectangleComponent@{RectangleComponent}}
+
+
+\mbox{\hyperlink{class_component}{Component}} for rendering a rectangle.  
+
+
+
+
+{\ttfamily \#include $<$Rectangle\+Component.\+hpp$>$}
+
+Inheritance diagram for Rectangle\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_rectangle_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rectangle_component_a4166960d24bf29db7d43dea2913677d5}{Rectangle\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_rectangle_component}{Rectangle\+Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rectangle_component_a362ef74aad988903d79f887acd40ec11}{Rectangle\+Component}} (\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$game\+Object\+State)
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_rectangle_component}{Rectangle\+Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rectangle_component_a7c13625c6b262739064529c340e6c024}{$\sim$\+Rectangle\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor for the \mbox{\hyperlink{class_rectangle_component}{Rectangle\+Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rectangle_component_a1066ed2039fff5515471a287da89072e}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State) override
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rectangle_component_a301f9025c77a6ccbee71274bb9528f67}{Render}} (SDL\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rectangle_component_ad2b64aec508e840f74fa029bb9f75e11}{Start}} () override
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rectangle_component_af68de60df2ac61068ae2ddd1e6f8ee2e}{Shutdown}} () override
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_rectangle_component_ada304023610a7393105b843275bdb44d}{get\+Tag}} () override
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_rectangle_component_aec5f13ea5a961bfd88dbeddd0d1007d0}{get\+Compo\+Name}} () override
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rectangle_component_a3cb2aa412a2dfd23adf9d7fed575797f}{set\+Compo\+Name}} (std\+::string name) override
+\begin{DoxyCompactList}\small\item\em Sets the tag of the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rectangle_component_ada94b79952cf6cd5cc5dcecc41d1b139}{set\+Up\+Rectangle}} (int x\+\_\+pos\+\_\+val, int y\+\_\+pos\+\_\+val, int width\+\_\+val, int height\+\_\+val, int red\+\_\+val, int green\+\_\+val, int blue\+\_\+val, int alpha\+\_\+val, SDL\+\_\+\+Rect rect\+Board)
+\begin{DoxyCompactList}\small\item\em Setup the rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_component_ab8378fa275af98e568a7e91d33d867af}{$\sim$\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State)
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{get\+Tag}} ()
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_component_ae89a01592cf673591afa652f06211328}{set\+Comp\+Removed}} ()
+\begin{DoxyCompactList}\small\item\em Sets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{get\+Compo\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{set\+Compo\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_rectangle_component_a83fecbf96291fc959a72c532d8fcdc3a}{tag}}
+\item 
+std\+::string \mbox{\hyperlink{class_rectangle_component_a6dd0f4141d166a66dcec30ae7cd81c08}{compo\+Name}}
+\item 
+\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$ \mbox{\hyperlink{class_rectangle_component_ad89974eb9c2f355586ead1135b18dc9d}{game\+Object\+State\+Ptr}}
+\item 
+std\+::string \mbox{\hyperlink{class_rectangle_component_a22213c082aec2e5807cc512038675dc8}{text\+Content}}
+\item 
+SDL\+\_\+\+Color \mbox{\hyperlink{class_rectangle_component_afbe657283c810b7f33110b0331a34c4d}{text\+Color}}
+\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_rectangle_component_ad251c14f1056a7def327ca2864ee8d4a}{texture\+Text}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_rectangle_component_af611765e7ff4c15dbffa3b11446a960a}{rect}}
+\item 
+int \mbox{\hyperlink{class_rectangle_component_ac442effe02bfbfc095e58229bacfbea0}{x\+\_\+pos}}
+\item 
+int \mbox{\hyperlink{class_rectangle_component_ae50fd2ad1ada0f4186ee36600acce625}{y\+\_\+pos}}
+\item 
+int \mbox{\hyperlink{class_rectangle_component_a6d8450e91c1f98934035dbebdbd3e649}{width}}
+\item 
+int \mbox{\hyperlink{class_rectangle_component_a43e28a5a631469e7c8196c6f18ffe7fe}{height}}
+\item 
+int \mbox{\hyperlink{class_rectangle_component_a80e530712d0422c0d08dc95f31522c8b}{red}}
+\item 
+int \mbox{\hyperlink{class_rectangle_component_a069aec293e97e951cff0442cfd6807b9}{green}}
+\item 
+int \mbox{\hyperlink{class_rectangle_component_a36ac09fe7859c53c131596a8ac49c809}{blue}}
+\item 
+int \mbox{\hyperlink{class_rectangle_component_a1c506ac58abf6c25cf67ffdd912b32af}{alpha}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a3f85fc409bdfe4968f91893f888d41b0}{tag}}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a085fdb125d2c7d24a6f8a672ae6af2c8}{compo\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_component}{Component}} for rendering a rectangle. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rectangle_component_a4166960d24bf29db7d43dea2913677d5}\label{class_rectangle_component_a4166960d24bf29db7d43dea2913677d5}} 
+\index{RectangleComponent@{RectangleComponent}!RectangleComponent@{RectangleComponent}}
+\index{RectangleComponent@{RectangleComponent}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{RectangleComponent()}{RectangleComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Rectangle\+Component\+::\+Rectangle\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_rectangle_component}{Rectangle\+Component}} class. 
+
+\mbox{\Hypertarget{class_rectangle_component_a362ef74aad988903d79f887acd40ec11}\label{class_rectangle_component_a362ef74aad988903d79f887acd40ec11}} 
+\index{RectangleComponent@{RectangleComponent}!RectangleComponent@{RectangleComponent}}
+\index{RectangleComponent@{RectangleComponent}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{RectangleComponent()}{RectangleComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Rectangle\+Component\+::\+Rectangle\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$}]{game\+Object\+State }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_rectangle_component}{Rectangle\+Component}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Object\+State} & Pointer to the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rectangle_component_a7c13625c6b262739064529c340e6c024}\label{class_rectangle_component_a7c13625c6b262739064529c340e6c024}} 
+\index{RectangleComponent@{RectangleComponent}!````~RectangleComponent@{$\sim$RectangleComponent}}
+\index{````~RectangleComponent@{$\sim$RectangleComponent}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$RectangleComponent()}{~RectangleComponent()}}
+{\footnotesize\ttfamily Rectangle\+Component\+::$\sim$\+Rectangle\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default destructor for the \mbox{\hyperlink{class_rectangle_component}{Rectangle\+Component}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rectangle_component_aec5f13ea5a961bfd88dbeddd0d1007d0}\label{class_rectangle_component_aec5f13ea5a961bfd88dbeddd0d1007d0}} 
+\index{RectangleComponent@{RectangleComponent}!getCompoName@{getCompoName}}
+\index{getCompoName@{getCompoName}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{getCompoName()}{getCompoName()}}
+{\footnotesize\ttfamily std\+::string Rectangle\+Component\+::get\+Compo\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the name of the component. 
+
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{Component}}.
+
+\mbox{\Hypertarget{class_rectangle_component_ada304023610a7393105b843275bdb44d}\label{class_rectangle_component_ada304023610a7393105b843275bdb44d}} 
+\index{RectangleComponent@{RectangleComponent}!getTag@{getTag}}
+\index{getTag@{getTag}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{getTag()}{getTag()}}
+{\footnotesize\ttfamily std\+::string Rectangle\+Component\+::get\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the tag of the component. 
+
+\begin{DoxyReturn}{Returns}
+The tag of the component. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{Component}}.
+
+\mbox{\Hypertarget{class_rectangle_component_a301f9025c77a6ccbee71274bb9528f67}\label{class_rectangle_component_a301f9025c77a6ccbee71274bb9528f67}} 
+\index{RectangleComponent@{RectangleComponent}!Render@{Render}}
+\index{Render@{Render}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Rectangle\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Renders the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ren} & The renderer to use. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Component}}.
+
+\mbox{\Hypertarget{class_rectangle_component_a3cb2aa412a2dfd23adf9d7fed575797f}\label{class_rectangle_component_a3cb2aa412a2dfd23adf9d7fed575797f}} 
+\index{RectangleComponent@{RectangleComponent}!setCompoName@{setCompoName}}
+\index{setCompoName@{setCompoName}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{setCompoName()}{setCompoName()}}
+{\footnotesize\ttfamily void Rectangle\+Component\+::set\+Compo\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the tag of the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag} & The tag to set. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{Component}}.
+
+\mbox{\Hypertarget{class_rectangle_component_ada94b79952cf6cd5cc5dcecc41d1b139}\label{class_rectangle_component_ada94b79952cf6cd5cc5dcecc41d1b139}} 
+\index{RectangleComponent@{RectangleComponent}!setUpRectangle@{setUpRectangle}}
+\index{setUpRectangle@{setUpRectangle}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{setUpRectangle()}{setUpRectangle()}}
+{\footnotesize\ttfamily void Rectangle\+Component\+::set\+Up\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+pos\+\_\+val,  }\item[{int}]{y\+\_\+pos\+\_\+val,  }\item[{int}]{width\+\_\+val,  }\item[{int}]{height\+\_\+val,  }\item[{int}]{red\+\_\+val,  }\item[{int}]{green\+\_\+val,  }\item[{int}]{blue\+\_\+val,  }\item[{int}]{alpha\+\_\+val,  }\item[{SDL\+\_\+\+Rect}]{rect\+Board }\end{DoxyParamCaption})}
+
+
+
+Setup the rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+pos\+\_\+val} & The x position of the rectangle. \\
+\hline
+{\em y\+\_\+pos\+\_\+val} & The y position of the rectangle. \\
+\hline
+{\em width\+\_\+val} & The width of the rectangle. \\
+\hline
+{\em height\+\_\+val} & The height of the rectangle. \\
+\hline
+{\em red\+\_\+val} & The red value of the rectangle. \\
+\hline
+{\em green\+\_\+val} & The green value of the rectangle. \\
+\hline
+{\em blue\+\_\+val} & The blue value of the rectangle. \\
+\hline
+{\em alpha\+\_\+val} & The alpha value of the rectangle. \\
+\hline
+{\em rect\+Board} & The rectangle to use. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rectangle_component_af68de60df2ac61068ae2ddd1e6f8ee2e}\label{class_rectangle_component_af68de60df2ac61068ae2ddd1e6f8ee2e}} 
+\index{RectangleComponent@{RectangleComponent}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Rectangle\+Component\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Shuts down the component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Component}}.
+
+\mbox{\Hypertarget{class_rectangle_component_ad2b64aec508e840f74fa029bb9f75e11}\label{class_rectangle_component_ad2b64aec508e840f74fa029bb9f75e11}} 
+\index{RectangleComponent@{RectangleComponent}!Start@{Start}}
+\index{Start@{Start}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Rectangle\+Component\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Starts the component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Component}}.
+
+\mbox{\Hypertarget{class_rectangle_component_a1066ed2039fff5515471a287da89072e}\label{class_rectangle_component_a1066ed2039fff5515471a287da89072e}} 
+\index{RectangleComponent@{RectangleComponent}!Update@{Update}}
+\index{Update@{Update}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Rectangle\+Component\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$}]{game\+Play\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Play\+State} & The current game play state. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_rectangle_component_a1c506ac58abf6c25cf67ffdd912b32af}\label{class_rectangle_component_a1c506ac58abf6c25cf67ffdd912b32af}} 
+\index{RectangleComponent@{RectangleComponent}!alpha@{alpha}}
+\index{alpha@{alpha}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{alpha}{alpha}}
+{\footnotesize\ttfamily int Rectangle\+Component\+::alpha\hspace{0.3cm}{\ttfamily [protected]}}
+
+The alpha value of the rectangle. \mbox{\Hypertarget{class_rectangle_component_a36ac09fe7859c53c131596a8ac49c809}\label{class_rectangle_component_a36ac09fe7859c53c131596a8ac49c809}} 
+\index{RectangleComponent@{RectangleComponent}!blue@{blue}}
+\index{blue@{blue}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{blue}{blue}}
+{\footnotesize\ttfamily int Rectangle\+Component\+::blue\hspace{0.3cm}{\ttfamily [protected]}}
+
+The blue value of the rectangle. \mbox{\Hypertarget{class_rectangle_component_a6dd0f4141d166a66dcec30ae7cd81c08}\label{class_rectangle_component_a6dd0f4141d166a66dcec30ae7cd81c08}} 
+\index{RectangleComponent@{RectangleComponent}!compoName@{compoName}}
+\index{compoName@{compoName}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{compoName}{compoName}}
+{\footnotesize\ttfamily std\+::string Rectangle\+Component\+::compo\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+The name of the component. \mbox{\Hypertarget{class_rectangle_component_ad89974eb9c2f355586ead1135b18dc9d}\label{class_rectangle_component_ad89974eb9c2f355586ead1135b18dc9d}} 
+\index{RectangleComponent@{RectangleComponent}!gameObjectStatePtr@{gameObjectStatePtr}}
+\index{gameObjectStatePtr@{gameObjectStatePtr}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{gameObjectStatePtr}{gameObjectStatePtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}}$\ast$ Rectangle\+Component\+::game\+Object\+State\+Ptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pointer to the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}}. \mbox{\Hypertarget{class_rectangle_component_a069aec293e97e951cff0442cfd6807b9}\label{class_rectangle_component_a069aec293e97e951cff0442cfd6807b9}} 
+\index{RectangleComponent@{RectangleComponent}!green@{green}}
+\index{green@{green}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{green}{green}}
+{\footnotesize\ttfamily int Rectangle\+Component\+::green\hspace{0.3cm}{\ttfamily [protected]}}
+
+The green value of the rectangle. \mbox{\Hypertarget{class_rectangle_component_a43e28a5a631469e7c8196c6f18ffe7fe}\label{class_rectangle_component_a43e28a5a631469e7c8196c6f18ffe7fe}} 
+\index{RectangleComponent@{RectangleComponent}!height@{height}}
+\index{height@{height}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Rectangle\+Component\+::height\hspace{0.3cm}{\ttfamily [protected]}}
+
+The height of the rectangle. \mbox{\Hypertarget{class_rectangle_component_af611765e7ff4c15dbffa3b11446a960a}\label{class_rectangle_component_af611765e7ff4c15dbffa3b11446a960a}} 
+\index{RectangleComponent@{RectangleComponent}!rect@{rect}}
+\index{rect@{rect}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Rectangle\+Component\+::rect\hspace{0.3cm}{\ttfamily [protected]}}
+
+The rectangle to use. \mbox{\Hypertarget{class_rectangle_component_a80e530712d0422c0d08dc95f31522c8b}\label{class_rectangle_component_a80e530712d0422c0d08dc95f31522c8b}} 
+\index{RectangleComponent@{RectangleComponent}!red@{red}}
+\index{red@{red}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{red}{red}}
+{\footnotesize\ttfamily int Rectangle\+Component\+::red\hspace{0.3cm}{\ttfamily [protected]}}
+
+The red value of the rectangle. \mbox{\Hypertarget{class_rectangle_component_a83fecbf96291fc959a72c532d8fcdc3a}\label{class_rectangle_component_a83fecbf96291fc959a72c532d8fcdc3a}} 
+\index{RectangleComponent@{RectangleComponent}!tag@{tag}}
+\index{tag@{tag}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{tag}{tag}}
+{\footnotesize\ttfamily std\+::string Rectangle\+Component\+::tag\hspace{0.3cm}{\ttfamily [protected]}}
+
+The tag of the component. \mbox{\Hypertarget{class_rectangle_component_afbe657283c810b7f33110b0331a34c4d}\label{class_rectangle_component_afbe657283c810b7f33110b0331a34c4d}} 
+\index{RectangleComponent@{RectangleComponent}!textColor@{textColor}}
+\index{textColor@{textColor}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{textColor}{textColor}}
+{\footnotesize\ttfamily SDL\+\_\+\+Color Rectangle\+Component\+::text\+Color\hspace{0.3cm}{\ttfamily [protected]}}
+
+The text color of the component. \mbox{\Hypertarget{class_rectangle_component_a22213c082aec2e5807cc512038675dc8}\label{class_rectangle_component_a22213c082aec2e5807cc512038675dc8}} 
+\index{RectangleComponent@{RectangleComponent}!textContent@{textContent}}
+\index{textContent@{textContent}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{textContent}{textContent}}
+{\footnotesize\ttfamily std\+::string Rectangle\+Component\+::text\+Content\hspace{0.3cm}{\ttfamily [protected]}}
+
+The text content of the component. \mbox{\Hypertarget{class_rectangle_component_ad251c14f1056a7def327ca2864ee8d4a}\label{class_rectangle_component_ad251c14f1056a7def327ca2864ee8d4a}} 
+\index{RectangleComponent@{RectangleComponent}!textureText@{textureText}}
+\index{textureText@{textureText}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{textureText}{textureText}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ Rectangle\+Component\+::texture\+Text\hspace{0.3cm}{\ttfamily [protected]}}
+
+The texture of the text. \mbox{\Hypertarget{class_rectangle_component_a6d8450e91c1f98934035dbebdbd3e649}\label{class_rectangle_component_a6d8450e91c1f98934035dbebdbd3e649}} 
+\index{RectangleComponent@{RectangleComponent}!width@{width}}
+\index{width@{width}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Rectangle\+Component\+::width\hspace{0.3cm}{\ttfamily [protected]}}
+
+The width of the rectangle. \mbox{\Hypertarget{class_rectangle_component_ac442effe02bfbfc095e58229bacfbea0}\label{class_rectangle_component_ac442effe02bfbfc095e58229bacfbea0}} 
+\index{RectangleComponent@{RectangleComponent}!x\_pos@{x\_pos}}
+\index{x\_pos@{x\_pos}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{x\_pos}{x\_pos}}
+{\footnotesize\ttfamily int Rectangle\+Component\+::x\+\_\+pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+The x position of the rectangle. \mbox{\Hypertarget{class_rectangle_component_ae50fd2ad1ada0f4186ee36600acce625}\label{class_rectangle_component_ae50fd2ad1ada0f4186ee36600acce625}} 
+\index{RectangleComponent@{RectangleComponent}!y\_pos@{y\_pos}}
+\index{y\_pos@{y\_pos}!RectangleComponent@{RectangleComponent}}
+\doxysubsubsection{\texorpdfstring{y\_pos}{y\_pos}}
+{\footnotesize\ttfamily int Rectangle\+Component\+::y\+\_\+pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+The y position of the rectangle. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_rectangle_component_8hpp}{Rectangle\+Component.\+hpp}}\item 
+src/\mbox{\hyperlink{_rectangle_component_8cpp}{Rectangle\+Component.\+cpp}}\end{DoxyCompactItemize}

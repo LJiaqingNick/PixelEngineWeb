@@ -1,0 +1,44 @@
+\hypertarget{_game_play_state_8hpp_source}{}\doxysection{Game\+Play\+State.\+hpp}
+\label{_game_play_state_8hpp_source}\index{include/GamePlayState.hpp@{include/GamePlayState.hpp}}
+\mbox{\hyperlink{_game_play_state_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL\_timer.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ For\ Mac}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL\_timer.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_play_state}{GamePlayState}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_play_state_afb55bc4d42ae31f1f6b3154c8149dd85}{GamePlayState}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_play_state_afb55bc4d42ae31f1f6b3154c8149dd85}{GamePlayState}}(\textcolor{keywordtype}{int}\ update\_rate);}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_play_state_aaa1afd5f6e091e5cb5bda2fa82247d58}{\string~GamePlayState}}();}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ Uint8\ \mbox{\hyperlink{class_game_play_state_aa9d0db46fc28bb58f08986b097427c9d}{getKeyInput}}();\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_play_state_a28b49c360539514f857c39b1431cb37f}{setKeyInput}}(Uint8\ key);\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_game_play_state_a4b445b96b788ab26253313f9ff805663}{GetDeltaTime}}();\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_play_state_a5f3cd464723b30e813d5f4d42b73217a}{Update}}();\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_play_state_a319d2c1c6a30af43dc6a53fd07c51631}{addToColliderList}}(std::string\ gameobj);\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_play_state_ad41499a7c4a20f35c66caf393b1b0476}{checkInsideColliderList}}(std::string\ gameobj);\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_play_state_ae5ef73f0bb26f0f43241e1a0d118df01}{resetColliderList}}();\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_game_play_state_a7488be3bacad3126b5c09e72b0052ba6}{getCurrentKeyPressed}}();\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ std::vector<Uint8>\ \mbox{\hyperlink{class_game_play_state_a5e6174d427f5fb892364181618a6007e}{getRecentKeyInputs}}();\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_game_play_state_aa50fb572bda79509b5c5fe3429b17ea3}{keyCodeToString}}(Uint8\ keycode);\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_play_state_afe5612adb1baae3ec011a90f86e9a6d0}{RecentKeyInputContains}}(Uint8\ keycode);\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_play_state_a45e2631dd625f779760f491c52056d2e}{recordKeyActivity}}(Uint8\ key);\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ Uint8\ key\_input;\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ Uint32\ mCurrentTime;\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ Uint32\ mLastUpdateTime;\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ std::vector<std::string>\ colliderList;\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ std::unordered\_map<Uint8,\ std::string>\ codeToKeyStrMap;\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ std::vector<Uint8>\ key\_input\_event\_queue;\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ key\_event\_queue\_limit;\ }
+\DoxyCodeLine{00055\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,252 @@
+\hypertarget{class_animator}{}\doxysection{Animator Class Reference}
+\label{class_animator}\index{Animator@{Animator}}
+
+
+A component for managing and updating animations.  
+
+
+
+
+{\ttfamily \#include $<$Animator.\+hpp$>$}
+
+Inheritance diagram for Animator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_animator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_animator_a143f45c2d9ceaa15a92d3f43d4a95490}{Animator}} (int frame\+Width, int frame\+Height)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_animator}{Animator}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_animator_a5af4797549f9f466a88657899e17c6ab}{$\sim$\+Animator}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_animator}{Animator}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animator_aa0652884fb0ce07a0d443a997bce5cad}{Update}} (float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Update the \mbox{\hyperlink{class_animator}{Animator}} with the given time delta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animator_ab44f677e391a3cbcccbeef8e8e421de2}{Set\+Current\+Row}} (int row)
+\begin{DoxyCompactList}\small\item\em Set the current row for the animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animator_ac9ce75d03636726d5b2fe890b8f6bd99}{Set\+Current\+Column}} (int column)
+\begin{DoxyCompactList}\small\item\em Set the current column for the animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animator_ab5f7212f0baf6e067329b928f5e70aba}{Add\+Animation}} (const std\+::string \&name, int start\+Row, int end\+Row, int start\+Column, int end\+Column, float frame\+Time)
+\begin{DoxyCompactList}\small\item\em Add a new animation with the given parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animator_a087a36fb071023cfca6250a0901a9c4e}{Set\+Current\+Animation}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Set the current animation by name. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_animator_aba47bc5e158f03355dbcb10e083c6858}{Get\+Current\+Row}} () const
+\begin{DoxyCompactList}\small\item\em Get the current row of the animation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_animator_a5a33f98df879e814b36081ffc6377c22}{Get\+Current\+Column}} () const
+\begin{DoxyCompactList}\small\item\em Get the current column of the animation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_animator_ac908164cdbf035a94a6e6c84fc0a2bc7}{Get\+Frame\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Get the frame width of the animation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_animator_a2ad0bfa6b9951c65525c8e9ee7757a5c}{Get\+Frame\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Get the frame height of the animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_component_ab8378fa275af98e568a7e91d33d867af}{$\sim$\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State)
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{get\+Tag}} ()
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_component_ae89a01592cf673591afa652f06211328}{set\+Comp\+Removed}} ()
+\begin{DoxyCompactList}\small\item\em Sets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{get\+Compo\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{set\+Compo\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a3f85fc409bdfe4968f91893f888d41b0}{tag}}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a085fdb125d2c7d24a6f8a672ae6af2c8}{compo\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component for managing and updating animations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_animator_a143f45c2d9ceaa15a92d3f43d4a95490}\label{class_animator_a143f45c2d9ceaa15a92d3f43d4a95490}} 
+\index{Animator@{Animator}!Animator@{Animator}}
+\index{Animator@{Animator}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{Animator()}{Animator()}}
+{\footnotesize\ttfamily Animator\+::\+Animator (\begin{DoxyParamCaption}\item[{int}]{frame\+Width,  }\item[{int}]{frame\+Height }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_animator}{Animator}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+Width} & Width of a single animation frame. \\
+\hline
+{\em frame\+Height} & Height of a single animation frame. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_animator_a5af4797549f9f466a88657899e17c6ab}\label{class_animator_a5af4797549f9f466a88657899e17c6ab}} 
+\index{Animator@{Animator}!````~Animator@{$\sim$Animator}}
+\index{````~Animator@{$\sim$Animator}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{$\sim$Animator()}{~Animator()}}
+{\footnotesize\ttfamily Animator\+::$\sim$\+Animator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{class_animator}{Animator}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_animator_ab5f7212f0baf6e067329b928f5e70aba}\label{class_animator_ab5f7212f0baf6e067329b928f5e70aba}} 
+\index{Animator@{Animator}!AddAnimation@{AddAnimation}}
+\index{AddAnimation@{AddAnimation}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{AddAnimation()}{AddAnimation()}}
+{\footnotesize\ttfamily void Animator\+::\+Add\+Animation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{int}]{start\+Row,  }\item[{int}]{end\+Row,  }\item[{int}]{start\+Column,  }\item[{int}]{end\+Column,  }\item[{float}]{frame\+Time }\end{DoxyParamCaption})}
+
+
+
+Add a new animation with the given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the new animation. \\
+\hline
+{\em start\+Row} & Starting row for the animation. \\
+\hline
+{\em end\+Row} & Ending row for the animation. \\
+\hline
+{\em start\+Column} & Starting column for the animation. \\
+\hline
+{\em end\+Column} & Ending column for the animation. \\
+\hline
+{\em frame\+Time} & Time duration for each frame of the animation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_animator_a5a33f98df879e814b36081ffc6377c22}\label{class_animator_a5a33f98df879e814b36081ffc6377c22}} 
+\index{Animator@{Animator}!GetCurrentColumn@{GetCurrentColumn}}
+\index{GetCurrentColumn@{GetCurrentColumn}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{GetCurrentColumn()}{GetCurrentColumn()}}
+{\footnotesize\ttfamily int Animator\+::\+Get\+Current\+Column (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the current column of the animation. 
+
+\begin{DoxyReturn}{Returns}
+The current column of the animation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_animator_aba47bc5e158f03355dbcb10e083c6858}\label{class_animator_aba47bc5e158f03355dbcb10e083c6858}} 
+\index{Animator@{Animator}!GetCurrentRow@{GetCurrentRow}}
+\index{GetCurrentRow@{GetCurrentRow}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{GetCurrentRow()}{GetCurrentRow()}}
+{\footnotesize\ttfamily int Animator\+::\+Get\+Current\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the current row of the animation. 
+
+\begin{DoxyReturn}{Returns}
+The current row of the animation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_animator_a2ad0bfa6b9951c65525c8e9ee7757a5c}\label{class_animator_a2ad0bfa6b9951c65525c8e9ee7757a5c}} 
+\index{Animator@{Animator}!GetFrameHeight@{GetFrameHeight}}
+\index{GetFrameHeight@{GetFrameHeight}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{GetFrameHeight()}{GetFrameHeight()}}
+{\footnotesize\ttfamily int Animator\+::\+Get\+Frame\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the frame height of the animation. 
+
+\begin{DoxyReturn}{Returns}
+The frame height of the animation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_animator_ac908164cdbf035a94a6e6c84fc0a2bc7}\label{class_animator_ac908164cdbf035a94a6e6c84fc0a2bc7}} 
+\index{Animator@{Animator}!GetFrameWidth@{GetFrameWidth}}
+\index{GetFrameWidth@{GetFrameWidth}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{GetFrameWidth()}{GetFrameWidth()}}
+{\footnotesize\ttfamily int Animator\+::\+Get\+Frame\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the frame width of the animation. 
+
+\begin{DoxyReturn}{Returns}
+The frame width of the animation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_animator_a087a36fb071023cfca6250a0901a9c4e}\label{class_animator_a087a36fb071023cfca6250a0901a9c4e}} 
+\index{Animator@{Animator}!SetCurrentAnimation@{SetCurrentAnimation}}
+\index{SetCurrentAnimation@{SetCurrentAnimation}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{SetCurrentAnimation()}{SetCurrentAnimation()}}
+{\footnotesize\ttfamily void Animator\+::\+Set\+Current\+Animation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Set the current animation by name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the animation to set as the current animation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_animator_ac9ce75d03636726d5b2fe890b8f6bd99}\label{class_animator_ac9ce75d03636726d5b2fe890b8f6bd99}} 
+\index{Animator@{Animator}!SetCurrentColumn@{SetCurrentColumn}}
+\index{SetCurrentColumn@{SetCurrentColumn}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{SetCurrentColumn()}{SetCurrentColumn()}}
+{\footnotesize\ttfamily void Animator\+::\+Set\+Current\+Column (\begin{DoxyParamCaption}\item[{int}]{column }\end{DoxyParamCaption})}
+
+
+
+Set the current column for the animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & The column to set as the current column. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_animator_ab44f677e391a3cbcccbeef8e8e421de2}\label{class_animator_ab44f677e391a3cbcccbeef8e8e421de2}} 
+\index{Animator@{Animator}!SetCurrentRow@{SetCurrentRow}}
+\index{SetCurrentRow@{SetCurrentRow}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{SetCurrentRow()}{SetCurrentRow()}}
+{\footnotesize\ttfamily void Animator\+::\+Set\+Current\+Row (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption})}
+
+
+
+Set the current row for the animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The row to set as the current row. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_animator_aa0652884fb0ce07a0d443a997bce5cad}\label{class_animator_aa0652884fb0ce07a0d443a997bce5cad}} 
+\index{Animator@{Animator}!Update@{Update}}
+\index{Update@{Update}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Animator\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Update the \mbox{\hyperlink{class_animator}{Animator}} with the given time delta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & Time delta since the last update. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_animator_8hpp}{Animator.\+hpp}}\item 
+src/\mbox{\hyperlink{_animator_8cpp}{Animator.\+cpp}}\end{DoxyCompactItemize}

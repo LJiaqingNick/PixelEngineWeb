@@ -1,0 +1,326 @@
+\hypertarget{class_text_component}{}\doxysection{Text\+Component Class Reference}
+\label{class_text_component}\index{TextComponent@{TextComponent}}
+
+
+\mbox{\hyperlink{class_component}{Component}} for rendering text.  
+
+
+
+
+{\ttfamily \#include $<$Text\+Component.\+hpp$>$}
+
+Inheritance diagram for Text\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_text_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_component_a6c0c9cd054dee20308180eb4cfa2fbe0}{Text\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_text_component}{Text\+Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text_component_a95a2df398bae22306eba651f17221c65}{Text\+Component}} (\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$game\+Object\+State)
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_text_component}{Text\+Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text_component_aa9e9e0b269eb8c59e286a64cb1dd0578}{$\sim$\+Text\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor for the \mbox{\hyperlink{class_text_component}{Text\+Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_text_component_ae3ecc6e64aa513a2acd604c709b63100}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State) override
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_text_component_a1f6f0aa5a8a26ef2e5f82ce349f1b4a8}{Render}} (SDL\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_text_component_a90403e58108c87856c336eee04c85f3b}{Start}} () override
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_text_component_af49ca15ccbf779266caa091792ae8b9b}{Shutdown}} () override
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_text_component_a4176f0f3eff89812e51c066143f5bd8e}{get\+Tag}} () override
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_text_component_a96c5ef2914a05ca9033c922069e1cab3}{get\+Compo\+Name}} () override
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_text_component_a77aa1e2e9997505b1f7a6b049ccd5bbf}{set\+Compo\+Name}} (std\+::string name) override
+\begin{DoxyCompactList}\small\item\em Sets the name of the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_text_component_a9168b24b84f2db5c22648409761101d7}{update\+Text\+Content}} (std\+::string content, SDL\+\_\+\+Renderer $\ast$ren, int x, int y, int width, int height)
+\begin{DoxyCompactList}\small\item\em Sets the text content of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_component_ab8378fa275af98e568a7e91d33d867af}{$\sim$\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State)
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{get\+Tag}} ()
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_component_ae89a01592cf673591afa652f06211328}{set\+Comp\+Removed}} ()
+\begin{DoxyCompactList}\small\item\em Sets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{get\+Compo\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{set\+Compo\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_text_component_a79e8783d354acae44bf2fd79194f40fc}{tag}}
+\item 
+std\+::string \mbox{\hyperlink{class_text_component_a17b3ae4554b8c8d4ed06459936919767}{compo\+Name}}
+\item 
+\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$ \mbox{\hyperlink{class_text_component_aab408306772ac1774703f8a36d54261c}{game\+Object\+State\+Ptr}}
+\item 
+std\+::string \mbox{\hyperlink{class_text_component_aa8f50bf9e64991ce0bd69f530432290b}{text\+Content}}
+\item 
+SDL\+\_\+\+Color \mbox{\hyperlink{class_text_component_a3b217f1db113b1c26cd5afe48cddc85e}{text\+Color}}
+\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_text_component_ae46dec9c20444fadd5cd8e5471282656}{texture\+Text}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_text_component_a1d3f370043cee94847f8a86f71092910}{rect}}
+\item 
+TTF\+\_\+\+Font $\ast$ \mbox{\hyperlink{class_text_component_aef8e46f1fac65406df40244cfa373113}{curr\+Font}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a3f85fc409bdfe4968f91893f888d41b0}{tag}}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a085fdb125d2c7d24a6f8a672ae6af2c8}{compo\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_component}{Component}} for rendering text. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_text_component_a6c0c9cd054dee20308180eb4cfa2fbe0}\label{class_text_component_a6c0c9cd054dee20308180eb4cfa2fbe0}} 
+\index{TextComponent@{TextComponent}!TextComponent@{TextComponent}}
+\index{TextComponent@{TextComponent}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{TextComponent()}{TextComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Text\+Component\+::\+Text\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_text_component}{Text\+Component}} class. 
+
+\mbox{\Hypertarget{class_text_component_a95a2df398bae22306eba651f17221c65}\label{class_text_component_a95a2df398bae22306eba651f17221c65}} 
+\index{TextComponent@{TextComponent}!TextComponent@{TextComponent}}
+\index{TextComponent@{TextComponent}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{TextComponent()}{TextComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Text\+Component\+::\+Text\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$}]{game\+Object\+State }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_text_component}{Text\+Component}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Object\+State} & Pointer to the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_text_component_aa9e9e0b269eb8c59e286a64cb1dd0578}\label{class_text_component_aa9e9e0b269eb8c59e286a64cb1dd0578}} 
+\index{TextComponent@{TextComponent}!````~TextComponent@{$\sim$TextComponent}}
+\index{````~TextComponent@{$\sim$TextComponent}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$TextComponent()}{~TextComponent()}}
+{\footnotesize\ttfamily Text\+Component\+::$\sim$\+Text\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default destructor for the \mbox{\hyperlink{class_text_component}{Text\+Component}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_text_component_a96c5ef2914a05ca9033c922069e1cab3}\label{class_text_component_a96c5ef2914a05ca9033c922069e1cab3}} 
+\index{TextComponent@{TextComponent}!getCompoName@{getCompoName}}
+\index{getCompoName@{getCompoName}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{getCompoName()}{getCompoName()}}
+{\footnotesize\ttfamily std\+::string Text\+Component\+::get\+Compo\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the name of the component. 
+
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{Component}}.
+
+\mbox{\Hypertarget{class_text_component_a4176f0f3eff89812e51c066143f5bd8e}\label{class_text_component_a4176f0f3eff89812e51c066143f5bd8e}} 
+\index{TextComponent@{TextComponent}!getTag@{getTag}}
+\index{getTag@{getTag}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{getTag()}{getTag()}}
+{\footnotesize\ttfamily std\+::string Text\+Component\+::get\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the tag of the component. 
+
+\begin{DoxyReturn}{Returns}
+The tag of the component. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{Component}}.
+
+\mbox{\Hypertarget{class_text_component_a1f6f0aa5a8a26ef2e5f82ce349f1b4a8}\label{class_text_component_a1f6f0aa5a8a26ef2e5f82ce349f1b4a8}} 
+\index{TextComponent@{TextComponent}!Render@{Render}}
+\index{Render@{Render}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Text\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Renders the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ren} & The renderer to use. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Component}}.
+
+\mbox{\Hypertarget{class_text_component_a77aa1e2e9997505b1f7a6b049ccd5bbf}\label{class_text_component_a77aa1e2e9997505b1f7a6b049ccd5bbf}} 
+\index{TextComponent@{TextComponent}!setCompoName@{setCompoName}}
+\index{setCompoName@{setCompoName}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{setCompoName()}{setCompoName()}}
+{\footnotesize\ttfamily void Text\+Component\+::set\+Compo\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the name of the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to set. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{Component}}.
+
+\mbox{\Hypertarget{class_text_component_af49ca15ccbf779266caa091792ae8b9b}\label{class_text_component_af49ca15ccbf779266caa091792ae8b9b}} 
+\index{TextComponent@{TextComponent}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Text\+Component\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Shuts down the component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Component}}.
+
+\mbox{\Hypertarget{class_text_component_a90403e58108c87856c336eee04c85f3b}\label{class_text_component_a90403e58108c87856c336eee04c85f3b}} 
+\index{TextComponent@{TextComponent}!Start@{Start}}
+\index{Start@{Start}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Text\+Component\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Starts the component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Component}}.
+
+\mbox{\Hypertarget{class_text_component_ae3ecc6e64aa513a2acd604c709b63100}\label{class_text_component_ae3ecc6e64aa513a2acd604c709b63100}} 
+\index{TextComponent@{TextComponent}!Update@{Update}}
+\index{Update@{Update}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Text\+Component\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$}]{game\+Play\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Play\+State} & The current game play state. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Component}}.
+
+\mbox{\Hypertarget{class_text_component_a9168b24b84f2db5c22648409761101d7}\label{class_text_component_a9168b24b84f2db5c22648409761101d7}} 
+\index{TextComponent@{TextComponent}!updateTextContent@{updateTextContent}}
+\index{updateTextContent@{updateTextContent}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{updateTextContent()}{updateTextContent()}}
+{\footnotesize\ttfamily void Text\+Component\+::update\+Text\+Content (\begin{DoxyParamCaption}\item[{std\+::string}]{content,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{ren,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Sets the text content of the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & The text content to set. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_text_component_a17b3ae4554b8c8d4ed06459936919767}\label{class_text_component_a17b3ae4554b8c8d4ed06459936919767}} 
+\index{TextComponent@{TextComponent}!compoName@{compoName}}
+\index{compoName@{compoName}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{compoName}{compoName}}
+{\footnotesize\ttfamily std\+::string Text\+Component\+::compo\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+The name of the component. \mbox{\Hypertarget{class_text_component_aef8e46f1fac65406df40244cfa373113}\label{class_text_component_aef8e46f1fac65406df40244cfa373113}} 
+\index{TextComponent@{TextComponent}!currFont@{currFont}}
+\index{currFont@{currFont}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{currFont}{currFont}}
+{\footnotesize\ttfamily TTF\+\_\+\+Font$\ast$ Text\+Component\+::curr\+Font\hspace{0.3cm}{\ttfamily [protected]}}
+
+The font of the text. \mbox{\Hypertarget{class_text_component_aab408306772ac1774703f8a36d54261c}\label{class_text_component_aab408306772ac1774703f8a36d54261c}} 
+\index{TextComponent@{TextComponent}!gameObjectStatePtr@{gameObjectStatePtr}}
+\index{gameObjectStatePtr@{gameObjectStatePtr}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{gameObjectStatePtr}{gameObjectStatePtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}}$\ast$ Text\+Component\+::game\+Object\+State\+Ptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pointer to the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}}. \mbox{\Hypertarget{class_text_component_a1d3f370043cee94847f8a86f71092910}\label{class_text_component_a1d3f370043cee94847f8a86f71092910}} 
+\index{TextComponent@{TextComponent}!rect@{rect}}
+\index{rect@{rect}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Text\+Component\+::rect\hspace{0.3cm}{\ttfamily [protected]}}
+
+The rectangle of the text. \mbox{\Hypertarget{class_text_component_a79e8783d354acae44bf2fd79194f40fc}\label{class_text_component_a79e8783d354acae44bf2fd79194f40fc}} 
+\index{TextComponent@{TextComponent}!tag@{tag}}
+\index{tag@{tag}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{tag}{tag}}
+{\footnotesize\ttfamily std\+::string Text\+Component\+::tag\hspace{0.3cm}{\ttfamily [protected]}}
+
+The tag of the component. \mbox{\Hypertarget{class_text_component_a3b217f1db113b1c26cd5afe48cddc85e}\label{class_text_component_a3b217f1db113b1c26cd5afe48cddc85e}} 
+\index{TextComponent@{TextComponent}!textColor@{textColor}}
+\index{textColor@{textColor}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{textColor}{textColor}}
+{\footnotesize\ttfamily SDL\+\_\+\+Color Text\+Component\+::text\+Color\hspace{0.3cm}{\ttfamily [protected]}}
+
+The color of the text. \mbox{\Hypertarget{class_text_component_aa8f50bf9e64991ce0bd69f530432290b}\label{class_text_component_aa8f50bf9e64991ce0bd69f530432290b}} 
+\index{TextComponent@{TextComponent}!textContent@{textContent}}
+\index{textContent@{textContent}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{textContent}{textContent}}
+{\footnotesize\ttfamily std\+::string Text\+Component\+::text\+Content\hspace{0.3cm}{\ttfamily [protected]}}
+
+The text content of the component. \mbox{\Hypertarget{class_text_component_ae46dec9c20444fadd5cd8e5471282656}\label{class_text_component_ae46dec9c20444fadd5cd8e5471282656}} 
+\index{TextComponent@{TextComponent}!textureText@{textureText}}
+\index{textureText@{textureText}!TextComponent@{TextComponent}}
+\doxysubsubsection{\texorpdfstring{textureText}{textureText}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ Text\+Component\+::texture\+Text\hspace{0.3cm}{\ttfamily [protected]}}
+
+The texture of the text. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_text_component_8hpp}{Text\+Component.\+hpp}}\item 
+src/\mbox{\hyperlink{_text_component_8cpp}{Text\+Component.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,149 @@
+\hypertarget{class_resource_manager}{}\doxysection{Resource\+Manager Class Reference}
+\label{class_resource_manager}\index{ResourceManager@{ResourceManager}}
+
+
+The resource manager class.  
+
+
+
+
+{\ttfamily \#include $<$Resource\+Manager.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_resource_manager_aeba474690a0abed7501d3ac35a501412}{Start\+UP}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_resource_manager_ae5ed3ee26a3de63a04d4bb6542d5bbb0}{Shut\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Shut down the \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} $\ast$ \mbox{\hyperlink{class_resource_manager_ab15d2c21ddb0c41dd45201dacacc628d}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the singleton instance of the \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_resource_manager_a3b06d0a1c44dcccadd3fa3da36514579}{Load\+Resource}} (std\+::string image\+\_\+filename)
+\begin{DoxyCompactList}\small\item\em Load a resource. \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{class_resource_manager_a02db32275477bd91425cb5dddedd935f}{Get\+Resource}} (std\+::string image\+\_\+filename)
+\begin{DoxyCompactList}\small\item\em Get an SDL\+\_\+\+Surface resource by its image filename. \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_resource_manager_a3f0b7c7cc575e0e6cfad146123d01c30}{Get\+Texture}} (SDL\+\_\+\+Renderer $\ast$\&renderer, std\+::string image\+\_\+filename)
+\begin{DoxyCompactList}\small\item\em Get an SDL\+\_\+\+Texture resource by its image filename. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} $\ast$ \mbox{\hyperlink{class_resource_manager_a50fe9e5e505b5fc1e8219ad71068d876}{instance}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The resource manager class. 
+
+This class is responsible for loading and unloading resources. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_manager_ab15d2c21ddb0c41dd45201dacacc628d}\label{class_resource_manager_ab15d2c21ddb0c41dd45201dacacc628d}} 
+\index{ResourceManager@{ResourceManager}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} $\ast$ Resource\+Manager\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the singleton instance of the \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_a02db32275477bd91425cb5dddedd935f}\label{class_resource_manager_a02db32275477bd91425cb5dddedd935f}} 
+\index{ResourceManager@{ResourceManager}!GetResource@{GetResource}}
+\index{GetResource@{GetResource}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetResource()}{GetResource()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface $\ast$ Resource\+Manager\+::\+Get\+Resource (\begin{DoxyParamCaption}\item[{std\+::string}]{image\+\_\+filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get an SDL\+\_\+\+Surface resource by its image filename. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+\_\+filename} & The image filename of the resource. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the SDL\+\_\+\+Surface resource. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_a3f0b7c7cc575e0e6cfad146123d01c30}\label{class_resource_manager_a3f0b7c7cc575e0e6cfad146123d01c30}} 
+\index{ResourceManager@{ResourceManager}!GetTexture@{GetTexture}}
+\index{GetTexture@{GetTexture}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetTexture()}{GetTexture()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture $\ast$ Resource\+Manager\+::\+Get\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$\&}]{renderer,  }\item[{std\+::string}]{image\+\_\+filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get an SDL\+\_\+\+Texture resource by its image filename. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Pointer to the SDL\+\_\+\+Renderer. \\
+\hline
+{\em image\+\_\+filename} & The image filename of the resource. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the SDL\+\_\+\+Texture resource. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_a3b06d0a1c44dcccadd3fa3da36514579}\label{class_resource_manager_a3b06d0a1c44dcccadd3fa3da36514579}} 
+\index{ResourceManager@{ResourceManager}!LoadResource@{LoadResource}}
+\index{LoadResource@{LoadResource}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadResource()}{LoadResource()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::\+Load\+Resource (\begin{DoxyParamCaption}\item[{std\+::string}]{image\+\_\+filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load a resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+\_\+filename} & The filename of the resource to load. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_resource_manager_ae5ed3ee26a3de63a04d4bb6542d5bbb0}\label{class_resource_manager_ae5ed3ee26a3de63a04d4bb6542d5bbb0}} 
+\index{ResourceManager@{ResourceManager}!ShutDown@{ShutDown}}
+\index{ShutDown@{ShutDown}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{ShutDown()}{ShutDown()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::\+Shut\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shut down the \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, non-\/zero otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_aeba474690a0abed7501d3ac35a501412}\label{class_resource_manager_aeba474690a0abed7501d3ac35a501412}} 
+\index{ResourceManager@{ResourceManager}!StartUP@{StartUP}}
+\index{StartUP@{StartUP}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{StartUP()}{StartUP()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::\+Start\+UP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, non-\/zero otherwise. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_resource_manager_a50fe9e5e505b5fc1e8219ad71068d876}\label{class_resource_manager_a50fe9e5e505b5fc1e8219ad71068d876}} 
+\index{ResourceManager@{ResourceManager}!instance@{instance}}
+\index{instance@{instance}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} $\ast$ Resource\+Manager\+::instance = nullptr\hspace{0.3cm}{\ttfamily [static]}}
+
+Pointer to the singleton instance of \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_resource_manager_8hpp}{Resource\+Manager.\+hpp}}\item 
+src/\mbox{\hyperlink{_resource_manager_8cpp}{Resource\+Manager.\+cpp}}\end{DoxyCompactItemize}

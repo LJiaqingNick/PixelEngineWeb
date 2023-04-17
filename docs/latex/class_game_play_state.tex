@@ -1,0 +1,166 @@
+\hypertarget{class_game_play_state}{}\doxysection{Game\+Play\+State Class Reference}
+\label{class_game_play_state}\index{GamePlayState@{GamePlayState}}
+
+
+A class for managing the game play state.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Play\+State.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_play_state_afb55bc4d42ae31f1f6b3154c8149dd85}{Game\+Play\+State}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_play_state_a43d9395bdb69c64c093f9d7dab168bcd}{Game\+Play\+State}} (int update\+\_\+rate)
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_play_state_aaa1afd5f6e091e5cb5bda2fa82247d58}{$\sim$\+Game\+Play\+State}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor for the \mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} class. \end{DoxyCompactList}\item 
+Uint8 \mbox{\hyperlink{class_game_play_state_aa9d0db46fc28bb58f08986b097427c9d}{get\+Key\+Input}} ()
+\item 
+void \mbox{\hyperlink{class_game_play_state_a28b49c360539514f857c39b1431cb37f}{set\+Key\+Input}} (Uint8 key)
+\item 
+float \mbox{\hyperlink{class_game_play_state_a4b445b96b788ab26253313f9ff805663}{Get\+Delta\+Time}} ()
+\item 
+void \mbox{\hyperlink{class_game_play_state_a5f3cd464723b30e813d5f4d42b73217a}{Update}} ()
+\item 
+bool \mbox{\hyperlink{class_game_play_state_a319d2c1c6a30af43dc6a53fd07c51631}{add\+To\+Collider\+List}} (std\+::string gameobj)
+\item 
+bool \mbox{\hyperlink{class_game_play_state_ad41499a7c4a20f35c66caf393b1b0476}{check\+Inside\+Collider\+List}} (std\+::string gameobj)
+\item 
+void \mbox{\hyperlink{class_game_play_state_ae5ef73f0bb26f0f43241e1a0d118df01}{reset\+Collider\+List}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_game_play_state_a7488be3bacad3126b5c09e72b0052ba6}{get\+Current\+Key\+Pressed}} ()
+\item 
+std\+::vector$<$ Uint8 $>$ \mbox{\hyperlink{class_game_play_state_a5e6174d427f5fb892364181618a6007e}{get\+Recent\+Key\+Inputs}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_game_play_state_aa50fb572bda79509b5c5fe3429b17ea3}{key\+Code\+To\+String}} (Uint8 keycode)
+\item 
+bool \mbox{\hyperlink{class_game_play_state_afe5612adb1baae3ec011a90f86e9a6d0}{Recent\+Key\+Input\+Contains}} (Uint8 keycode)
+\item 
+void \mbox{\hyperlink{class_game_play_state_a45e2631dd625f779760f491c52056d2e}{record\+Key\+Activity}} (Uint8 key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for managing the game play state. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_play_state_afb55bc4d42ae31f1f6b3154c8149dd85}\label{class_game_play_state_afb55bc4d42ae31f1f6b3154c8149dd85}} 
+\index{GamePlayState@{GamePlayState}!GamePlayState@{GamePlayState}}
+\index{GamePlayState@{GamePlayState}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{GamePlayState()}{GamePlayState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+Play\+State\+::\+Game\+Play\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} class. 
+
+\mbox{\Hypertarget{class_game_play_state_a43d9395bdb69c64c093f9d7dab168bcd}\label{class_game_play_state_a43d9395bdb69c64c093f9d7dab168bcd}} 
+\index{GamePlayState@{GamePlayState}!GamePlayState@{GamePlayState}}
+\index{GamePlayState@{GamePlayState}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{GamePlayState()}{GamePlayState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+Play\+State\+::\+Game\+Play\+State (\begin{DoxyParamCaption}\item[{int}]{update\+\_\+rate }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em update\+\_\+rate} & The update rate of the game. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_play_state_aaa1afd5f6e091e5cb5bda2fa82247d58}\label{class_game_play_state_aaa1afd5f6e091e5cb5bda2fa82247d58}} 
+\index{GamePlayState@{GamePlayState}!````~GamePlayState@{$\sim$GamePlayState}}
+\index{````~GamePlayState@{$\sim$GamePlayState}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{$\sim$GamePlayState()}{~GamePlayState()}}
+{\footnotesize\ttfamily Game\+Play\+State\+::$\sim$\+Game\+Play\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default destructor for the \mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_play_state_a319d2c1c6a30af43dc6a53fd07c51631}\label{class_game_play_state_a319d2c1c6a30af43dc6a53fd07c51631}} 
+\index{GamePlayState@{GamePlayState}!addToColliderList@{addToColliderList}}
+\index{addToColliderList@{addToColliderList}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{addToColliderList()}{addToColliderList()}}
+{\footnotesize\ttfamily bool Game\+Play\+State\+::add\+To\+Collider\+List (\begin{DoxyParamCaption}\item[{std\+::string}]{gameobj }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Updates the game play state. \mbox{\Hypertarget{class_game_play_state_ad41499a7c4a20f35c66caf393b1b0476}\label{class_game_play_state_ad41499a7c4a20f35c66caf393b1b0476}} 
+\index{GamePlayState@{GamePlayState}!checkInsideColliderList@{checkInsideColliderList}}
+\index{checkInsideColliderList@{checkInsideColliderList}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{checkInsideColliderList()}{checkInsideColliderList()}}
+{\footnotesize\ttfamily bool Game\+Play\+State\+::check\+Inside\+Collider\+List (\begin{DoxyParamCaption}\item[{std\+::string}]{gameobj }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Adds a game object to the collider list. \mbox{\Hypertarget{class_game_play_state_a7488be3bacad3126b5c09e72b0052ba6}\label{class_game_play_state_a7488be3bacad3126b5c09e72b0052ba6}} 
+\index{GamePlayState@{GamePlayState}!getCurrentKeyPressed@{getCurrentKeyPressed}}
+\index{getCurrentKeyPressed@{getCurrentKeyPressed}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{getCurrentKeyPressed()}{getCurrentKeyPressed()}}
+{\footnotesize\ttfamily std\+::string Game\+Play\+State\+::get\+Current\+Key\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Resets the collider list. \mbox{\Hypertarget{class_game_play_state_a4b445b96b788ab26253313f9ff805663}\label{class_game_play_state_a4b445b96b788ab26253313f9ff805663}} 
+\index{GamePlayState@{GamePlayState}!GetDeltaTime@{GetDeltaTime}}
+\index{GetDeltaTime@{GetDeltaTime}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{GetDeltaTime()}{GetDeltaTime()}}
+{\footnotesize\ttfamily float Game\+Play\+State\+::\+Get\+Delta\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Sets the key input. \mbox{\Hypertarget{class_game_play_state_aa9d0db46fc28bb58f08986b097427c9d}\label{class_game_play_state_aa9d0db46fc28bb58f08986b097427c9d}} 
+\index{GamePlayState@{GamePlayState}!getKeyInput@{getKeyInput}}
+\index{getKeyInput@{getKeyInput}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{getKeyInput()}{getKeyInput()}}
+{\footnotesize\ttfamily Uint8 Game\+Play\+State\+::get\+Key\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_play_state_a5e6174d427f5fb892364181618a6007e}\label{class_game_play_state_a5e6174d427f5fb892364181618a6007e}} 
+\index{GamePlayState@{GamePlayState}!getRecentKeyInputs@{getRecentKeyInputs}}
+\index{getRecentKeyInputs@{getRecentKeyInputs}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{getRecentKeyInputs()}{getRecentKeyInputs()}}
+{\footnotesize\ttfamily std\+::vector$<$ Uint8 $>$ Game\+Play\+State\+::get\+Recent\+Key\+Inputs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Gets the current key pressed. \mbox{\Hypertarget{class_game_play_state_aa50fb572bda79509b5c5fe3429b17ea3}\label{class_game_play_state_aa50fb572bda79509b5c5fe3429b17ea3}} 
+\index{GamePlayState@{GamePlayState}!keyCodeToString@{keyCodeToString}}
+\index{keyCodeToString@{keyCodeToString}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{keyCodeToString()}{keyCodeToString()}}
+{\footnotesize\ttfamily std\+::string Game\+Play\+State\+::key\+Code\+To\+String (\begin{DoxyParamCaption}\item[{Uint8}]{keycode }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Gets the recent key inputs. \mbox{\Hypertarget{class_game_play_state_afe5612adb1baae3ec011a90f86e9a6d0}\label{class_game_play_state_afe5612adb1baae3ec011a90f86e9a6d0}} 
+\index{GamePlayState@{GamePlayState}!RecentKeyInputContains@{RecentKeyInputContains}}
+\index{RecentKeyInputContains@{RecentKeyInputContains}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{RecentKeyInputContains()}{RecentKeyInputContains()}}
+{\footnotesize\ttfamily bool Game\+Play\+State\+::\+Recent\+Key\+Input\+Contains (\begin{DoxyParamCaption}\item[{Uint8}]{keycode }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Converts a key code to a string. \mbox{\Hypertarget{class_game_play_state_a45e2631dd625f779760f491c52056d2e}\label{class_game_play_state_a45e2631dd625f779760f491c52056d2e}} 
+\index{GamePlayState@{GamePlayState}!recordKeyActivity@{recordKeyActivity}}
+\index{recordKeyActivity@{recordKeyActivity}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{recordKeyActivity()}{recordKeyActivity()}}
+{\footnotesize\ttfamily void Game\+Play\+State\+::record\+Key\+Activity (\begin{DoxyParamCaption}\item[{Uint8}]{key }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Checks if the recent key inputs contains a key code. \mbox{\Hypertarget{class_game_play_state_ae5ef73f0bb26f0f43241e1a0d118df01}\label{class_game_play_state_ae5ef73f0bb26f0f43241e1a0d118df01}} 
+\index{GamePlayState@{GamePlayState}!resetColliderList@{resetColliderList}}
+\index{resetColliderList@{resetColliderList}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{resetColliderList()}{resetColliderList()}}
+{\footnotesize\ttfamily void Game\+Play\+State\+::reset\+Collider\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Checks if a game object is in the collider list. \mbox{\Hypertarget{class_game_play_state_a28b49c360539514f857c39b1431cb37f}\label{class_game_play_state_a28b49c360539514f857c39b1431cb37f}} 
+\index{GamePlayState@{GamePlayState}!setKeyInput@{setKeyInput}}
+\index{setKeyInput@{setKeyInput}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{setKeyInput()}{setKeyInput()}}
+{\footnotesize\ttfamily void Game\+Play\+State\+::set\+Key\+Input (\begin{DoxyParamCaption}\item[{Uint8}]{key }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Gets the key input. \mbox{\Hypertarget{class_game_play_state_a5f3cd464723b30e813d5f4d42b73217a}\label{class_game_play_state_a5f3cd464723b30e813d5f4d42b73217a}} 
+\index{GamePlayState@{GamePlayState}!Update@{Update}}
+\index{Update@{Update}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+Play\+State\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Gets the delta time. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_game_play_state_8hpp}{Game\+Play\+State.\+hpp}}\item 
+src/\mbox{\hyperlink{_game_play_state_8cpp}{Game\+Play\+State.\+cpp}}\end{DoxyCompactItemize}

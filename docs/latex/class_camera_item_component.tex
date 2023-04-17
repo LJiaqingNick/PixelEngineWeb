@@ -1,0 +1,336 @@
+\hypertarget{class_camera_item_component}{}\doxysection{Camera\+Item\+Component Class Reference}
+\label{class_camera_item_component}\index{CameraItemComponent@{CameraItemComponent}}
+
+
+\mbox{\hyperlink{class_component}{Component}} for managing the camera in relation to a specific \mbox{\hyperlink{class_game_object}{Game\+Object}}.  
+
+
+
+
+{\ttfamily \#include $<$Camera\+Item\+Component.\+hpp$>$}
+
+Inheritance diagram for Camera\+Item\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_camera_item_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_camera_item_component_a22c11ea19423c9353ff17618d45e23e9}{Camera\+Item\+Component}} (\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$game\+Obj\+State\+Ptr)
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_camera_item_component}{Camera\+Item\+Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_camera_item_component_a72368a1b4092ea859b5bd2528a07971f}{Camera\+Item\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_camera_item_component}{Camera\+Item\+Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_camera_item_component_a4a43670bdfb7bc7d56e87f8e0fdad83a}{$\sim$\+Camera\+Item\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor for the \mbox{\hyperlink{class_camera_item_component}{Camera\+Item\+Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_camera_item_component_aac77989933cda0940d4f308899630dc4}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State) override
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_camera_item_component_a3ee646620ec6ed48fe7bcea3179f7198}{Render}} (SDL\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_camera_item_component_ad8de0a7e2a1aa1e4be61662f2779c2f5}{Start}} () override
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_camera_item_component_a71107ead3dfb9bffbe1c38fb62fd0782}{Shutdown}} () override
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_camera_item_component_ac2d805d40aa9cec50064a6b8ecd67a3a}{get\+Tag}} () override
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_camera_item_component_a1d4c85b8a9fd13ddd9d4873d0d0fd587}{get\+Compo\+Name}} () override
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_camera_item_component_a920aef1abe00c28e3e5fd24fa65a19cc}{set\+Compo\+Name}} (std\+::string name) override
+\begin{DoxyCompactList}\small\item\em Sets the name of the component. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ \mbox{\hyperlink{class_camera_item_component_a0435c265ce9df94724c83c04683c9a12}{get\+Attach\+Target\+Game\+Obj}} ()
+\begin{DoxyCompactList}\small\item\em Gets the camera rectangle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_item_component_a6fabae21049858d59de7f69f497e73d9}{set\+Attach\+Target\+Game\+Obj}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$game\+Obj)
+\begin{DoxyCompactList}\small\item\em Sets the camera rectangle. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_camera_item_component_ac1727bf01c743e14bae20ee4e0e88a6b}{get\+Moving\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Gets the camera rectangle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_item_component_a828c72589470a1ece506fba3fe54c165}{set\+Moving\+Line}} (double move\+Line\+Place)
+\begin{DoxyCompactList}\small\item\em Sets the camera rectangle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_camera_item_component_a6b28f48de658f6c667d15250047c49df}{get\+CamX}} (int window\+Width, int window\+Height, int world\+Width, int world\+Height)
+\begin{DoxyCompactList}\small\item\em Gets the camera rectangle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_camera_item_component_a6a0ee67af6e7395fe17baa66cfa7d16b}{get\+CamY}} (int window\+Width, int window\+Height, int world\+Width, int world\+Height)
+\begin{DoxyCompactList}\small\item\em Sets the camera rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_component_ab8378fa275af98e568a7e91d33d867af}{$\sim$\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State)
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{get\+Tag}} ()
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_component_ae89a01592cf673591afa652f06211328}{set\+Comp\+Removed}} ()
+\begin{DoxyCompactList}\small\item\em Sets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{get\+Compo\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{set\+Compo\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a3f85fc409bdfe4968f91893f888d41b0}{tag}}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a085fdb125d2c7d24a6f8a672ae6af2c8}{compo\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_component}{Component}} for managing the camera in relation to a specific \mbox{\hyperlink{class_game_object}{Game\+Object}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_camera_item_component_a22c11ea19423c9353ff17618d45e23e9}\label{class_camera_item_component_a22c11ea19423c9353ff17618d45e23e9}} 
+\index{CameraItemComponent@{CameraItemComponent}!CameraItemComponent@{CameraItemComponent}}
+\index{CameraItemComponent@{CameraItemComponent}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{CameraItemComponent()}{CameraItemComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Camera\+Item\+Component\+::\+Camera\+Item\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$}]{game\+Obj\+State\+Ptr }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_camera_item_component}{Camera\+Item\+Component}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Obj\+State\+Ptr} & Pointer to the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_item_component_a72368a1b4092ea859b5bd2528a07971f}\label{class_camera_item_component_a72368a1b4092ea859b5bd2528a07971f}} 
+\index{CameraItemComponent@{CameraItemComponent}!CameraItemComponent@{CameraItemComponent}}
+\index{CameraItemComponent@{CameraItemComponent}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{CameraItemComponent()}{CameraItemComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Camera\+Item\+Component\+::\+Camera\+Item\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_camera_item_component}{Camera\+Item\+Component}} class. 
+
+\mbox{\Hypertarget{class_camera_item_component_a4a43670bdfb7bc7d56e87f8e0fdad83a}\label{class_camera_item_component_a4a43670bdfb7bc7d56e87f8e0fdad83a}} 
+\index{CameraItemComponent@{CameraItemComponent}!````~CameraItemComponent@{$\sim$CameraItemComponent}}
+\index{````~CameraItemComponent@{$\sim$CameraItemComponent}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$CameraItemComponent()}{~CameraItemComponent()}}
+{\footnotesize\ttfamily Camera\+Item\+Component\+::$\sim$\+Camera\+Item\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default destructor for the \mbox{\hyperlink{class_camera_item_component}{Camera\+Item\+Component}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_item_component_a0435c265ce9df94724c83c04683c9a12}\label{class_camera_item_component_a0435c265ce9df94724c83c04683c9a12}} 
+\index{CameraItemComponent@{CameraItemComponent}!getAttachTargetGameObj@{getAttachTargetGameObj}}
+\index{getAttachTargetGameObj@{getAttachTargetGameObj}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{getAttachTargetGameObj()}{getAttachTargetGameObj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ Camera\+Item\+Component\+::get\+Attach\+Target\+Game\+Obj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the camera rectangle. 
+
+\begin{DoxyReturn}{Returns}
+The camera rectangle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_item_component_a6b28f48de658f6c667d15250047c49df}\label{class_camera_item_component_a6b28f48de658f6c667d15250047c49df}} 
+\index{CameraItemComponent@{CameraItemComponent}!getCamX@{getCamX}}
+\index{getCamX@{getCamX}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{getCamX()}{getCamX()}}
+{\footnotesize\ttfamily int Camera\+Item\+Component\+::get\+CamX (\begin{DoxyParamCaption}\item[{int}]{window\+Width,  }\item[{int}]{window\+Height,  }\item[{int}]{world\+Width,  }\item[{int}]{world\+Height }\end{DoxyParamCaption})}
+
+
+
+Gets the camera rectangle. 
+
+\begin{DoxyReturn}{Returns}
+The camera rectangle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_item_component_a6a0ee67af6e7395fe17baa66cfa7d16b}\label{class_camera_item_component_a6a0ee67af6e7395fe17baa66cfa7d16b}} 
+\index{CameraItemComponent@{CameraItemComponent}!getCamY@{getCamY}}
+\index{getCamY@{getCamY}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{getCamY()}{getCamY()}}
+{\footnotesize\ttfamily int Camera\+Item\+Component\+::get\+CamY (\begin{DoxyParamCaption}\item[{int}]{window\+Width,  }\item[{int}]{window\+Height,  }\item[{int}]{world\+Width,  }\item[{int}]{world\+Height }\end{DoxyParamCaption})}
+
+
+
+Sets the camera rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+Rect} & The camera rectangle. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_item_component_a1d4c85b8a9fd13ddd9d4873d0d0fd587}\label{class_camera_item_component_a1d4c85b8a9fd13ddd9d4873d0d0fd587}} 
+\index{CameraItemComponent@{CameraItemComponent}!getCompoName@{getCompoName}}
+\index{getCompoName@{getCompoName}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{getCompoName()}{getCompoName()}}
+{\footnotesize\ttfamily std\+::string Camera\+Item\+Component\+::get\+Compo\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the name of the component. 
+
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{Component}}.
+
+\mbox{\Hypertarget{class_camera_item_component_ac1727bf01c743e14bae20ee4e0e88a6b}\label{class_camera_item_component_ac1727bf01c743e14bae20ee4e0e88a6b}} 
+\index{CameraItemComponent@{CameraItemComponent}!getMovingLine@{getMovingLine}}
+\index{getMovingLine@{getMovingLine}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{getMovingLine()}{getMovingLine()}}
+{\footnotesize\ttfamily double Camera\+Item\+Component\+::get\+Moving\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the camera rectangle. 
+
+\begin{DoxyReturn}{Returns}
+The camera rectangle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_item_component_ac2d805d40aa9cec50064a6b8ecd67a3a}\label{class_camera_item_component_ac2d805d40aa9cec50064a6b8ecd67a3a}} 
+\index{CameraItemComponent@{CameraItemComponent}!getTag@{getTag}}
+\index{getTag@{getTag}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{getTag()}{getTag()}}
+{\footnotesize\ttfamily std\+::string Camera\+Item\+Component\+::get\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the tag of the component. 
+
+\begin{DoxyReturn}{Returns}
+The tag of the component. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{Component}}.
+
+\mbox{\Hypertarget{class_camera_item_component_a3ee646620ec6ed48fe7bcea3179f7198}\label{class_camera_item_component_a3ee646620ec6ed48fe7bcea3179f7198}} 
+\index{CameraItemComponent@{CameraItemComponent}!Render@{Render}}
+\index{Render@{Render}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Camera\+Item\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Renders the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ren} & The renderer to use. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Component}}.
+
+\mbox{\Hypertarget{class_camera_item_component_a6fabae21049858d59de7f69f497e73d9}\label{class_camera_item_component_a6fabae21049858d59de7f69f497e73d9}} 
+\index{CameraItemComponent@{CameraItemComponent}!setAttachTargetGameObj@{setAttachTargetGameObj}}
+\index{setAttachTargetGameObj@{setAttachTargetGameObj}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{setAttachTargetGameObj()}{setAttachTargetGameObj()}}
+{\footnotesize\ttfamily void Camera\+Item\+Component\+::set\+Attach\+Target\+Game\+Obj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{game\+Obj }\end{DoxyParamCaption})}
+
+
+
+Sets the camera rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+Rect} & The camera rectangle. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_item_component_a920aef1abe00c28e3e5fd24fa65a19cc}\label{class_camera_item_component_a920aef1abe00c28e3e5fd24fa65a19cc}} 
+\index{CameraItemComponent@{CameraItemComponent}!setCompoName@{setCompoName}}
+\index{setCompoName@{setCompoName}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{setCompoName()}{setCompoName()}}
+{\footnotesize\ttfamily void Camera\+Item\+Component\+::set\+Compo\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the name of the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the component. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{Component}}.
+
+\mbox{\Hypertarget{class_camera_item_component_a828c72589470a1ece506fba3fe54c165}\label{class_camera_item_component_a828c72589470a1ece506fba3fe54c165}} 
+\index{CameraItemComponent@{CameraItemComponent}!setMovingLine@{setMovingLine}}
+\index{setMovingLine@{setMovingLine}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{setMovingLine()}{setMovingLine()}}
+{\footnotesize\ttfamily void Camera\+Item\+Component\+::set\+Moving\+Line (\begin{DoxyParamCaption}\item[{double}]{move\+Line\+Place }\end{DoxyParamCaption})}
+
+
+
+Sets the camera rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+Rect} & The camera rectangle. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_item_component_a71107ead3dfb9bffbe1c38fb62fd0782}\label{class_camera_item_component_a71107ead3dfb9bffbe1c38fb62fd0782}} 
+\index{CameraItemComponent@{CameraItemComponent}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Camera\+Item\+Component\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Shuts down the component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Component}}.
+
+\mbox{\Hypertarget{class_camera_item_component_ad8de0a7e2a1aa1e4be61662f2779c2f5}\label{class_camera_item_component_ad8de0a7e2a1aa1e4be61662f2779c2f5}} 
+\index{CameraItemComponent@{CameraItemComponent}!Start@{Start}}
+\index{Start@{Start}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Camera\+Item\+Component\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Starts the component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Component}}.
+
+\mbox{\Hypertarget{class_camera_item_component_aac77989933cda0940d4f308899630dc4}\label{class_camera_item_component_aac77989933cda0940d4f308899630dc4}} 
+\index{CameraItemComponent@{CameraItemComponent}!Update@{Update}}
+\index{Update@{Update}!CameraItemComponent@{CameraItemComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Camera\+Item\+Component\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$}]{game\+Play\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Play\+State} & The current game play state. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_camera_item_component_8hpp}{Camera\+Item\+Component.\+hpp}}\item 
+src/\mbox{\hyperlink{_camera_item_component_8cpp}{Camera\+Item\+Component.\+cpp}}\end{DoxyCompactItemize}

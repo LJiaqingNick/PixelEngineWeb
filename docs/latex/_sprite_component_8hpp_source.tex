@@ -1,0 +1,95 @@
+\hypertarget{_sprite_component_8hpp_source}{}\doxysection{Sprite\+Component.\+hpp}
+\label{_sprite_component_8hpp_source}\index{include/SpriteComponent.hpp@{include/SpriteComponent.hpp}}
+\mbox{\hyperlink{_sprite_component_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SPRITE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SPRITE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_animator_8hpp}{Animator.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8hpp}{Component.hpp}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sprite_component}{SpriteComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_sprite_component}{SpriteComponent}}(\mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ givenGameObjStatePtr);}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_sprite_component_add14acc8523a724c112e6c93b750b60e}{\string~SpriteComponent}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a856577214b1e0ef889ab97915c6f3dc8}{SetPosition}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a272e061203fbc6cdd6cd6c53e1ca7d64}{Update}}(\mbox{\hyperlink{class_game_play_state}{GamePlayState}}*\ gamePlayState)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ \ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a843ce3d3a2f37cce8ecc8418969b3607}{Render}}(SDL\_Renderer*\ ren)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a4a8c8df868aeccbc76c8b4c985c8ed19}{LoadImage}}(std::string\ filePath,\ SDL\_Renderer*\ ren,\ \mbox{\hyperlink{class_resource_manager}{ResourceManager}}*\ resourceManager,\ \textcolor{keywordtype}{int}\ redKey,\ \textcolor{keywordtype}{int}\ greenKey,\ \textcolor{keywordtype}{int}\ blueKey);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_ad6e05a2d9553120b92760a7e5840231c}{Start}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00066\ \ \ \ \ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_ab40fed4732f32d10542e4c396cf6a7f7}{Shutdown}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_sprite_component_a413f3f5c3d0567a89c5ffc3954ac141b}{getTag}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00077\ \ \ \ \ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_sprite_component_a4a6dab2b9a01b5615ccc7c560c409a43}{getCompoName}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a25368d99fe5324d562027644efb1b70c}{setCompoName}}(std::string\ name)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_abd7c699b228854d7b44ba7b76aadbf60}{SetAnimator}}(\mbox{\hyperlink{class_animator}{Animator}}*\ animator);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a7650e1bceae98b7fb4bfe7032efd4713}{setUpSpriteInfo}}(\textcolor{keywordtype}{int}\ mSrc\_xFact,\ \textcolor{keywordtype}{int}\ mSrc\_yVal,\ \textcolor{keywordtype}{int}\ mSrc\_wVal,\ \textcolor{keywordtype}{int}\ mSrc\_hVal,\ \textcolor{keywordtype}{int}\ mDest\_wVal,\ \textcolor{keywordtype}{int}\ mDest\_hVal);}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{comment}{//\ Add\ a\ new\ constructor\ with\ Animator\ parameters}}
+\DoxyCodeLine{00115\ \textcolor{comment}{}\ \ \ \ \mbox{\hyperlink{class_sprite_component}{SpriteComponent}}(\mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ givenGameObjStatePtr,\ \textcolor{keywordtype}{int}\ frameWidth,\ \textcolor{keywordtype}{int}\ frameHeight,\ \textcolor{keywordtype}{int}\ numRows,\ \textcolor{keywordtype}{int}\ numColumns,\ \textcolor{keywordtype}{float}\ frameDuration);}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{comment}{//\ ...}}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{comment}{//\ Animator\ methods}}
+\DoxyCodeLine{00123\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_ae4630b608e0e101784d44061d6669623}{UpdateFrame}}();}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a05dbfc35419573ae601e4dae64ba9b58}{SetFrameDuration}}(\textcolor{keywordtype}{float}\ frameDuration);}
+\DoxyCodeLine{00133\ \ \ \ \ \mbox{\hyperlink{class_animator}{Animator}}*\ \mbox{\hyperlink{class_sprite_component_a931d0535fbf71079297ce7c650fbeefd}{GetAnimator}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mPosition\_x;\ }
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mPosition\_y;\ }
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \ \ \ mCurrentFrame\{0\};\ }
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \ \ \ mLastFrame\{7\};\ }
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ SDL\_Surface*\ \ \ \ mSpriteSheet\ =\ \ \textcolor{keyword}{nullptr};\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ SDL\_Texture*\ \ \ \ mTexture\ \ \ \ \ =\ \ \textcolor{keyword}{nullptr};\ }
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ SDL\_Rect\ \ \ \ \ \ \ \ mSrc;\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ SDL\_Rect\ \ \ \ \ \ \ \ mDest;\ }
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ gameObjStatePtr;\ }
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ std::string\ compoName;\ }
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ msrc\_x\_factor;\ }
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mSrc\_y;\ \ }
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mSrc\_w;\ \ }
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mSrc\_h;\ \ }
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mDest\_w;\ \ }
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mDest\_h;\ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ std::string\ tag;\ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordtype}{int}\ mFrameWidth;\ }
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{int}\ mFrameHeight;\ }
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{int}\ mNumRows;\ }
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordtype}{int}\ mNumColumns;\ }
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordtype}{float}\ mFrameDuration;\ }
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordtype}{float}\ mCurrentTime;\ }
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{keywordtype}{int}\ mRedKey;\ }
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordtype}{int}\ mGreenKey;\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{int}\ mBlueKey;\ }
+\DoxyCodeLine{00166\ \ \ \ \ \mbox{\hyperlink{class_animator}{Animator}}*\ animator;}
+\DoxyCodeLine{00167\ \};}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \textcolor{comment}{/*\ Reference:\ }}
+\DoxyCodeLine{00174\ \textcolor{comment}{Assignment\ 5\ as\ foundation}}
+\DoxyCodeLine{00175\ \textcolor{comment}{*/}}
+
+\end{DoxyCode}

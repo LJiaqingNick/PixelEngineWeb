@@ -1,0 +1,40 @@
+\hypertarget{_collide_component_8hpp_source}{}\doxysection{Collide\+Component.\+hpp}
+\label{_collide_component_8hpp_source}\index{include/CollideComponent.hpp@{include/CollideComponent.hpp}}
+\mbox{\hyperlink{_collide_component_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COLLIDE\_COMPONENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ COLLIDE\_COMPONENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8hpp}{Component.hpp}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_tile_map_component_8hpp}{TileMapComponent.hpp}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_game_object_8hpp}{GameObject.hpp}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_collide_component}{CollideComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_collide_component}{CollideComponent}}(\mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ givenGameObjStatePtr,\ \mbox{\hyperlink{class_tile_map_component}{TileMapComponent}}*\ tileMap,\ std::vector<GameObject*>\&\ gameObjects,\ std::string\ objectName);}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_collide_component_a543e13b3cdec8da367fefef13e7cbba0}{\string~CollideComponent}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_collide_component_a1f02de7c0954af9102c1a9ad1ca47e81}{isCollidingTileMap}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_collide_component_aca153c8197cfc7fd4337e0aff1146489}{anyCollision}}(\mbox{\hyperlink{class_game_object}{GameObject}}*\ gameObject);}
+\DoxyCodeLine{00046\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_collide_component_a392d64dae07ad1212b6ce3d42d6ceb34}{checkCollision}}(\mbox{\hyperlink{class_game_object}{GameObject}}*\ gameObject,\ \mbox{\hyperlink{class_game_play_state}{GamePlayState}}*\ gameplayState);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_collide_component_af696923f381d1dd9483cc58499136106}{Render}}(SDL\_Renderer*\ ren)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_collide_component_adf12d6a961f97062ccab0e2dce96ea08}{Update}}(\mbox{\hyperlink{class_game_play_state}{GamePlayState}}*\ gamePlayState)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_collide_component_acf3823aeefcc6a891bfbbe1c388a9900}{Start}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_collide_component_ac50c1e905ae202524e065b3934f04b96}{Shutdown}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_collide_component_ab8fe82938684c62caad3d57fc3b52ef1}{getTag}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_collide_component_a8ac31089525d0c835a6b237772833de8}{getCompoName}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_collide_component_aee018b01a40cd8e4abfd81f57d96d8bb}{setCompoName}}(std::string\ name)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{class_tile_map_component}{TileMapComponent}}*\ m\_TileMap;\ }
+\DoxyCodeLine{00084\ \ \ \ \ std::vector<GameObject*>\&\ m\_GameObjects;\ }
+\DoxyCodeLine{00086\ \ \ \ \ \mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ gameObjStatePtr;\ }
+\DoxyCodeLine{00087\ \ \ \ \ std::string\ thisObjectName;\ }
+\DoxyCodeLine{00088\ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

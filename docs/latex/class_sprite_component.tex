@@ -1,0 +1,382 @@
+\hypertarget{class_sprite_component}{}\doxysection{Sprite\+Component Class Reference}
+\label{class_sprite_component}\index{SpriteComponent@{SpriteComponent}}
+
+
+\mbox{\hyperlink{class_component}{Component}} for rendering a sprite.  
+
+
+
+
+{\ttfamily \#include $<$Sprite\+Component.\+hpp$>$}
+
+Inheritance diagram for Sprite\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sprite_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sprite_component_a806e26e36da4344ccf1b243e7f219090}{Sprite\+Component}} (\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$given\+Game\+Obj\+State\+Ptr)
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_sprite_component}{Sprite\+Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_component_add14acc8523a724c112e6c93b750b60e}{$\sim$\+Sprite\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor for the \mbox{\hyperlink{class_sprite_component}{Sprite\+Component}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_a856577214b1e0ef889ab97915c6f3dc8}{Set\+Position}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Sets the position of the sprite. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sprite_component_a272e061203fbc6cdd6cd6c53e1ca7d64}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State) override
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sprite_component_a843ce3d3a2f37cce8ecc8418969b3607}{Render}} (SDL\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_a4a8c8df868aeccbc76c8b4c985c8ed19}{Load\+Image}} (std\+::string file\+Path, SDL\+\_\+\+Renderer $\ast$ren, \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} $\ast$resource\+Manager, int red\+Key, int green\+Key, int blue\+Key)
+\begin{DoxyCompactList}\small\item\em Loads the image for the sprite. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sprite_component_ad6e05a2d9553120b92760a7e5840231c}{Start}} () override
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sprite_component_ab40fed4732f32d10542e4c396cf6a7f7}{Shutdown}} () override
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_sprite_component_a413f3f5c3d0567a89c5ffc3954ac141b}{get\+Tag}} () override
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_sprite_component_a4a6dab2b9a01b5615ccc7c560c409a43}{get\+Compo\+Name}} () override
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sprite_component_a25368d99fe5324d562027644efb1b70c}{set\+Compo\+Name}} (std\+::string name) override
+\begin{DoxyCompactList}\small\item\em Sets the tag of the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_abd7c699b228854d7b44ba7b76aadbf60}{Set\+Animator}} (\mbox{\hyperlink{class_animator}{Animator}} $\ast$animator)
+\begin{DoxyCompactList}\small\item\em Sets the animator for the sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_a7650e1bceae98b7fb4bfe7032efd4713}{set\+Up\+Sprite\+Info}} (int m\+Src\+\_\+x\+Fact, int m\+Src\+\_\+y\+Val, int m\+Src\+\_\+w\+Val, int m\+Src\+\_\+h\+Val, int m\+Dest\+\_\+w\+Val, int m\+Dest\+\_\+h\+Val)
+\begin{DoxyCompactList}\small\item\em Sets the sprite info. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_component_a583070eb3e2c5d7f63744dffc084b5a7}{Sprite\+Component}} (\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$given\+Game\+Obj\+State\+Ptr, int frame\+Width, int frame\+Height, int num\+Rows, int num\+Columns, float frame\+Duration)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_sprite_component}{Sprite\+Component}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_ae4630b608e0e101784d44061d6669623}{Update\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em Updates the frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_a05dbfc35419573ae601e4dae64ba9b58}{Set\+Frame\+Duration}} (float frame\+Duration)
+\begin{DoxyCompactList}\small\item\em Sets the frame duration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_animator}{Animator}} $\ast$ \mbox{\hyperlink{class_sprite_component_a931d0535fbf71079297ce7c650fbeefd}{Get\+Animator}} () const
+\begin{DoxyCompactList}\small\item\em Gets the animator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_component_ab8378fa275af98e568a7e91d33d867af}{$\sim$\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State)
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{get\+Tag}} ()
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_component_ae89a01592cf673591afa652f06211328}{set\+Comp\+Removed}} ()
+\begin{DoxyCompactList}\small\item\em Sets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{get\+Compo\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{set\+Compo\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a3f85fc409bdfe4968f91893f888d41b0}{tag}}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a085fdb125d2c7d24a6f8a672ae6af2c8}{compo\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_component}{Component}} for rendering a sprite. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sprite_component_a806e26e36da4344ccf1b243e7f219090}\label{class_sprite_component_a806e26e36da4344ccf1b243e7f219090}} 
+\index{SpriteComponent@{SpriteComponent}!SpriteComponent@{SpriteComponent}}
+\index{SpriteComponent@{SpriteComponent}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{SpriteComponent()}{SpriteComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Sprite\+Component\+::\+Sprite\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$}]{given\+Game\+Obj\+State\+Ptr }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_sprite_component}{Sprite\+Component}} class. 
+
+\mbox{\Hypertarget{class_sprite_component_add14acc8523a724c112e6c93b750b60e}\label{class_sprite_component_add14acc8523a724c112e6c93b750b60e}} 
+\index{SpriteComponent@{SpriteComponent}!````~SpriteComponent@{$\sim$SpriteComponent}}
+\index{````~SpriteComponent@{$\sim$SpriteComponent}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$SpriteComponent()}{~SpriteComponent()}}
+{\footnotesize\ttfamily Sprite\+Component\+::$\sim$\+Sprite\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default destructor for the \mbox{\hyperlink{class_sprite_component}{Sprite\+Component}} class. 
+
+\mbox{\Hypertarget{class_sprite_component_a583070eb3e2c5d7f63744dffc084b5a7}\label{class_sprite_component_a583070eb3e2c5d7f63744dffc084b5a7}} 
+\index{SpriteComponent@{SpriteComponent}!SpriteComponent@{SpriteComponent}}
+\index{SpriteComponent@{SpriteComponent}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{SpriteComponent()}{SpriteComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Sprite\+Component\+::\+Sprite\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$}]{given\+Game\+Obj\+State\+Ptr,  }\item[{int}]{frame\+Width,  }\item[{int}]{frame\+Height,  }\item[{int}]{num\+Rows,  }\item[{int}]{num\+Columns,  }\item[{float}]{frame\+Duration }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_sprite_component}{Sprite\+Component}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+Width} & The width of the frame. \\
+\hline
+{\em frame\+Height} & The height of the frame. \\
+\hline
+{\em num\+Rows} & The number of rows in the sprite sheet. \\
+\hline
+{\em num\+Columns} & The number of columns in the sprite sheet. \\
+\hline
+{\em frame\+Duration} & The duration of the frame. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sprite_component_a931d0535fbf71079297ce7c650fbeefd}\label{class_sprite_component_a931d0535fbf71079297ce7c650fbeefd}} 
+\index{SpriteComponent@{SpriteComponent}!GetAnimator@{GetAnimator}}
+\index{GetAnimator@{GetAnimator}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{GetAnimator()}{GetAnimator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_animator}{Animator}} $\ast$ Sprite\+Component\+::\+Get\+Animator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the animator. 
+
+\begin{DoxyReturn}{Returns}
+The animator. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_component_a4a6dab2b9a01b5615ccc7c560c409a43}\label{class_sprite_component_a4a6dab2b9a01b5615ccc7c560c409a43}} 
+\index{SpriteComponent@{SpriteComponent}!getCompoName@{getCompoName}}
+\index{getCompoName@{getCompoName}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{getCompoName()}{getCompoName()}}
+{\footnotesize\ttfamily std\+::string Sprite\+Component\+::get\+Compo\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the name of the component. 
+
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{Component}}.
+
+\mbox{\Hypertarget{class_sprite_component_a413f3f5c3d0567a89c5ffc3954ac141b}\label{class_sprite_component_a413f3f5c3d0567a89c5ffc3954ac141b}} 
+\index{SpriteComponent@{SpriteComponent}!getTag@{getTag}}
+\index{getTag@{getTag}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{getTag()}{getTag()}}
+{\footnotesize\ttfamily std\+::string Sprite\+Component\+::get\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the tag of the component. 
+
+\begin{DoxyReturn}{Returns}
+The tag of the component. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{Component}}.
+
+\mbox{\Hypertarget{class_sprite_component_a4a8c8df868aeccbc76c8b4c985c8ed19}\label{class_sprite_component_a4a8c8df868aeccbc76c8b4c985c8ed19}} 
+\index{SpriteComponent@{SpriteComponent}!LoadImage@{LoadImage}}
+\index{LoadImage@{LoadImage}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{LoadImage()}{LoadImage()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Load\+Image (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Path,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{ren,  }\item[{\mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} $\ast$}]{resource\+Manager,  }\item[{int}]{red\+Key,  }\item[{int}]{green\+Key,  }\item[{int}]{blue\+Key }\end{DoxyParamCaption})}
+
+
+
+Loads the image for the sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & The path to the image. \\
+\hline
+{\em ren} & The renderer to use. \\
+\hline
+{\em resource\+Manager} & The resource manager to use. \\
+\hline
+{\em red\+Key} & The red key for transparency. \\
+\hline
+{\em green\+Key} & The green key for transparency. \\
+\hline
+{\em blue\+Key} & The blue key for transparency. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_component_a843ce3d3a2f37cce8ecc8418969b3607}\label{class_sprite_component_a843ce3d3a2f37cce8ecc8418969b3607}} 
+\index{SpriteComponent@{SpriteComponent}!Render@{Render}}
+\index{Render@{Render}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Renders the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ren} & The renderer to use. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Component}}.
+
+\mbox{\Hypertarget{class_sprite_component_abd7c699b228854d7b44ba7b76aadbf60}\label{class_sprite_component_abd7c699b228854d7b44ba7b76aadbf60}} 
+\index{SpriteComponent@{SpriteComponent}!SetAnimator@{SetAnimator}}
+\index{SetAnimator@{SetAnimator}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{SetAnimator()}{SetAnimator()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Set\+Animator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_animator}{Animator}} $\ast$}]{animator }\end{DoxyParamCaption})}
+
+
+
+Sets the animator for the sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animator} & The animator to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_component_a25368d99fe5324d562027644efb1b70c}\label{class_sprite_component_a25368d99fe5324d562027644efb1b70c}} 
+\index{SpriteComponent@{SpriteComponent}!setCompoName@{setCompoName}}
+\index{setCompoName@{setCompoName}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{setCompoName()}{setCompoName()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::set\+Compo\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the tag of the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag} & The tag to set. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{Component}}.
+
+\mbox{\Hypertarget{class_sprite_component_a05dbfc35419573ae601e4dae64ba9b58}\label{class_sprite_component_a05dbfc35419573ae601e4dae64ba9b58}} 
+\index{SpriteComponent@{SpriteComponent}!SetFrameDuration@{SetFrameDuration}}
+\index{SetFrameDuration@{SetFrameDuration}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{SetFrameDuration()}{SetFrameDuration()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Set\+Frame\+Duration (\begin{DoxyParamCaption}\item[{float}]{frame\+Duration }\end{DoxyParamCaption})}
+
+
+
+Sets the frame duration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+Duration} & The duration of the frame. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_component_a856577214b1e0ef889ab97915c6f3dc8}\label{class_sprite_component_a856577214b1e0ef889ab97915c6f3dc8}} 
+\index{SpriteComponent@{SpriteComponent}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Sets the position of the sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position. \\
+\hline
+{\em y} & The y position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_component_a7650e1bceae98b7fb4bfe7032efd4713}\label{class_sprite_component_a7650e1bceae98b7fb4bfe7032efd4713}} 
+\index{SpriteComponent@{SpriteComponent}!setUpSpriteInfo@{setUpSpriteInfo}}
+\index{setUpSpriteInfo@{setUpSpriteInfo}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{setUpSpriteInfo()}{setUpSpriteInfo()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::set\+Up\+Sprite\+Info (\begin{DoxyParamCaption}\item[{int}]{m\+Src\+\_\+x\+Fact,  }\item[{int}]{m\+Src\+\_\+y\+Val,  }\item[{int}]{m\+Src\+\_\+w\+Val,  }\item[{int}]{m\+Src\+\_\+h\+Val,  }\item[{int}]{m\+Dest\+\_\+w\+Val,  }\item[{int}]{m\+Dest\+\_\+h\+Val }\end{DoxyParamCaption})}
+
+
+
+Sets the sprite info. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+Src\+\_\+x\+Fact} & The x factor for the source rectangle. \\
+\hline
+{\em m\+Src\+\_\+y\+Val} & The y value for the source rectangle. \\
+\hline
+{\em m\+Src\+\_\+w\+Val} & The width value for the source rectangle. \\
+\hline
+{\em m\+Src\+\_\+h\+Val} & The height value for the source rectangle. \\
+\hline
+{\em m\+Dest\+\_\+w\+Val} & The width value for the destination rectangle. \\
+\hline
+{\em m\+Dest\+\_\+h\+Val} & The height value for the destination rectangle. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_component_ab40fed4732f32d10542e4c396cf6a7f7}\label{class_sprite_component_ab40fed4732f32d10542e4c396cf6a7f7}} 
+\index{SpriteComponent@{SpriteComponent}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Shuts down the component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Component}}.
+
+\mbox{\Hypertarget{class_sprite_component_ad6e05a2d9553120b92760a7e5840231c}\label{class_sprite_component_ad6e05a2d9553120b92760a7e5840231c}} 
+\index{SpriteComponent@{SpriteComponent}!Start@{Start}}
+\index{Start@{Start}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Starts the component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Component}}.
+
+\mbox{\Hypertarget{class_sprite_component_a272e061203fbc6cdd6cd6c53e1ca7d64}\label{class_sprite_component_a272e061203fbc6cdd6cd6c53e1ca7d64}} 
+\index{SpriteComponent@{SpriteComponent}!Update@{Update}}
+\index{Update@{Update}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$}]{game\+Play\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Play\+State} & The current game play state. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Component}}.
+
+\mbox{\Hypertarget{class_sprite_component_ae4630b608e0e101784d44061d6669623}\label{class_sprite_component_ae4630b608e0e101784d44061d6669623}} 
+\index{SpriteComponent@{SpriteComponent}!UpdateFrame@{UpdateFrame}}
+\index{UpdateFrame@{UpdateFrame}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{UpdateFrame()}{UpdateFrame()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Update\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the frame. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_sprite_component_8hpp}{Sprite\+Component.\+hpp}}\item 
+src/\mbox{\hyperlink{_sprite_component_8cpp}{Sprite\+Component.\+cpp}}\end{DoxyCompactItemize}

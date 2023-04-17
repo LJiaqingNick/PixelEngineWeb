@@ -1,0 +1,91 @@
+\hypertarget{_game_object_state_8hpp_source}{}\doxysection{Game\+Object\+State.\+hpp}
+\label{_game_object_state_8hpp_source}\index{include/GameObjectState.hpp@{include/GameObjectState.hpp}}
+\mbox{\hyperlink{_game_object_state_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GAMEOBJECTSTATE\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GAMEOBJECTSTATE\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ This\ works\ for\ Mac}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_graphics_engine_renderer_8hpp}{IGraphicsEngineRenderer.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_resource_manager_8hpp}{ResourceManager.hpp}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_object_state}{GameObjectState}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_object_state_aa98ccccdc59273aa3020d3b0a8d358b9}{GameObjectState}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_object_state_a3dbd9e7cc3ab86d2b019d281a8df363c}{\string~GameObjectState}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_object_state_a5be393920ace8e0a2e5b907d820b3c08}{GetVelocityX}}();\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_object_state_a60862e8afddabe699c76c6dc2d97d05f}{GetVelocityY}}();\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_object_state_a1e57e22880d4f84a8413afae55490ed6}{GetPrevX}}();\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_object_state_a87d2cf2050b649811dfafc9fc4d01b40}{GetPrevY}}();\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_object_state_ad3d487403e3777200752138a8c89c36d}{GetPosX}}();\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_object_state_aa892eaac5b9c8d6ce08334898d2f9cf6}{GetPosY}}();\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_object_state_a3e87d06d25826a0259e1b5b38e8bf278}{GetHeight}}();\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_object_state_a4b6bd8d73c0d3e78ef911ff3e2c50307}{GetWidth}}();\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_object_state_aa80527d030bcbe6605c1db942a028e7e}{IsJumping}}();\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_object_state_ae6dc47fe03d6a967a6d8ae858de18b99}{IsInteracting}}();\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_object_state_a63c7002a33899fc0cca8dfd86ac4c06f}{IsDynamic}}();\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_object_state_a938f59b51dc25f4a577d33fa560d7647}{getFrameNum}}();\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_object_state_a1808a45ae3b97ae0402c5eccfbf4019b}{getScale}}();\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_object_state_ad0115126fd8be88768a41f85a1d96e1d}{IsAttacking}}();\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_object_state_a6555d18a30faa0f45b659a58be652337}{IsBeingAttacked}}();\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_game_object_state_a4e4130a21856f87def1e93447d293113}{getSpriteFilePath}}();\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_resource_manager}{ResourceManager}}*\ \mbox{\hyperlink{class_game_object_state_a3aa7e8da5067b4c7557be9ada5669b08}{getResourceManager}}();\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_object_state_a9f7071f4bfc3b5b3092551f23eba1b82}{IsVisible}}();\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_af332ff20726d6fba0164ec9524584ac2}{setVelocityX}}(\textcolor{keywordtype}{int}\ x);\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_a33d170671c44531ca0deacc2ab81c295}{setVelocityY}}(\textcolor{keywordtype}{int}\ y);\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_ac209d67683be71f37169d81b72a2d8c9}{setPrevX}}(\textcolor{keywordtype}{int}\ x);\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_a5cd40faaeb6d38a8541a65db2eaf55a8}{setPrevY}}(\textcolor{keywordtype}{int}\ y);\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_a628ccfad634c4e3de8de2a440785de4c}{setPosX}}(\textcolor{keywordtype}{int}\ x);\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_a610dd2a87b4bcb7c1ad96bf0fed469ca}{setPosY}}(\textcolor{keywordtype}{int}\ y);\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_ad3bec0130fef91984e04a08074e06cec}{setHeight}}(\textcolor{keywordtype}{int}\ h);\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_a47719b3d84b35bf3c8b9991c8ca9e5f0}{setWidth}}(\textcolor{keywordtype}{int}\ w);\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_afb63c640c70433f9502838f747f8baad}{setIsJumping}}(\textcolor{keywordtype}{bool}\ jumping);\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_a6c3183654b5ac512bc6bb269f3ec5b0f}{setInteracting}}(\textcolor{keywordtype}{bool}\ interacting);\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_a996c89c0310cfd4b73cbbcfc2b350a07}{setDynamic}}(\textcolor{keywordtype}{bool}\ dynamic);\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_a8b5e5d5cd411c35fc89749b88e58bf11}{setFrameNum}}(\textcolor{keywordtype}{int}\ frm);\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_ac8aaf7b771bf2d94871a099e459900bd}{setScale}}(\textcolor{keywordtype}{int}\ scaleVal);\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_a21b93e99f1a51b903437af8b057f88ad}{setIsAttacking}}(\textcolor{keywordtype}{bool}\ attacking);\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_a29a89096f04c3aeef03c93836edd81aa}{setIsBeingAttacked}}(\textcolor{keywordtype}{bool}\ beingAttacked);\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_ab23a623df8be8bdec79027672a1baef5}{setSpriteFilePath}}(std::string\ filePath);\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_a83173bb3d709e544fe25f88537c53fba}{setResourceManager}}(\mbox{\hyperlink{class_resource_manager}{ResourceManager}}*\ rsrcMngr);\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_aa21fe293e2459b37913504a8d42428f0}{setIsVisible}}(\textcolor{keywordtype}{bool}\ visibleVal);\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_game_object_state_af4c8cb3a0feee44ae52fe7082e79d6ce}{GetDeltaTime}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_state_a5a49da5a388868df7b1ee920239b7be3}{SetDeltaTime}}(\textcolor{keywordtype}{float}\ delta\_time);\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ velocity\_x;\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ velocity\_y;\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ position\_x;\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ position\_y;\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ prev\_x;\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ prev\_y;\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ height\_h;\ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ width\_w;\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_jumping;\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_interacting;\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ scale\_entire;\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_attacking;\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_being\_attacked;\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_visible;\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ delta\_time;\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_dynamic;\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ frame\_num;\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ above\ variables\ added\ to\ Python\ layer\ getter/setter\ for\ gameplaying}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ std::string\ spriteFilePath;\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_resource_manager}{ResourceManager}}*\ resourceManager;\ }
+\DoxyCodeLine{00098\ \};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{comment}{/*\ Reference:\ }}
+\DoxyCodeLine{00104\ \textcolor{comment}{Assignment\ 5\ as\ foundation}}
+\DoxyCodeLine{00105\ \textcolor{comment}{*/}}
+
+\end{DoxyCode}

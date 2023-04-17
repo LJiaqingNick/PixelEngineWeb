@@ -79,6 +79,12 @@ section {
   padding: 20px 0;
 }
 
+.link {
+  color: #070808;
+  font-size: 1.0rem;
+  padding: 20px 0;
+}
+
 img {
   max-width: 100%;
   height: auto;

@@ -1,0 +1,735 @@
+\hypertarget{class_s_d_l_display_program}{}\doxysection{SDLDisplay\+Program Class Reference}
+\label{class_s_d_l_display_program}\index{SDLDisplayProgram@{SDLDisplayProgram}}
+
+
+Main class for managing the SDL display and game loop.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_d_l_display_program_af4d1e8e7c68d590a3592921baf37783b}{SDLDisplay\+Program}} (int width, int height, std\+::string title\+Str)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_s_d_l_display_program}{SDLDisplay\+Program}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_s_d_l_display_program_a67b978c5880d9452fe70944da1c65470}{$\sim$\+SDLDisplay\+Program}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_s_d_l_display_program}{SDLDisplay\+Program}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_display_program_a0e5cb80579514ba9f792d4f0e48e806c}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the SDL display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_display_program_a67d8a55ce2189be9050281fd9ea5446d}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the SDL display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_display_program_acfa11bea2bce820887a180d4f093e520}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_display_program_a1b70216d320b07f77b94f53af5f8e966}{Delay}} (int milliseconds)
+\begin{DoxyCompactList}\small\item\em Delays the game loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_display_program_a07bcfcfada7cffddf0ef37968f222b01}{Flip}} ()
+\begin{DoxyCompactList}\small\item\em Flips the display. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Window $\ast$ \mbox{\hyperlink{class_s_d_l_display_program_a325f831e8a381db1b1164a1e0719dc12}{get\+SDLWindow}} ()
+\item 
+int \mbox{\hyperlink{class_s_d_l_display_program_a5e76fdbc58e563693047853d88a246e8}{Input\+Receiver}} ()
+\item 
+bool \mbox{\hyperlink{class_s_d_l_display_program_a00e1ff20d89574e9e31624852755e087}{Get\+Is\+Quit\+Game}} ()
+\item 
+void \mbox{\hyperlink{class_s_d_l_display_program_a919dcd41a2d7f26884d71ecd4e0e0e11}{Input\+Step}} ()
+\item 
+void \mbox{\hyperlink{class_s_d_l_display_program_a8a080b88b0094c3e42842708984fab99}{Update\+Step}} ()
+\item 
+void \mbox{\hyperlink{class_s_d_l_display_program_abbe0824464d35be089507de1f543220a}{Render\+Step}} ()
+\item 
+void \mbox{\hyperlink{class_s_d_l_display_program_aca1a82954483266599bcf28970295986}{Game\+Loop}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_ae2e71a8638f4c88b3ecac314a5bac15b}{Py\+Setup\+Keyboard\+Control}} (std\+::string object\+Name, std\+::string key\+Name, std\+::string state\+Item, int change\+Value)
+\begin{DoxyCompactList}\small\item\em Sets up the Keyboard Control \mbox{\hyperlink{class_component}{Component}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_a810a9f8a95bfe8e8aebe84f601904f6a}{Py\+Add\+Component\+New}} (std\+::string object\+Name, std\+::string component\+Name)
+\begin{DoxyCompactList}\small\item\em Adds new component to the game object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_ab358c669a484378850957c0134f90e12}{Py\+Add\+New\+Game\+Object}} (std\+::string object\+Name, int posX, int posY)
+\begin{DoxyCompactList}\small\item\em Adds new game object to the game. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_a319d03efea9bea11c1bc06d2e6f1993c}{Py\+Setup\+Sprite\+Initial}} (std\+::string object\+Name, std\+::string file\+Path, int msrc\+\_\+x\+\_\+factor, int m\+Src\+\_\+y, int m\+Src\+\_\+w, int m\+Src\+\_\+h, int m\+Dest\+\_\+w, int m\+Dest\+\_\+h, int red\+Key, int green\+Key, int blue\+Key)
+\begin{DoxyCompactList}\small\item\em Sets up the sprite component. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_aad2e9c83b7903f488f961175bf64adf3}{Py\+Setup\+Tile\+Map}} (std\+::string object\+Name, std\+::string sprite\+File\+Path, int rows, int cols, int tile\+Width, int tile\+Height, int mapX, int mapY, int tile\+Width\+In\+Map, int tile\+Height\+In\+Map, int red\+Key, int green\+Key, int blue\+Key, const std\+::vector$<$ int $>$ \&tile\+Matrix)
+\begin{DoxyCompactList}\small\item\em Sets up the Tile Map component. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_ab24c703179ac7614d5524ef00a8c92a4}{Py\+Setup\+Tile\+Map}} (std\+::string object\+Name, std\+::string tilemap\+\_\+json\+\_\+file\+\_\+path, int tile\+Width\+In\+Map, int tile\+Height\+In\+Map, int red\+Key, int green\+Key, int blue\+Key)
+\begin{DoxyCompactList}\small\item\em Sets up the Tile Map component. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_a5c38840306dd4bf73b6db1dcd767184c}{Py\+Get\+Game\+Object\+State\+Item}} (std\+::string object\+Name, std\+::string item\+Name)
+\begin{DoxyCompactList}\small\item\em Gets the value of the game object state item. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_s_d_l_display_program_a8129cc9c21f75b9aad2c3e40588de058}{Py\+Set\+Game\+Object\+State\+Item}} (std\+::string object\+Name, std\+::string item\+Name, int change\+Value)
+\begin{DoxyCompactList}\small\item\em Sets the value of the game object state item. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_a8de7d3a168ec11097d3583e6c6a0cbae}{Py\+Add\+Sound\+Component}} (std\+::string object\+Name)
+\begin{DoxyCompactList}\small\item\em Add Sound \mbox{\hyperlink{class_component}{Component}} to the game object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_a0356db29514b7fb02693b6ffd8148c24}{Py\+Add\+Collide\+Component}} (std\+::string object\+Name)
+\begin{DoxyCompactList}\small\item\em Add collide component to the game object. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_s_d_l_display_program_a5ca67219318ca527ed79328dc0bc8cd1}{Py\+Check\+Collision}} (std\+::string object\+Name)
+\begin{DoxyCompactList}\small\item\em Checks if the game object is colliding with another game object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_acd8da714be0f9c55f2e4f2514846914f}{Py\+Add\+Rigid\+Body\+Component}} (std\+::string object\+Name)
+\begin{DoxyCompactList}\small\item\em Add rigid body component to the game object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_a6456c7b3e12435f0b6b3edf6c5b23e78}{Py\+Get\+Game\+Object\+State}} (std\+::string object\+Name)
+\begin{DoxyCompactList}\small\item\em Gets the game object state. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_a7715ee17c51813bf5ada40fb966ef2a5}{Py\+Setup\+Rigid\+Body\+Component}} (std\+::string object\+Name, bool use\+Gravity, bool is\+Kinematic, float velX, float velY, float max\+VelX, float max\+VelY, float m\+Mass)
+\begin{DoxyCompactList}\small\item\em Sets up the rigid body component. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_ad061f7f4a94c41619871ddab58d0796f}{Py\+Attach\+Camera}} (std\+::string obj\+Name, double perpective\+Factor)
+\begin{DoxyCompactList}\small\item\em Attach a camera to the game object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_abe4c6d4c78785f9dae5e6d3383e2157e}{get\+Key\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em Gets the key pressed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_display_program_ad8065b52204c5185cc9fdbc346410920}{Py\+User\+Interface\+Set\+Text}} (std\+::string obj\+Name, std\+::string content\+Text, int x, int y, int width, int height, bool is\+UI)
+\begin{DoxyCompactList}\small\item\em Sets up the text component. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_aafb527b42ed5292ffa18d355568ededf}{Py\+Choose\+Sprite\+Animation}} (std\+::string object\+Name, std\+::string anime)
+\begin{DoxyCompactList}\small\item\em Chooses the sprite animation. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_s_d_l_display_program_a1e23d10fd6cdcf99b504223bb55c0413}{Py\+Check\+Inside\+Collider\+List}} (std\+::string obj\+Name)
+\begin{DoxyCompactList}\small\item\em Checks if the game object is inside the collider list. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_a9bf484fb4a5aa1aea0f30103c923e225}{Py\+Setup\+Rectangle\+Component}} (std\+::string obj\+Name, int x\+\_\+pos\+\_\+val, int y\+\_\+pos\+\_\+val, int width\+\_\+val, int height\+\_\+val, int red\+\_\+val, int green\+\_\+val, int blue\+\_\+val, int alpha\+\_\+val, bool is\+UI)
+\begin{DoxyCompactList}\small\item\em Sets up the rectangle component. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_acae48b8ab89dbad4ac9161ee677193bb}{Input\+Key\+Getter}} ()
+\begin{DoxyCompactList}\small\item\em Gets the input key. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_s_d_l_display_program_aaa89355fffa3c0a75beb41a3818c2d06}{Py\+Add\+New\+Animation}} (std\+::string object\+Name, std\+::string name, int start\+FrameX, int start\+FrameY, int end\+FrameX, int end\+FrameY, float frame\+Duration)
+\begin{DoxyCompactList}\small\item\em Adds a new animation to the game object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_graphics_engine_renderer}{IGraphics\+Engine\+Renderer}} $\ast$ \mbox{\hyperlink{class_s_d_l_display_program_a72473d86afa1d16cea7657512bebd56e}{ige\+Renderer}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main class for managing the SDL display and game loop. 
+
+This class is responsible for managing the SDL display and game loop. It also provides methods for managing game objects and their components. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_s_d_l_display_program_af4d1e8e7c68d590a3592921baf37783b}\label{class_s_d_l_display_program_af4d1e8e7c68d590a3592921baf37783b}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!SDLDisplayProgram@{SDLDisplayProgram}}
+\index{SDLDisplayProgram@{SDLDisplayProgram}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{SDLDisplayProgram()}{SDLDisplayProgram()}}
+{\footnotesize\ttfamily SDLDisplay\+Program\+::\+SDLDisplay\+Program (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{std\+::string}]{title\+Str }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_s_d_l_display_program}{SDLDisplay\+Program}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the display. \\
+\hline
+{\em height} & The height of the display. \\
+\hline
+{\em title\+Str} & The title of the display. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_display_program_a67b978c5880d9452fe70944da1c65470}\label{class_s_d_l_display_program_a67b978c5880d9452fe70944da1c65470}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!````~SDLDisplayProgram@{$\sim$SDLDisplayProgram}}
+\index{````~SDLDisplayProgram@{$\sim$SDLDisplayProgram}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{$\sim$SDLDisplayProgram()}{~SDLDisplayProgram()}}
+{\footnotesize\ttfamily SDLDisplay\+Program\+::$\sim$\+SDLDisplay\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{class_s_d_l_display_program}{SDLDisplay\+Program}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_d_l_display_program_acfa11bea2bce820887a180d4f093e520}\label{class_s_d_l_display_program_acfa11bea2bce820887a180d4f093e520}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!Clear@{Clear}}
+\index{Clear@{Clear}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void SDLDisplay\+Program\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the screen. 
+
+\mbox{\Hypertarget{class_s_d_l_display_program_a1b70216d320b07f77b94f53af5f8e966}\label{class_s_d_l_display_program_a1b70216d320b07f77b94f53af5f8e966}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!Delay@{Delay}}
+\index{Delay@{Delay}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{Delay()}{Delay()}}
+{\footnotesize\ttfamily void SDLDisplay\+Program\+::\+Delay (\begin{DoxyParamCaption}\item[{int}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+Delays the game loop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em milliseconds} & The number of milliseconds to delay. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_display_program_a07bcfcfada7cffddf0ef37968f222b01}\label{class_s_d_l_display_program_a07bcfcfada7cffddf0ef37968f222b01}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!Flip@{Flip}}
+\index{Flip@{Flip}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{Flip()}{Flip()}}
+{\footnotesize\ttfamily void SDLDisplay\+Program\+::\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Flips the display. 
+
+\mbox{\Hypertarget{class_s_d_l_display_program_aca1a82954483266599bcf28970295986}\label{class_s_d_l_display_program_aca1a82954483266599bcf28970295986}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!GameLoop@{GameLoop}}
+\index{GameLoop@{GameLoop}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{GameLoop()}{GameLoop()}}
+{\footnotesize\ttfamily void SDLDisplay\+Program\+::\+Game\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Runs the game loop. \mbox{\Hypertarget{class_s_d_l_display_program_a00e1ff20d89574e9e31624852755e087}\label{class_s_d_l_display_program_a00e1ff20d89574e9e31624852755e087}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!GetIsQuitGame@{GetIsQuitGame}}
+\index{GetIsQuitGame@{GetIsQuitGame}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{GetIsQuitGame()}{GetIsQuitGame()}}
+{\footnotesize\ttfamily bool SDLDisplay\+Program\+::\+Get\+Is\+Quit\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the quit game flag. \mbox{\Hypertarget{class_s_d_l_display_program_abe4c6d4c78785f9dae5e6d3383e2157e}\label{class_s_d_l_display_program_abe4c6d4c78785f9dae5e6d3383e2157e}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!getKeyPressed@{getKeyPressed}}
+\index{getKeyPressed@{getKeyPressed}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{getKeyPressed()}{getKeyPressed()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::get\+Key\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the key pressed. 
+
+\mbox{\Hypertarget{class_s_d_l_display_program_a325f831e8a381db1b1164a1e0719dc12}\label{class_s_d_l_display_program_a325f831e8a381db1b1164a1e0719dc12}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!getSDLWindow@{getSDLWindow}}
+\index{getSDLWindow@{getSDLWindow}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{getSDLWindow()}{getSDLWindow()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Window $\ast$ SDLDisplay\+Program\+::get\+SDLWindow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the SDL window. \mbox{\Hypertarget{class_s_d_l_display_program_acae48b8ab89dbad4ac9161ee677193bb}\label{class_s_d_l_display_program_acae48b8ab89dbad4ac9161ee677193bb}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!InputKeyGetter@{InputKeyGetter}}
+\index{InputKeyGetter@{InputKeyGetter}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{InputKeyGetter()}{InputKeyGetter()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Input\+Key\+Getter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the input key. 
+
+\mbox{\Hypertarget{class_s_d_l_display_program_a5e76fdbc58e563693047853d88a246e8}\label{class_s_d_l_display_program_a5e76fdbc58e563693047853d88a246e8}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!InputReceiver@{InputReceiver}}
+\index{InputReceiver@{InputReceiver}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{InputReceiver()}{InputReceiver()}}
+{\footnotesize\ttfamily int SDLDisplay\+Program\+::\+Input\+Receiver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Receives input from the user. \mbox{\Hypertarget{class_s_d_l_display_program_a919dcd41a2d7f26884d71ecd4e0e0e11}\label{class_s_d_l_display_program_a919dcd41a2d7f26884d71ecd4e0e0e11}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!InputStep@{InputStep}}
+\index{InputStep@{InputStep}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{InputStep()}{InputStep()}}
+{\footnotesize\ttfamily void SDLDisplay\+Program\+::\+Input\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Processes input. \mbox{\Hypertarget{class_s_d_l_display_program_a0356db29514b7fb02693b6ffd8148c24}\label{class_s_d_l_display_program_a0356db29514b7fb02693b6ffd8148c24}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PyAddCollideComponent@{PyAddCollideComponent}}
+\index{PyAddCollideComponent@{PyAddCollideComponent}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PyAddCollideComponent()}{PyAddCollideComponent()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Add\+Collide\+Component (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name }\end{DoxyParamCaption})}
+
+
+
+Add collide component to the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_a810a9f8a95bfe8e8aebe84f601904f6a}\label{class_s_d_l_display_program_a810a9f8a95bfe8e8aebe84f601904f6a}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PyAddComponentNew@{PyAddComponentNew}}
+\index{PyAddComponentNew@{PyAddComponentNew}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PyAddComponentNew()}{PyAddComponentNew()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Add\+Component\+New (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name,  }\item[{std\+::string}]{component\+Name }\end{DoxyParamCaption})}
+
+
+
+Adds new component to the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+{\em component\+Name} & The name of the component. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_aaa89355fffa3c0a75beb41a3818c2d06}\label{class_s_d_l_display_program_aaa89355fffa3c0a75beb41a3818c2d06}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PyAddNewAnimation@{PyAddNewAnimation}}
+\index{PyAddNewAnimation@{PyAddNewAnimation}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PyAddNewAnimation()}{PyAddNewAnimation()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Add\+New\+Animation (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name,  }\item[{std\+::string}]{name,  }\item[{int}]{start\+FrameX,  }\item[{int}]{start\+FrameY,  }\item[{int}]{end\+FrameX,  }\item[{int}]{end\+FrameY,  }\item[{float}]{frame\+Duration }\end{DoxyParamCaption})}
+
+
+
+Adds a new animation to the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+{\em name} & The name of the animation. \\
+\hline
+{\em start\+FrameX} & The x position of the start frame. \\
+\hline
+{\em start\+FrameY} & The y position of the start frame. \\
+\hline
+{\em end\+FrameX} & The x position of the end frame. \\
+\hline
+{\em end\+FrameY} & The y position of the end frame. \\
+\hline
+{\em frame\+Duration} & The duration of the frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_ab358c669a484378850957c0134f90e12}\label{class_s_d_l_display_program_ab358c669a484378850957c0134f90e12}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PyAddNewGameObject@{PyAddNewGameObject}}
+\index{PyAddNewGameObject@{PyAddNewGameObject}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PyAddNewGameObject()}{PyAddNewGameObject()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Add\+New\+Game\+Object (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name,  }\item[{int}]{posX,  }\item[{int}]{posY }\end{DoxyParamCaption})}
+
+
+
+Adds new game object to the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+{\em posX} & The x position of the game object. \\
+\hline
+{\em posY} & The y position of the game object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_display_program_acd8da714be0f9c55f2e4f2514846914f}\label{class_s_d_l_display_program_acd8da714be0f9c55f2e4f2514846914f}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PyAddRigidBodyComponent@{PyAddRigidBodyComponent}}
+\index{PyAddRigidBodyComponent@{PyAddRigidBodyComponent}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PyAddRigidBodyComponent()}{PyAddRigidBodyComponent()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Add\+Rigid\+Body\+Component (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name }\end{DoxyParamCaption})}
+
+
+
+Add rigid body component to the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_a8de7d3a168ec11097d3583e6c6a0cbae}\label{class_s_d_l_display_program_a8de7d3a168ec11097d3583e6c6a0cbae}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PyAddSoundComponent@{PyAddSoundComponent}}
+\index{PyAddSoundComponent@{PyAddSoundComponent}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PyAddSoundComponent()}{PyAddSoundComponent()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Add\+Sound\+Component (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name }\end{DoxyParamCaption})}
+
+
+
+Add Sound \mbox{\hyperlink{class_component}{Component}} to the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_ad061f7f4a94c41619871ddab58d0796f}\label{class_s_d_l_display_program_ad061f7f4a94c41619871ddab58d0796f}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PyAttachCamera@{PyAttachCamera}}
+\index{PyAttachCamera@{PyAttachCamera}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PyAttachCamera()}{PyAttachCamera()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Attach\+Camera (\begin{DoxyParamCaption}\item[{std\+::string}]{obj\+Name,  }\item[{double}]{perpective\+Factor }\end{DoxyParamCaption})}
+
+
+
+Attach a camera to the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+Name} & The name of the game object. \\
+\hline
+{\em perpective\+Factor} & The perpective factor of the camera. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_a5ca67219318ca527ed79328dc0bc8cd1}\label{class_s_d_l_display_program_a5ca67219318ca527ed79328dc0bc8cd1}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PyCheckCollision@{PyCheckCollision}}
+\index{PyCheckCollision@{PyCheckCollision}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PyCheckCollision()}{PyCheckCollision()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ SDLDisplay\+Program\+::\+Py\+Check\+Collision (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name }\end{DoxyParamCaption})}
+
+
+
+Checks if the game object is colliding with another game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the game object that is colliding with the game object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_a1e23d10fd6cdcf99b504223bb55c0413}\label{class_s_d_l_display_program_a1e23d10fd6cdcf99b504223bb55c0413}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PyCheckInsideColliderList@{PyCheckInsideColliderList}}
+\index{PyCheckInsideColliderList@{PyCheckInsideColliderList}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PyCheckInsideColliderList()}{PyCheckInsideColliderList()}}
+{\footnotesize\ttfamily bool SDLDisplay\+Program\+::\+Py\+Check\+Inside\+Collider\+List (\begin{DoxyParamCaption}\item[{std\+::string}]{obj\+Name }\end{DoxyParamCaption})}
+
+
+
+Checks if the game object is inside the collider list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+Name} & The name of the game object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_display_program_aafb527b42ed5292ffa18d355568ededf}\label{class_s_d_l_display_program_aafb527b42ed5292ffa18d355568ededf}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PyChooseSpriteAnimation@{PyChooseSpriteAnimation}}
+\index{PyChooseSpriteAnimation@{PyChooseSpriteAnimation}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PyChooseSpriteAnimation()}{PyChooseSpriteAnimation()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Choose\+Sprite\+Animation (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name,  }\item[{std\+::string}]{anime }\end{DoxyParamCaption})}
+
+
+
+Chooses the sprite animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+{\em anime} & The name of the animation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_a6456c7b3e12435f0b6b3edf6c5b23e78}\label{class_s_d_l_display_program_a6456c7b3e12435f0b6b3edf6c5b23e78}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PyGetGameObjectState@{PyGetGameObjectState}}
+\index{PyGetGameObjectState@{PyGetGameObjectState}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PyGetGameObjectState()}{PyGetGameObjectState()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Get\+Game\+Object\+State (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name }\end{DoxyParamCaption})}
+
+
+
+Gets the game object state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The game object state. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_a5c38840306dd4bf73b6db1dcd767184c}\label{class_s_d_l_display_program_a5c38840306dd4bf73b6db1dcd767184c}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PyGetGameObjectStateItem@{PyGetGameObjectStateItem}}
+\index{PyGetGameObjectStateItem@{PyGetGameObjectStateItem}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PyGetGameObjectStateItem()}{PyGetGameObjectStateItem()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Get\+Game\+Object\+State\+Item (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name,  }\item[{std\+::string}]{item\+Name }\end{DoxyParamCaption})}
+
+
+
+Gets the value of the game object state item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+{\em item\+Name} & The name of the state item. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_display_program_a8129cc9c21f75b9aad2c3e40588de058}\label{class_s_d_l_display_program_a8129cc9c21f75b9aad2c3e40588de058}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PySetGameObjectStateItem@{PySetGameObjectStateItem}}
+\index{PySetGameObjectStateItem@{PySetGameObjectStateItem}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PySetGameObjectStateItem()}{PySetGameObjectStateItem()}}
+{\footnotesize\ttfamily bool SDLDisplay\+Program\+::\+Py\+Set\+Game\+Object\+State\+Item (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name,  }\item[{std\+::string}]{item\+Name,  }\item[{int}]{change\+Value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of the game object state item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+{\em item\+Name} & The name of the state item. \\
+\hline
+{\em change\+Value} & The value to change the state item by. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_display_program_ae2e71a8638f4c88b3ecac314a5bac15b}\label{class_s_d_l_display_program_ae2e71a8638f4c88b3ecac314a5bac15b}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PySetupKeyboardControl@{PySetupKeyboardControl}}
+\index{PySetupKeyboardControl@{PySetupKeyboardControl}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PySetupKeyboardControl()}{PySetupKeyboardControl()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Setup\+Keyboard\+Control (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name,  }\item[{std\+::string}]{key\+Name,  }\item[{std\+::string}]{state\+Item,  }\item[{int}]{change\+Value }\end{DoxyParamCaption})}
+
+
+
+Sets up the Keyboard Control \mbox{\hyperlink{class_component}{Component}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+{\em key\+Name} & The name of the key. \\
+\hline
+{\em state\+Item} & The name of the state item. \\
+\hline
+{\em change\+Value} & The value to change the state item by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_a9bf484fb4a5aa1aea0f30103c923e225}\label{class_s_d_l_display_program_a9bf484fb4a5aa1aea0f30103c923e225}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PySetupRectangleComponent@{PySetupRectangleComponent}}
+\index{PySetupRectangleComponent@{PySetupRectangleComponent}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PySetupRectangleComponent()}{PySetupRectangleComponent()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Setup\+Rectangle\+Component (\begin{DoxyParamCaption}\item[{std\+::string}]{obj\+Name,  }\item[{int}]{x\+\_\+pos\+\_\+val,  }\item[{int}]{y\+\_\+pos\+\_\+val,  }\item[{int}]{width\+\_\+val,  }\item[{int}]{height\+\_\+val,  }\item[{int}]{red\+\_\+val,  }\item[{int}]{green\+\_\+val,  }\item[{int}]{blue\+\_\+val,  }\item[{int}]{alpha\+\_\+val,  }\item[{bool}]{is\+UI }\end{DoxyParamCaption})}
+
+
+
+Sets up the rectangle component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+Name} & The name of the game object. \\
+\hline
+{\em x\+\_\+pos\+\_\+val} & The x position of the rectangle. \\
+\hline
+{\em y\+\_\+pos\+\_\+val} & The y position of the rectangle. \\
+\hline
+{\em width\+\_\+val} & The width of the rectangle. \\
+\hline
+{\em height\+\_\+val} & The height of the rectangle. \\
+\hline
+{\em red\+\_\+val} & The red value for transparency. \\
+\hline
+{\em green\+\_\+val} & The green value for transparency. \\
+\hline
+{\em blue\+\_\+val} & The blue value for transparency. \\
+\hline
+{\em alpha\+\_\+val} & The alpha value for transparency. \\
+\hline
+{\em is\+UI} & Whether the rectangle is a UI element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_a7715ee17c51813bf5ada40fb966ef2a5}\label{class_s_d_l_display_program_a7715ee17c51813bf5ada40fb966ef2a5}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PySetupRigidBodyComponent@{PySetupRigidBodyComponent}}
+\index{PySetupRigidBodyComponent@{PySetupRigidBodyComponent}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PySetupRigidBodyComponent()}{PySetupRigidBodyComponent()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Setup\+Rigid\+Body\+Component (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name,  }\item[{bool}]{use\+Gravity,  }\item[{bool}]{is\+Kinematic,  }\item[{float}]{velX,  }\item[{float}]{velY,  }\item[{float}]{max\+VelX,  }\item[{float}]{max\+VelY,  }\item[{float}]{m\+Mass }\end{DoxyParamCaption})}
+
+
+
+Sets up the rigid body component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+{\em use\+Gravity} & Whether the game object uses gravity. \\
+\hline
+{\em is\+Kinematic} & Whether the game object is kinematic. \\
+\hline
+{\em velX} & The x velocity of the game object. \\
+\hline
+{\em velY} & The y velocity of the game object. \\
+\hline
+{\em max\+VelX} & The maximum x velocity of the game object. \\
+\hline
+{\em max\+VelY} & The maximum y velocity of the game object. \\
+\hline
+{\em m\+Mass} & The mass of the game object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_a319d03efea9bea11c1bc06d2e6f1993c}\label{class_s_d_l_display_program_a319d03efea9bea11c1bc06d2e6f1993c}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PySetupSpriteInitial@{PySetupSpriteInitial}}
+\index{PySetupSpriteInitial@{PySetupSpriteInitial}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PySetupSpriteInitial()}{PySetupSpriteInitial()}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Setup\+Sprite\+Initial (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name,  }\item[{std\+::string}]{file\+Path,  }\item[{int}]{msrc\+\_\+x\+\_\+factor,  }\item[{int}]{m\+Src\+\_\+y,  }\item[{int}]{m\+Src\+\_\+w,  }\item[{int}]{m\+Src\+\_\+h,  }\item[{int}]{m\+Dest\+\_\+w,  }\item[{int}]{m\+Dest\+\_\+h,  }\item[{int}]{red\+Key = {\ttfamily 255},  }\item[{int}]{green\+Key = {\ttfamily 0},  }\item[{int}]{blue\+Key = {\ttfamily 255} }\end{DoxyParamCaption})}
+
+
+
+Sets up the sprite component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+{\em file\+Path} & The path to the sprite file. \\
+\hline
+{\em msrc\+\_\+x\+\_\+factor} & The x factor of the sprite. \\
+\hline
+{\em m\+Src\+\_\+y} & The y factor of the sprite. \\
+\hline
+{\em m\+Src\+\_\+w} & The width of the sprite. \\
+\hline
+{\em m\+Src\+\_\+h} & The height of the sprite. \\
+\hline
+{\em m\+Dest\+\_\+w} & The width of the sprite in the game. \\
+\hline
+{\em m\+Dest\+\_\+h} & The height of the sprite in the game. \\
+\hline
+{\em red\+Key} & The red key value for transparency. \\
+\hline
+{\em green\+Key} & The green key value for transparency. \\
+\hline
+{\em blue\+Key} & The blue key value for transparency. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_aad2e9c83b7903f488f961175bf64adf3}\label{class_s_d_l_display_program_aad2e9c83b7903f488f961175bf64adf3}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PySetupTileMap@{PySetupTileMap}}
+\index{PySetupTileMap@{PySetupTileMap}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PySetupTileMap()}{PySetupTileMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Setup\+Tile\+Map (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name,  }\item[{std\+::string}]{sprite\+File\+Path,  }\item[{int}]{rows,  }\item[{int}]{cols,  }\item[{int}]{tile\+Width,  }\item[{int}]{tile\+Height,  }\item[{int}]{mapX,  }\item[{int}]{mapY,  }\item[{int}]{tile\+Width\+In\+Map,  }\item[{int}]{tile\+Height\+In\+Map,  }\item[{int}]{red\+Key,  }\item[{int}]{green\+Key,  }\item[{int}]{blue\+Key,  }\item[{const std\+::vector$<$ int $>$ \&}]{tile\+Matrix }\end{DoxyParamCaption})}
+
+
+
+Sets up the Tile Map component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. \\
+\hline
+{\em sprite\+File\+Path} & The path to the sprite file. \\
+\hline
+{\em rows} & The number of rows in the tileset. \\
+\hline
+{\em cols} & The number of columns in the tileset. \\
+\hline
+{\em tile\+Width} & The width of the tileset. \\
+\hline
+{\em tile\+Height} & The height of the tileset. \\
+\hline
+{\em mapX} & The number of columns in the map. \\
+\hline
+{\em mapY} & The number of rows in the map. \\
+\hline
+{\em tile\+Width\+In\+Map} & The width of the tile in the map. \\
+\hline
+{\em tile\+Height\+In\+Map} & The height of the tile in the map. \\
+\hline
+{\em red\+Key} & The red key value for transparency. \\
+\hline
+{\em green\+Key} & The green key value for transparency. \\
+\hline
+{\em blue\+Key} & The blue key value for transparency. \\
+\hline
+{\em tile\+Matrix} & The 2D tilemap matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_ab24c703179ac7614d5524ef00a8c92a4}\label{class_s_d_l_display_program_ab24c703179ac7614d5524ef00a8c92a4}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PySetupTileMap@{PySetupTileMap}}
+\index{PySetupTileMap@{PySetupTileMap}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PySetupTileMap()}{PySetupTileMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string SDLDisplay\+Program\+::\+Py\+Setup\+Tile\+Map (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name,  }\item[{std\+::string}]{tilemap\+\_\+json\+\_\+file\+\_\+path,  }\item[{int}]{tile\+Width\+In\+Map,  }\item[{int}]{tile\+Height\+In\+Map,  }\item[{int}]{red\+Key,  }\item[{int}]{green\+Key,  }\item[{int}]{blue\+Key }\end{DoxyParamCaption})}
+
+
+
+Sets up the Tile Map component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Name} & The name of the game object. @ param tilemap\+\_\+json\+\_\+file\+\_\+path The path to the tilemap json file. \\
+\hline
+{\em tile\+Width\+In\+Map} & The width of the tile in the map. \\
+\hline
+{\em tile\+Height\+In\+Map} & The height of the tile in the map. \\
+\hline
+{\em red\+Key} & The red key value for transparency. \\
+\hline
+{\em green\+Key} & The green key value for transparency. \\
+\hline
+{\em blue\+Key} & The blue key value for transparency. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_display_program_ad8065b52204c5185cc9fdbc346410920}\label{class_s_d_l_display_program_ad8065b52204c5185cc9fdbc346410920}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!PyUserInterfaceSetText@{PyUserInterfaceSetText}}
+\index{PyUserInterfaceSetText@{PyUserInterfaceSetText}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{PyUserInterfaceSetText()}{PyUserInterfaceSetText()}}
+{\footnotesize\ttfamily void SDLDisplay\+Program\+::\+Py\+User\+Interface\+Set\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{obj\+Name,  }\item[{std\+::string}]{content\+Text,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{bool}]{is\+UI }\end{DoxyParamCaption})}
+
+
+
+Sets up the text component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+Name} & The name of the game object. \\
+\hline
+{\em content\+Text} & The text to display. \\
+\hline
+{\em x} & The x position of the text. \\
+\hline
+{\em y} & The y position of the text. \\
+\hline
+{\em width} & The width of the text. \\
+\hline
+{\em height} & The height of the text. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_display_program_abbe0824464d35be089507de1f543220a}\label{class_s_d_l_display_program_abbe0824464d35be089507de1f543220a}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!RenderStep@{RenderStep}}
+\index{RenderStep@{RenderStep}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{RenderStep()}{RenderStep()}}
+{\footnotesize\ttfamily void SDLDisplay\+Program\+::\+Render\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Renders the game. \mbox{\Hypertarget{class_s_d_l_display_program_a67d8a55ce2189be9050281fd9ea5446d}\label{class_s_d_l_display_program_a67d8a55ce2189be9050281fd9ea5446d}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void SDLDisplay\+Program\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shuts down the SDL display. 
+
+\mbox{\Hypertarget{class_s_d_l_display_program_a0e5cb80579514ba9f792d4f0e48e806c}\label{class_s_d_l_display_program_a0e5cb80579514ba9f792d4f0e48e806c}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!Start@{Start}}
+\index{Start@{Start}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void SDLDisplay\+Program\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the SDL display. 
+
+\mbox{\Hypertarget{class_s_d_l_display_program_a8a080b88b0094c3e42842708984fab99}\label{class_s_d_l_display_program_a8a080b88b0094c3e42842708984fab99}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!UpdateStep@{UpdateStep}}
+\index{UpdateStep@{UpdateStep}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{UpdateStep()}{UpdateStep()}}
+{\footnotesize\ttfamily void SDLDisplay\+Program\+::\+Update\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Updates the game. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_s_d_l_display_program_a72473d86afa1d16cea7657512bebd56e}\label{class_s_d_l_display_program_a72473d86afa1d16cea7657512bebd56e}} 
+\index{SDLDisplayProgram@{SDLDisplayProgram}!igeRenderer@{igeRenderer}}
+\index{igeRenderer@{igeRenderer}!SDLDisplayProgram@{SDLDisplayProgram}}
+\doxysubsubsection{\texorpdfstring{igeRenderer}{igeRenderer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_graphics_engine_renderer}{IGraphics\+Engine\+Renderer}}$\ast$ SDLDisplay\+Program\+::ige\+Renderer = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{binding__funcs_8cpp}{binding\+\_\+funcs.\+cpp}}\end{DoxyCompactItemize}

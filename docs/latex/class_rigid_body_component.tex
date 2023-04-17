@@ -1,0 +1,293 @@
+\hypertarget{class_rigid_body_component}{}\doxysection{Rigid\+Body\+Component Class Reference}
+\label{class_rigid_body_component}\index{RigidBodyComponent@{RigidBodyComponent}}
+
+
+Rigid body component for game objects.  
+
+
+
+
+{\ttfamily \#include $<$Rigid\+Body\+Component.\+hpp$>$}
+
+Inheritance diagram for Rigid\+Body\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_rigid_body_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rigid_body_component_a97e4ea4666ebb0a2fe0b4cb9c57489be}{Rigid\+Body\+Component}} (\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$given\+Game\+Obj\+State\+Ptr)
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_rigid_body_component}{Rigid\+Body\+Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rigid_body_component_a4ae204ad71d7dd38c654f7d800972fe7}{Render}} (SDL\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em Renders the rigid body component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rigid_body_component_a64b8ce08bf59ce4712921848dc0dc408}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State) override
+\begin{DoxyCompactList}\small\item\em Updates the rigid body component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rigid_body_component_a15ec68973de42f40e538adea7d11b610}{Start}} () override
+\begin{DoxyCompactList}\small\item\em Starts the rigid body component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rigid_body_component_af6a79cbe51be633ba43fd2a90f5a389c}{Shutdown}} () override
+\begin{DoxyCompactList}\small\item\em Shuts down the rigid body component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rigid_body_component_ab1aa36a5b07db1854df3a0074433263e}{Set\+Gravity}} (float g)
+\item 
+void \mbox{\hyperlink{class_rigid_body_component_a681ba6f4ef8c604c776cfee680435a6e}{Set\+Mass}} (float mass)
+\item 
+void \mbox{\hyperlink{class_rigid_body_component_aed47822f57987273cfae0c0e3b4168ee}{Set\+Drag}} (float drag)
+\item 
+void \mbox{\hyperlink{class_rigid_body_component_a8ffe1d78091bf2a4ec27bfafa3a3c445}{Set\+Use\+Gravity}} (bool huh)
+\item 
+void \mbox{\hyperlink{class_rigid_body_component_aab569c1004ce9699b790a892c4893b08}{Set\+Is\+Kinematic}} (bool huh)
+\item 
+void \mbox{\hyperlink{class_rigid_body_component_a37edefc1f3e7e26186988497a6a4dd0a}{Add\+Force}} (float x, float y)
+\item 
+void \mbox{\hyperlink{class_rigid_body_component_a1ba711d4e3b74c895b38ed3662266de8}{Set\+Max\+ForceX}} (float f)
+\item 
+void \mbox{\hyperlink{class_rigid_body_component_a0f7d0d15f678ff7d4fbd2947e19dea29}{Set\+Max\+ForceY}} (float f)
+\item 
+float \mbox{\hyperlink{class_rigid_body_component_afbdd91dc348f108d28b7ee1edefe0c04}{Get\+ForceX}} ()
+\item 
+float \mbox{\hyperlink{class_rigid_body_component_ac1b8b0265bf2ceaada90de241a364fc6}{Get\+ForceY}} ()
+\item 
+void \mbox{\hyperlink{class_rigid_body_component_afe819d07099b259345869ec6e0c19b41}{Set\+ForceX}} (float x)
+\item 
+void \mbox{\hyperlink{class_rigid_body_component_a90bb632d45984ca8ad36b8f1ea168aba}{Set\+ForceY}} (float y)
+\item 
+virtual std\+::string \mbox{\hyperlink{class_rigid_body_component_aa4e9ef7064cc9c0c9a4def5d52479b1c}{get\+Tag}} () override
+\item 
+virtual std\+::string \mbox{\hyperlink{class_rigid_body_component_a27ff4a072ac440f61eabe939d85b7f8e}{get\+Compo\+Name}} () override
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rigid_body_component_a261a1bd09326a27cf065354111520675}{set\+Compo\+Name}} (std\+::string name) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_component_ab8378fa275af98e568a7e91d33d867af}{$\sim$\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State)
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{get\+Tag}} ()
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_component_ae89a01592cf673591afa652f06211328}{set\+Comp\+Removed}} ()
+\begin{DoxyCompactList}\small\item\em Sets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{get\+Compo\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{set\+Compo\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a3f85fc409bdfe4968f91893f888d41b0}{tag}}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a085fdb125d2c7d24a6f8a672ae6af2c8}{compo\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rigid body component for game objects. 
+
+This class represents a rigid body component that can be attached to game objects to provide physics behavior such as gravity, mass, and drag. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rigid_body_component_a97e4ea4666ebb0a2fe0b4cb9c57489be}\label{class_rigid_body_component_a97e4ea4666ebb0a2fe0b4cb9c57489be}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!RigidBodyComponent@{RigidBodyComponent}}
+\index{RigidBodyComponent@{RigidBodyComponent}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{RigidBodyComponent()}{RigidBodyComponent()}}
+{\footnotesize\ttfamily Rigid\+Body\+Component\+::\+Rigid\+Body\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$}]{given\+Game\+Obj\+State\+Ptr }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_rigid_body_component}{Rigid\+Body\+Component}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rigid_body_component_a37edefc1f3e7e26186988497a6a4dd0a}\label{class_rigid_body_component_a37edefc1f3e7e26186988497a6a4dd0a}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!AddForce@{AddForce}}
+\index{AddForce@{AddForce}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{AddForce()}{AddForce()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::\+Add\+Force (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Set whether the object is kinematic \texorpdfstring{$>$}{>} \mbox{\Hypertarget{class_rigid_body_component_a27ff4a072ac440f61eabe939d85b7f8e}\label{class_rigid_body_component_a27ff4a072ac440f61eabe939d85b7f8e}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!getCompoName@{getCompoName}}
+\index{getCompoName@{getCompoName}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{getCompoName()}{getCompoName()}}
+{\footnotesize\ttfamily std\+::string Rigid\+Body\+Component\+::get\+Compo\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the name of the component. 
+
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{Component}}.
+
+\mbox{\Hypertarget{class_rigid_body_component_afbdd91dc348f108d28b7ee1edefe0c04}\label{class_rigid_body_component_afbdd91dc348f108d28b7ee1edefe0c04}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!GetForceX@{GetForceX}}
+\index{GetForceX@{GetForceX}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{GetForceX()}{GetForceX()}}
+{\footnotesize\ttfamily float Rigid\+Body\+Component\+::\+Get\+ForceX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Set the maximum force in the y direction \texorpdfstring{$>$}{>} \mbox{\Hypertarget{class_rigid_body_component_ac1b8b0265bf2ceaada90de241a364fc6}\label{class_rigid_body_component_ac1b8b0265bf2ceaada90de241a364fc6}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!GetForceY@{GetForceY}}
+\index{GetForceY@{GetForceY}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{GetForceY()}{GetForceY()}}
+{\footnotesize\ttfamily float Rigid\+Body\+Component\+::\+Get\+ForceY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Get the force in the x direction \texorpdfstring{$>$}{>} \mbox{\Hypertarget{class_rigid_body_component_aa4e9ef7064cc9c0c9a4def5d52479b1c}\label{class_rigid_body_component_aa4e9ef7064cc9c0c9a4def5d52479b1c}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!getTag@{getTag}}
+\index{getTag@{getTag}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{getTag()}{getTag()}}
+{\footnotesize\ttfamily std\+::string Rigid\+Body\+Component\+::get\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\texorpdfstring{$<$}{<} Set the force in the y direction \texorpdfstring{$>$}{>} 
+
+Reimplemented from \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{Component}}.
+
+\mbox{\Hypertarget{class_rigid_body_component_a4ae204ad71d7dd38c654f7d800972fe7}\label{class_rigid_body_component_a4ae204ad71d7dd38c654f7d800972fe7}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!Render@{Render}}
+\index{Render@{Render}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Renders the rigid body component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ren} & The renderer to use. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Component}}.
+
+\mbox{\Hypertarget{class_rigid_body_component_a261a1bd09326a27cf065354111520675}\label{class_rigid_body_component_a261a1bd09326a27cf065354111520675}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!setCompoName@{setCompoName}}
+\index{setCompoName@{setCompoName}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{setCompoName()}{setCompoName()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::set\+Compo\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\texorpdfstring{$<$}{<} Get the name of the component \texorpdfstring{$>$}{>} 
+
+Reimplemented from \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{Component}}.
+
+\mbox{\Hypertarget{class_rigid_body_component_aed47822f57987273cfae0c0e3b4168ee}\label{class_rigid_body_component_aed47822f57987273cfae0c0e3b4168ee}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!SetDrag@{SetDrag}}
+\index{SetDrag@{SetDrag}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{SetDrag()}{SetDrag()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::\+Set\+Drag (\begin{DoxyParamCaption}\item[{float}]{drag }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Set the mass of the object \texorpdfstring{$>$}{>} \mbox{\Hypertarget{class_rigid_body_component_afe819d07099b259345869ec6e0c19b41}\label{class_rigid_body_component_afe819d07099b259345869ec6e0c19b41}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!SetForceX@{SetForceX}}
+\index{SetForceX@{SetForceX}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{SetForceX()}{SetForceX()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::\+Set\+ForceX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Get the force in the y direction \texorpdfstring{$>$}{>} \mbox{\Hypertarget{class_rigid_body_component_a90bb632d45984ca8ad36b8f1ea168aba}\label{class_rigid_body_component_a90bb632d45984ca8ad36b8f1ea168aba}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!SetForceY@{SetForceY}}
+\index{SetForceY@{SetForceY}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{SetForceY()}{SetForceY()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::\+Set\+ForceY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Set the force in the x direction \texorpdfstring{$>$}{>} \mbox{\Hypertarget{class_rigid_body_component_ab1aa36a5b07db1854df3a0074433263e}\label{class_rigid_body_component_ab1aa36a5b07db1854df3a0074433263e}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!SetGravity@{SetGravity}}
+\index{SetGravity@{SetGravity}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{SetGravity()}{SetGravity()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::\+Set\+Gravity (\begin{DoxyParamCaption}\item[{float}]{g }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_rigid_body_component_aab569c1004ce9699b790a892c4893b08}\label{class_rigid_body_component_aab569c1004ce9699b790a892c4893b08}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!SetIsKinematic@{SetIsKinematic}}
+\index{SetIsKinematic@{SetIsKinematic}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{SetIsKinematic()}{SetIsKinematic()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::\+Set\+Is\+Kinematic (\begin{DoxyParamCaption}\item[{bool}]{huh }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Set whether the object uses gravity \texorpdfstring{$>$}{>} \mbox{\Hypertarget{class_rigid_body_component_a681ba6f4ef8c604c776cfee680435a6e}\label{class_rigid_body_component_a681ba6f4ef8c604c776cfee680435a6e}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!SetMass@{SetMass}}
+\index{SetMass@{SetMass}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{SetMass()}{SetMass()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::\+Set\+Mass (\begin{DoxyParamCaption}\item[{float}]{mass }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Set the gravity of the object \texorpdfstring{$>$}{>} \mbox{\Hypertarget{class_rigid_body_component_a1ba711d4e3b74c895b38ed3662266de8}\label{class_rigid_body_component_a1ba711d4e3b74c895b38ed3662266de8}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!SetMaxForceX@{SetMaxForceX}}
+\index{SetMaxForceX@{SetMaxForceX}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{SetMaxForceX()}{SetMaxForceX()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::\+Set\+Max\+ForceX (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Add a force to the object \texorpdfstring{$>$}{>} \mbox{\Hypertarget{class_rigid_body_component_a0f7d0d15f678ff7d4fbd2947e19dea29}\label{class_rigid_body_component_a0f7d0d15f678ff7d4fbd2947e19dea29}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!SetMaxForceY@{SetMaxForceY}}
+\index{SetMaxForceY@{SetMaxForceY}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{SetMaxForceY()}{SetMaxForceY()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::\+Set\+Max\+ForceY (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Set the maximum force in the x direction \texorpdfstring{$>$}{>} \mbox{\Hypertarget{class_rigid_body_component_a8ffe1d78091bf2a4ec27bfafa3a3c445}\label{class_rigid_body_component_a8ffe1d78091bf2a4ec27bfafa3a3c445}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!SetUseGravity@{SetUseGravity}}
+\index{SetUseGravity@{SetUseGravity}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{SetUseGravity()}{SetUseGravity()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::\+Set\+Use\+Gravity (\begin{DoxyParamCaption}\item[{bool}]{huh }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Set the drag of the object \texorpdfstring{$>$}{>} \mbox{\Hypertarget{class_rigid_body_component_af6a79cbe51be633ba43fd2a90f5a389c}\label{class_rigid_body_component_af6a79cbe51be633ba43fd2a90f5a389c}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Shuts down the rigid body component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Component}}.
+
+\mbox{\Hypertarget{class_rigid_body_component_a15ec68973de42f40e538adea7d11b610}\label{class_rigid_body_component_a15ec68973de42f40e538adea7d11b610}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!Start@{Start}}
+\index{Start@{Start}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Starts the rigid body component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Component}}.
+
+\mbox{\Hypertarget{class_rigid_body_component_a64b8ce08bf59ce4712921848dc0dc408}\label{class_rigid_body_component_a64b8ce08bf59ce4712921848dc0dc408}} 
+\index{RigidBodyComponent@{RigidBodyComponent}!Update@{Update}}
+\index{Update@{Update}!RigidBodyComponent@{RigidBodyComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Component\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$}]{game\+Play\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the rigid body component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Play\+State} & The current game play state. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_rigid_body_component_8hpp}{Rigid\+Body\+Component.\+hpp}}\item 
+src/\mbox{\hyperlink{_rigid_body_component_8cpp}{Rigid\+Body\+Component.\+cpp}}\end{DoxyCompactItemize}

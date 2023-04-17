@@ -1,0 +1,65 @@
+\hypertarget{_rigid_body_component_8hpp_source}{}\doxysection{Rigid\+Body\+Component.\+hpp}
+\label{_rigid_body_component_8hpp_source}\index{include/RigidBodyComponent.hpp@{include/RigidBodyComponent.hpp}}
+\mbox{\hyperlink{_rigid_body_component_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Wan\ Hongyu\ on\ 2023-\/04-\/13.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ FINALPROJECT\_VANCOUVER\_GROUP2\_RIGIDBODYCOMPONENT\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ FINALPROJECT\_VANCOUVER\_GROUP2\_RIGIDBODYCOMPONENT\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8hpp}{Component.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_game_object_state_8hpp}{GameObjectState.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//\#include\ <pybind11/functional.h>}}
+\DoxyCodeLine{00014\ \textcolor{comment}{//\#include\ <pybind11/pybind11.h>}}
+\DoxyCodeLine{00015\ \textcolor{comment}{//namespace\ py\ =\ pybind11;}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rigid_body_component}{RigidBodyComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ Constructor}}
+\DoxyCodeLine{00030\ \textcolor{comment}{}\ \ \ \ \mbox{\hyperlink{class_rigid_body_component}{RigidBodyComponent}}(\mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ givenGameObjStatePtr);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_a4ae204ad71d7dd38c654f7d800972fe7}{Render}}(SDL\_Renderer*\ ren)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ Update\ the\ position\ of\ the\ object\ every\ frame\ after\ applying\ gravity}}
+\DoxyCodeLine{00042\ \textcolor{comment}{}\ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_a64b8ce08bf59ce4712921848dc0dc408}{Update}}(\mbox{\hyperlink{class_game_play_state}{GamePlayState}}*\ gamePlayState)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_a15ec68973de42f40e538adea7d11b610}{Start}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_af6a79cbe51be633ba43fd2a90f5a389c}{Shutdown}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//\ Setters}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_ab1aa36a5b07db1854df3a0074433263e}{SetGravity}}(\textcolor{keywordtype}{float}\ g);\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_a681ba6f4ef8c604c776cfee680435a6e}{SetMass}}(\textcolor{keywordtype}{float}\ mass);\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_aed47822f57987273cfae0c0e3b4168ee}{SetDrag}}(\textcolor{keywordtype}{float}\ drag);\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_a8ffe1d78091bf2a4ec27bfafa3a3c445}{SetUseGravity}}(\textcolor{keywordtype}{bool}\ huh);\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_aab569c1004ce9699b790a892c4893b08}{SetIsKinematic}}(\textcolor{keywordtype}{bool}\ huh);\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_a37edefc1f3e7e26186988497a6a4dd0a}{AddForce}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_a1ba711d4e3b74c895b38ed3662266de8}{SetMaxForceX}}(\textcolor{keywordtype}{float}\ f);\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_a0f7d0d15f678ff7d4fbd2947e19dea29}{SetMaxForceY}}(\textcolor{keywordtype}{float}\ f);\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{//\ Getters}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_rigid_body_component_afbdd91dc348f108d28b7ee1edefe0c04}{GetForceX}}();\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_rigid_body_component_ac1b8b0265bf2ceaada90de241a364fc6}{GetForceY}}();\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_afe819d07099b259345869ec6e0c19b41}{SetForceX}}(\textcolor{keywordtype}{float}\ x);\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_a90bb632d45984ca8ad36b8f1ea168aba}{SetForceY}}(\textcolor{keywordtype}{float}\ y);\ }
+\DoxyCodeLine{00068\ \textcolor{comment}{//\ \ \ \ void\ SetUpdateCallback(py::function\ updateCallback);}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_rigid_body_component_aa4e9ef7064cc9c0c9a4def5d52479b1c}{getTag}}()\ \textcolor{keyword}{override};\ \textcolor{comment}{/*\ <\ Get\ the\ tag\ of\ the\ component\ >\ */}}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_rigid_body_component_a27ff4a072ac440f61eabe939d85b7f8e}{getCompoName}}()\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_component_a261a1bd09326a27cf065354111520675}{setCompoName}}(std::string\ name)\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00075\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{float}\ mWidth,\ mHeight,\ mMass,\ mDrag,\ mVelX,\ mVelY,\ mMaxVelX,\ mMaxVelY,\ mGravity;\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{float}\ mLastX,\ mLastY;\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{bool}\ mUseGravity,\ mIsKinematic;\ }
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ mGameObjStatePtr;\ }
+\DoxyCodeLine{00080\ \ \ \ \ std::string\ mCompoName;\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{float}\ mAccumulatedMoveX;\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{float}\ mAccumulatedMoveY;\ }
+\DoxyCodeLine{00083\ \textcolor{comment}{//\ \ \ \ py::function\ mUpdateCallback;}}
+\DoxyCodeLine{00084\ \};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

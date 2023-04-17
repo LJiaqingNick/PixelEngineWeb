@@ -1,0 +1,206 @@
+\hypertarget{namespace_g_u_i__tilemap__editor}{}\doxysection{GUI\+\_\+tilemap\+\_\+editor Namespace Reference}
+\label{namespace_g_u_i__tilemap__editor}\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a2ebfbc5ac3f78120182a28c80ac709c6}{select\+\_\+tileset}} ()
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a2f92319809f5a1b3791fddc190ad7541}{row\+\_\+column\+\_\+to\+\_\+coord}} (row, col)
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_ab27e03e5fecac80c023b69befa376104}{coord\+\_\+to\+\_\+row\+\_\+column}} (coord)
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_aeef310e62778695019cb5b8ca1b20714}{generate\+\_\+tilemap}} ()
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a7595a0473ad50e481fd5a388a4e12cc8}{load\+\_\+tilemap}} ()
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a5b8280400e6256bb999d68723f997581}{generate\+\_\+loaded\+\_\+grid}} ()
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_acb722e1c520f95c17bafed63d36a1c34}{generate\+\_\+grid}} ()
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a875e3d42ca66e855dd8d8d59bbb33673}{on\+\_\+loaded\+\_\+canvas\+\_\+click}} (event)
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a032fcebd508577f729eb09afaeffa195}{on\+\_\+main\+\_\+canvas\+\_\+click}} (event, row=None, col=None, tile=None)
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_aaff559c9bfb6e0224458123396ae1555}{undo}} ()
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a2f0ea1e6c224f4e40ef30549a4d006ca}{clean\+\_\+the\+\_\+main\+\_\+canvas}} ()
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a1f13b0c4b46ca596b26b3d86f97713ed}{load\+\_\+temp\+\_\+tilemap}} (\+\_\+images)
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a38d280732776673039aeb67515800986}{go\+\_\+left\+\_\+of\+\_\+tilemap\+\_\+click}} ()
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a46473e7258d20da874557580190c9555}{go\+\_\+right\+\_\+of\+\_\+tilemap\+\_\+click}} ()
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_ad33fd9f2f28971e890bc8d2b2504a0d1}{generate\+\_\+long\+\_\+tilemap}} ()
+\item 
+def \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a461329f99493bdac08590f52960af1d9}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a5f704a40d84bb5c18c9c565481817dd9}{CANVAS\+\_\+\+WIDTH}} = 350
+\item 
+int \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a93edcbdace47b1e24790b490a869e91f}{CANVAS\+\_\+\+HEIGHT}} = 350
+\item 
+int \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a3e785e9e4925ab2b0c7d36f812c72d9e}{LOADED\+\_\+\+CANVAS\+\_\+\+WIDTH}} = 270
+\item 
+int \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_add66bc9d8ea3e55731de50b151bc03ed}{LOADED\+\_\+\+CANVAS\+\_\+\+HEIGHT}} = 270
+\item 
+None \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a1072b7481c72ae7351699b4a44cf028c}{selected\+\_\+tile\+\_\+highlight}} = None
+\item 
+list \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_add44d270f6ab1412d630cd9fd0ac96b5}{undo\+\_\+stack}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_acbb8fabdf2dd87c3929f800a85d8a065}{tile\+\_\+maps}} = \mbox{[}None\mbox{]}
+\item 
+int \mbox{\hyperlink{namespace_g_u_i__tilemap__editor_a55942f388b5746ffe414ef5774c7cabf}{tile\+\_\+map\+\_\+position}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a2f0ea1e6c224f4e40ef30549a4d006ca}\label{namespace_g_u_i__tilemap__editor_a2f0ea1e6c224f4e40ef30549a4d006ca}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!clean\_the\_main\_canvas@{clean\_the\_main\_canvas}}
+\index{clean\_the\_main\_canvas@{clean\_the\_main\_canvas}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{clean\_the\_main\_canvas()}{clean\_the\_main\_canvas()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+clean\+\_\+the\+\_\+main\+\_\+canvas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_ab27e03e5fecac80c023b69befa376104}\label{namespace_g_u_i__tilemap__editor_ab27e03e5fecac80c023b69befa376104}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!coord\_to\_row\_column@{coord\_to\_row\_column}}
+\index{coord\_to\_row\_column@{coord\_to\_row\_column}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{coord\_to\_row\_column()}{coord\_to\_row\_column()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+coord\+\_\+to\+\_\+row\+\_\+column (\begin{DoxyParamCaption}\item[{}]{coord }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_acb722e1c520f95c17bafed63d36a1c34}\label{namespace_g_u_i__tilemap__editor_acb722e1c520f95c17bafed63d36a1c34}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!generate\_grid@{generate\_grid}}
+\index{generate\_grid@{generate\_grid}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{generate\_grid()}{generate\_grid()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+generate\+\_\+grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a5b8280400e6256bb999d68723f997581}\label{namespace_g_u_i__tilemap__editor_a5b8280400e6256bb999d68723f997581}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!generate\_loaded\_grid@{generate\_loaded\_grid}}
+\index{generate\_loaded\_grid@{generate\_loaded\_grid}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{generate\_loaded\_grid()}{generate\_loaded\_grid()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+generate\+\_\+loaded\+\_\+grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_ad33fd9f2f28971e890bc8d2b2504a0d1}\label{namespace_g_u_i__tilemap__editor_ad33fd9f2f28971e890bc8d2b2504a0d1}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!generate\_long\_tilemap@{generate\_long\_tilemap}}
+\index{generate\_long\_tilemap@{generate\_long\_tilemap}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{generate\_long\_tilemap()}{generate\_long\_tilemap()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+generate\+\_\+long\+\_\+tilemap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_aeef310e62778695019cb5b8ca1b20714}\label{namespace_g_u_i__tilemap__editor_aeef310e62778695019cb5b8ca1b20714}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!generate\_tilemap@{generate\_tilemap}}
+\index{generate\_tilemap@{generate\_tilemap}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{generate\_tilemap()}{generate\_tilemap()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+generate\+\_\+tilemap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a38d280732776673039aeb67515800986}\label{namespace_g_u_i__tilemap__editor_a38d280732776673039aeb67515800986}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!go\_left\_of\_tilemap\_click@{go\_left\_of\_tilemap\_click}}
+\index{go\_left\_of\_tilemap\_click@{go\_left\_of\_tilemap\_click}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{go\_left\_of\_tilemap\_click()}{go\_left\_of\_tilemap\_click()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+go\+\_\+left\+\_\+of\+\_\+tilemap\+\_\+click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a46473e7258d20da874557580190c9555}\label{namespace_g_u_i__tilemap__editor_a46473e7258d20da874557580190c9555}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!go\_right\_of\_tilemap\_click@{go\_right\_of\_tilemap\_click}}
+\index{go\_right\_of\_tilemap\_click@{go\_right\_of\_tilemap\_click}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{go\_right\_of\_tilemap\_click()}{go\_right\_of\_tilemap\_click()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+go\+\_\+right\+\_\+of\+\_\+tilemap\+\_\+click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a1f13b0c4b46ca596b26b3d86f97713ed}\label{namespace_g_u_i__tilemap__editor_a1f13b0c4b46ca596b26b3d86f97713ed}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!load\_temp\_tilemap@{load\_temp\_tilemap}}
+\index{load\_temp\_tilemap@{load\_temp\_tilemap}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{load\_temp\_tilemap()}{load\_temp\_tilemap()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+load\+\_\+temp\+\_\+tilemap (\begin{DoxyParamCaption}\item[{}]{\+\_\+images }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a7595a0473ad50e481fd5a388a4e12cc8}\label{namespace_g_u_i__tilemap__editor_a7595a0473ad50e481fd5a388a4e12cc8}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!load\_tilemap@{load\_tilemap}}
+\index{load\_tilemap@{load\_tilemap}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{load\_tilemap()}{load\_tilemap()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+load\+\_\+tilemap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a461329f99493bdac08590f52960af1d9}\label{namespace_g_u_i__tilemap__editor_a461329f99493bdac08590f52960af1d9}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!main@{main}}
+\index{main@{main}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a875e3d42ca66e855dd8d8d59bbb33673}\label{namespace_g_u_i__tilemap__editor_a875e3d42ca66e855dd8d8d59bbb33673}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!on\_loaded\_canvas\_click@{on\_loaded\_canvas\_click}}
+\index{on\_loaded\_canvas\_click@{on\_loaded\_canvas\_click}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{on\_loaded\_canvas\_click()}{on\_loaded\_canvas\_click()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+on\+\_\+loaded\+\_\+canvas\+\_\+click (\begin{DoxyParamCaption}\item[{}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a032fcebd508577f729eb09afaeffa195}\label{namespace_g_u_i__tilemap__editor_a032fcebd508577f729eb09afaeffa195}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!on\_main\_canvas\_click@{on\_main\_canvas\_click}}
+\index{on\_main\_canvas\_click@{on\_main\_canvas\_click}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{on\_main\_canvas\_click()}{on\_main\_canvas\_click()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+on\+\_\+main\+\_\+canvas\+\_\+click (\begin{DoxyParamCaption}\item[{}]{event,  }\item[{}]{row = {\ttfamily None},  }\item[{}]{col = {\ttfamily None},  }\item[{}]{tile = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a2f92319809f5a1b3791fddc190ad7541}\label{namespace_g_u_i__tilemap__editor_a2f92319809f5a1b3791fddc190ad7541}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!row\_column\_to\_coord@{row\_column\_to\_coord}}
+\index{row\_column\_to\_coord@{row\_column\_to\_coord}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{row\_column\_to\_coord()}{row\_column\_to\_coord()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+row\+\_\+column\+\_\+to\+\_\+coord (\begin{DoxyParamCaption}\item[{}]{row,  }\item[{}]{col }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a2ebfbc5ac3f78120182a28c80ac709c6}\label{namespace_g_u_i__tilemap__editor_a2ebfbc5ac3f78120182a28c80ac709c6}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!select\_tileset@{select\_tileset}}
+\index{select\_tileset@{select\_tileset}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{select\_tileset()}{select\_tileset()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+select\+\_\+tileset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_aaff559c9bfb6e0224458123396ae1555}\label{namespace_g_u_i__tilemap__editor_aaff559c9bfb6e0224458123396ae1555}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!undo@{undo}}
+\index{undo@{undo}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{undo()}{undo()}}
+{\footnotesize\ttfamily def GUI\+\_\+tilemap\+\_\+editor.\+undo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a93edcbdace47b1e24790b490a869e91f}\label{namespace_g_u_i__tilemap__editor_a93edcbdace47b1e24790b490a869e91f}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!CANVAS\_HEIGHT@{CANVAS\_HEIGHT}}
+\index{CANVAS\_HEIGHT@{CANVAS\_HEIGHT}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{CANVAS\_HEIGHT}{CANVAS\_HEIGHT}}
+{\footnotesize\ttfamily int GUI\+\_\+tilemap\+\_\+editor.\+CANVAS\+\_\+\+HEIGHT = 350}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a5f704a40d84bb5c18c9c565481817dd9}\label{namespace_g_u_i__tilemap__editor_a5f704a40d84bb5c18c9c565481817dd9}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!CANVAS\_WIDTH@{CANVAS\_WIDTH}}
+\index{CANVAS\_WIDTH@{CANVAS\_WIDTH}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{CANVAS\_WIDTH}{CANVAS\_WIDTH}}
+{\footnotesize\ttfamily int GUI\+\_\+tilemap\+\_\+editor.\+CANVAS\+\_\+\+WIDTH = 350}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_add66bc9d8ea3e55731de50b151bc03ed}\label{namespace_g_u_i__tilemap__editor_add66bc9d8ea3e55731de50b151bc03ed}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!LOADED\_CANVAS\_HEIGHT@{LOADED\_CANVAS\_HEIGHT}}
+\index{LOADED\_CANVAS\_HEIGHT@{LOADED\_CANVAS\_HEIGHT}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{LOADED\_CANVAS\_HEIGHT}{LOADED\_CANVAS\_HEIGHT}}
+{\footnotesize\ttfamily int GUI\+\_\+tilemap\+\_\+editor.\+LOADED\+\_\+\+CANVAS\+\_\+\+HEIGHT = 270}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a3e785e9e4925ab2b0c7d36f812c72d9e}\label{namespace_g_u_i__tilemap__editor_a3e785e9e4925ab2b0c7d36f812c72d9e}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!LOADED\_CANVAS\_WIDTH@{LOADED\_CANVAS\_WIDTH}}
+\index{LOADED\_CANVAS\_WIDTH@{LOADED\_CANVAS\_WIDTH}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{LOADED\_CANVAS\_WIDTH}{LOADED\_CANVAS\_WIDTH}}
+{\footnotesize\ttfamily int GUI\+\_\+tilemap\+\_\+editor.\+LOADED\+\_\+\+CANVAS\+\_\+\+WIDTH = 270}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a1072b7481c72ae7351699b4a44cf028c}\label{namespace_g_u_i__tilemap__editor_a1072b7481c72ae7351699b4a44cf028c}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!selected\_tile\_highlight@{selected\_tile\_highlight}}
+\index{selected\_tile\_highlight@{selected\_tile\_highlight}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{selected\_tile\_highlight}{selected\_tile\_highlight}}
+{\footnotesize\ttfamily None GUI\+\_\+tilemap\+\_\+editor.\+selected\+\_\+tile\+\_\+highlight = None}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_a55942f388b5746ffe414ef5774c7cabf}\label{namespace_g_u_i__tilemap__editor_a55942f388b5746ffe414ef5774c7cabf}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!tile\_map\_position@{tile\_map\_position}}
+\index{tile\_map\_position@{tile\_map\_position}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{tile\_map\_position}{tile\_map\_position}}
+{\footnotesize\ttfamily int GUI\+\_\+tilemap\+\_\+editor.\+tile\+\_\+map\+\_\+position = 0}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_acbb8fabdf2dd87c3929f800a85d8a065}\label{namespace_g_u_i__tilemap__editor_acbb8fabdf2dd87c3929f800a85d8a065}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!tile\_maps@{tile\_maps}}
+\index{tile\_maps@{tile\_maps}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{tile\_maps}{tile\_maps}}
+{\footnotesize\ttfamily list GUI\+\_\+tilemap\+\_\+editor.\+tile\+\_\+maps = \mbox{[}None\mbox{]}}
+
+\mbox{\Hypertarget{namespace_g_u_i__tilemap__editor_add44d270f6ab1412d630cd9fd0ac96b5}\label{namespace_g_u_i__tilemap__editor_add44d270f6ab1412d630cd9fd0ac96b5}} 
+\index{GUI\_tilemap\_editor@{GUI\_tilemap\_editor}!undo\_stack@{undo\_stack}}
+\index{undo\_stack@{undo\_stack}!GUI\_tilemap\_editor@{GUI\_tilemap\_editor}}
+\doxysubsubsection{\texorpdfstring{undo\_stack}{undo\_stack}}
+{\footnotesize\ttfamily list GUI\+\_\+tilemap\+\_\+editor.\+undo\+\_\+stack = \mbox{[}$\,$\mbox{]}}
+

@@ -1,0 +1,40 @@
+\hypertarget{_sound_component_8hpp_source}{}\doxysection{Sound\+Component.\+hpp}
+\label{_sound_component_8hpp_source}\index{include/SoundComponent.hpp@{include/SoundComponent.hpp}}
+\mbox{\hyperlink{_sound_component_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SOUNDCOMPONENT\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SOUNDCOMPONENT\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SDL\_mixer.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8hpp}{Component.hpp}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sound_component}{SoundComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_sound_component_ac85a4908906d1fa1df88dd3e621e2558}{SoundComponent}}();}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_sound_component_accc94a6c273de8ce9bbc4ad2ed95607a}{\string~SoundComponent}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_component_a6a2d3a54ec4fba1b190a5c21245e2f5a}{Update}}(\mbox{\hyperlink{class_game_play_state}{GamePlayState}}*\ gamePlayState)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_component_a6763c8bf96ddb3289ea55dd3a028ac9a}{Render}}(SDL\_Renderer*\ ren)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_component_a5dc98514821ec479fb7a4f01becf45b9}{Start}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_component_a0b944782ac2195e2aab3986dfefda1d0}{Shutdown}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_sound_component_af606e27df47dfced4ad8ca5851327f76}{getTag}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_sound_component_a5d4c0f34a7ecf925ba7cfa9bef988c32}{getCompoName}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_component_a86107af1a2c1aeb7349bf785913d0949}{setCompoName}}(std::string\ name)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_sound_component_a4f59072d2532dff794183dc321c5743f}{LoadBGM}}(\textcolor{keyword}{const}\ std::string\&\ path);}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_component_aedbe4c35427e31f177e55f904465831d}{PlayBGM}}(\textcolor{keywordtype}{int}\ loops\ =\ -\/1);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_component_a6b25e40b55db5a8cec6be4072fe7cb67}{StopBGM}}();}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_sound_component_a8b0f5d958025dfe391a6b4f04b8792e2}{LoadSFX}}(\textcolor{keyword}{const}\ std::string\&\ path);}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_component_a568ac7e682716339d5abbb5ae1c921ec}{PlaySFX}}(\textcolor{keywordtype}{int}\ channel\ =\ -\/1,\ \textcolor{keywordtype}{int}\ loops\ =\ 0);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00087\ \ \ \ \ std::string\ compoName;\ }
+\DoxyCodeLine{00088\ \ \ \ \ Mix\_Music*\ bgm;\ }
+\DoxyCodeLine{00089\ \ \ \ \ Mix\_Chunk*\ sfx;\ }
+\DoxyCodeLine{00090\ \};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

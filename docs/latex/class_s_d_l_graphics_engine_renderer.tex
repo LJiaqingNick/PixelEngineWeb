@@ -1,0 +1,116 @@
+\hypertarget{class_s_d_l_graphics_engine_renderer}{}\doxysection{SDLGraphics\+Engine\+Renderer Class Reference}
+\label{class_s_d_l_graphics_engine_renderer}\index{SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}}
+
+
+{\ttfamily \#include $<$IGraphics\+Engine\+Renderer.\+hpp$>$}
+
+Inheritance diagram for SDLGraphics\+Engine\+Renderer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_s_d_l_graphics_engine_renderer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_a3334bb9e72d07c2d288aec246bf93cbb}{SDLGraphics\+Engine\+Renderer}} (int w, int h, std\+::string title)
+\item 
+\mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_a1420b7422b6cbaadae4490c554716117}{$\sim$\+SDLGraphics\+Engine\+Renderer}} ()
+\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_a91b29bf19986c6ad8710238778312277}{Set\+Render\+Draw\+Color}} (int r, int g, int b, int a) override
+\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_ae6edfc67a39076c0c12101ad85be4f6a}{Render\+Clear}} () override
+\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_acddd7c456e4311d71fc1d43f29343d81}{Render\+Present}} () override
+\item 
+SDL\+\_\+\+Window $\ast$ \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_abd24deb029577fc237b47a3cbf30c121}{Get\+Window}} ()
+\item 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{class_s_d_l_graphics_engine_renderer_a93e5f435d003933cf3304e44c5aa7324}{Get\+Renderer}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_i_graphics_engine_renderer}{IGraphics\+Engine\+Renderer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_graphics_engine_renderer_abb88d7c12a88418c05d53673b782bfa7}{IGraphics\+Engine\+Renderer}} (int w, int h, std\+::string title)
+\item 
+virtual \mbox{\hyperlink{class_i_graphics_engine_renderer_a1b5219e8b718d38b4e54be31557eee17}{$\sim$\+IGraphics\+Engine\+Renderer}} ()
+\item 
+virtual void \mbox{\hyperlink{class_i_graphics_engine_renderer_acf62a15fc0e1c52356b09c57e2628529}{Set\+Render\+Draw\+Color}} (int r, int g, int b, int a)=0
+\item 
+virtual void \mbox{\hyperlink{class_i_graphics_engine_renderer_a33dc89efb652168680736dc4871df48e}{Render\+Clear}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_i_graphics_engine_renderer_aae42681e8163b9321b6b742c47365012}{Render\+Present}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_i_graphics_engine_renderer}{IGraphics\+Engine\+Renderer}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_i_graphics_engine_renderer_a5fc1eeeea4c45bac9a30b04380200632}{m\+Screen\+Width}} \{0\}
+\item 
+int \mbox{\hyperlink{class_i_graphics_engine_renderer_a53ad0e9c3338aeb89ec73dda3b7f9a3d}{m\+Screen\+Height}} \{0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_s_d_l_graphics_engine_renderer_a3334bb9e72d07c2d288aec246bf93cbb}\label{class_s_d_l_graphics_engine_renderer_a3334bb9e72d07c2d288aec246bf93cbb}} 
+\index{SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}!SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}}
+\index{SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}!SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{SDLGraphicsEngineRenderer()}{SDLGraphicsEngineRenderer()}}
+{\footnotesize\ttfamily SDLGraphics\+Engine\+Renderer\+::\+SDLGraphics\+Engine\+Renderer (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h,  }\item[{std\+::string}]{title }\end{DoxyParamCaption})}
+
+Concrete implementation of constructor \mbox{\Hypertarget{class_s_d_l_graphics_engine_renderer_a1420b7422b6cbaadae4490c554716117}\label{class_s_d_l_graphics_engine_renderer_a1420b7422b6cbaadae4490c554716117}} 
+\index{SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}!````~SDLGraphicsEngineRenderer@{$\sim$SDLGraphicsEngineRenderer}}
+\index{````~SDLGraphicsEngineRenderer@{$\sim$SDLGraphicsEngineRenderer}!SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{$\sim$SDLGraphicsEngineRenderer()}{~SDLGraphicsEngineRenderer()}}
+{\footnotesize\ttfamily SDLGraphics\+Engine\+Renderer\+::$\sim$\+SDLGraphics\+Engine\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_d_l_graphics_engine_renderer_a93e5f435d003933cf3304e44c5aa7324}\label{class_s_d_l_graphics_engine_renderer_a93e5f435d003933cf3304e44c5aa7324}} 
+\index{SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}!GetRenderer@{GetRenderer}}
+\index{GetRenderer@{GetRenderer}!SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{GetRenderer()}{GetRenderer()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer $\ast$ SDLGraphics\+Engine\+Renderer\+::\+Get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get Pointer to Renderer \mbox{\Hypertarget{class_s_d_l_graphics_engine_renderer_abd24deb029577fc237b47a3cbf30c121}\label{class_s_d_l_graphics_engine_renderer_abd24deb029577fc237b47a3cbf30c121}} 
+\index{SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}!GetWindow@{GetWindow}}
+\index{GetWindow@{GetWindow}!SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{GetWindow()}{GetWindow()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Window $\ast$ SDLGraphics\+Engine\+Renderer\+::\+Get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get Pointer to Window \mbox{\Hypertarget{class_s_d_l_graphics_engine_renderer_ae6edfc67a39076c0c12101ad85be4f6a}\label{class_s_d_l_graphics_engine_renderer_ae6edfc67a39076c0c12101ad85be4f6a}} 
+\index{SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}!RenderClear@{RenderClear}}
+\index{RenderClear@{RenderClear}!SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{RenderClear()}{RenderClear()}}
+{\footnotesize\ttfamily void SDLGraphics\+Engine\+Renderer\+::\+Render\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Clear the screen 
+
+Implements \mbox{\hyperlink{class_i_graphics_engine_renderer_a33dc89efb652168680736dc4871df48e}{IGraphics\+Engine\+Renderer}}.
+
+\mbox{\Hypertarget{class_s_d_l_graphics_engine_renderer_acddd7c456e4311d71fc1d43f29343d81}\label{class_s_d_l_graphics_engine_renderer_acddd7c456e4311d71fc1d43f29343d81}} 
+\index{SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}!RenderPresent@{RenderPresent}}
+\index{RenderPresent@{RenderPresent}!SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{RenderPresent()}{RenderPresent()}}
+{\footnotesize\ttfamily void SDLGraphics\+Engine\+Renderer\+::\+Render\+Present (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Render whatever is in the backbuffer to the screen. 
+
+Implements \mbox{\hyperlink{class_i_graphics_engine_renderer_aae42681e8163b9321b6b742c47365012}{IGraphics\+Engine\+Renderer}}.
+
+\mbox{\Hypertarget{class_s_d_l_graphics_engine_renderer_a91b29bf19986c6ad8710238778312277}\label{class_s_d_l_graphics_engine_renderer_a91b29bf19986c6ad8710238778312277}} 
+\index{SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}!SetRenderDrawColor@{SetRenderDrawColor}}
+\index{SetRenderDrawColor@{SetRenderDrawColor}!SDLGraphicsEngineRenderer@{SDLGraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{SetRenderDrawColor()}{SetRenderDrawColor()}}
+{\footnotesize\ttfamily void SDLGraphics\+Engine\+Renderer\+::\+Set\+Render\+Draw\+Color (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b,  }\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set the color for the background whenever the color is cleared. 
+
+Implements \mbox{\hyperlink{class_i_graphics_engine_renderer_acf62a15fc0e1c52356b09c57e2628529}{IGraphics\+Engine\+Renderer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_i_graphics_engine_renderer_8hpp}{IGraphics\+Engine\+Renderer.\+hpp}}\item 
+src/\mbox{\hyperlink{_i_graphics_engine_renderer_8cpp}{IGraphics\+Engine\+Renderer.\+cpp}}\end{DoxyCompactItemize}

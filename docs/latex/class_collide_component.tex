@@ -1,0 +1,291 @@
+\hypertarget{class_collide_component}{}\doxysection{Collide\+Component Class Reference}
+\label{class_collide_component}\index{CollideComponent@{CollideComponent}}
+
+
+A component for handling collisions.  
+
+
+
+
+{\ttfamily \#include $<$Collide\+Component.\+hpp$>$}
+
+Inheritance diagram for Collide\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_collide_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collide_component_a4c39462a21855410f500be9d06f4132d}{Collide\+Component}} (\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$given\+Game\+Obj\+State\+Ptr, \mbox{\hyperlink{class_tile_map_component}{Tile\+Map\+Component}} $\ast$tile\+Map, std\+::vector$<$ \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ $>$ \&game\+Objects, std\+::string object\+Name)
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_collide_component}{Collide\+Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collide_component_a543e13b3cdec8da367fefef13e7cbba0}{$\sim$\+Collide\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_collide_component}{Collide\+Component}} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_collide_component_a1f02de7c0954af9102c1a9ad1ca47e81}{is\+Colliding\+Tile\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the object is colliding with the tile map. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_collide_component_aca153c8197cfc7fd4337e0aff1146489}{any\+Collision}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$game\+Object)
+\begin{DoxyCompactList}\small\item\em Checks if the object is colliding with another object. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_collide_component_a392d64dae07ad1212b6ce3d42d6ceb34}{check\+Collision}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$game\+Object, \mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$gameplay\+State)
+\begin{DoxyCompactList}\small\item\em Checks if the object is colliding with another object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_collide_component_af696923f381d1dd9483cc58499136106}{Render}} (SDL\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_collide_component_adf12d6a961f97062ccab0e2dce96ea08}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State) override
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_collide_component_acf3823aeefcc6a891bfbbe1c388a9900}{Start}} () override
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_collide_component_ac50c1e905ae202524e065b3934f04b96}{Shutdown}} () override
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_collide_component_ab8fe82938684c62caad3d57fc3b52ef1}{get\+Tag}} () override
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_collide_component_a8ac31089525d0c835a6b237772833de8}{get\+Compo\+Name}} () override
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_collide_component_aee018b01a40cd8e4abfd81f57d96d8bb}{set\+Compo\+Name}} (std\+::string name) override
+\begin{DoxyCompactList}\small\item\em Sets the name of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_component_ab8378fa275af98e568a7e91d33d867af}{$\sim$\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_component}{Component}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State)
+\begin{DoxyCompactList}\small\item\em Updates the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Renders the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{get\+Tag}} ()
+\begin{DoxyCompactList}\small\item\em Gets the tag of the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_component_ae89a01592cf673591afa652f06211328}{set\+Comp\+Removed}} ()
+\begin{DoxyCompactList}\small\item\em Sets the tag of the component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{get\+Compo\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{set\+Compo\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a3f85fc409bdfe4968f91893f888d41b0}{tag}}
+\item 
+std\+::string \mbox{\hyperlink{class_component_a085fdb125d2c7d24a6f8a672ae6af2c8}{compo\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component for handling collisions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_collide_component_a4c39462a21855410f500be9d06f4132d}\label{class_collide_component_a4c39462a21855410f500be9d06f4132d}} 
+\index{CollideComponent@{CollideComponent}!CollideComponent@{CollideComponent}}
+\index{CollideComponent@{CollideComponent}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{CollideComponent()}{CollideComponent()}}
+{\footnotesize\ttfamily Collide\+Component\+::\+Collide\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$}]{given\+Game\+Obj\+State\+Ptr,  }\item[{\mbox{\hyperlink{class_tile_map_component}{Tile\+Map\+Component}} $\ast$}]{tile\+Map,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ $>$ \&}]{game\+Objects,  }\item[{std\+::string}]{object\+Name }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_collide_component}{Collide\+Component}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em given\+Game\+Obj\+State\+Ptr} & Pointer to the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}}. \\
+\hline
+{\em tile\+Map} & The tile map to check collisions against. \\
+\hline
+{\em game\+Objects} & The game objects to check collisions against. \\
+\hline
+{\em object\+Name} & The name of the object that this component is attached to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_collide_component_a543e13b3cdec8da367fefef13e7cbba0}\label{class_collide_component_a543e13b3cdec8da367fefef13e7cbba0}} 
+\index{CollideComponent@{CollideComponent}!````~CollideComponent@{$\sim$CollideComponent}}
+\index{````~CollideComponent@{$\sim$CollideComponent}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$CollideComponent()}{~CollideComponent()}}
+{\footnotesize\ttfamily Collide\+Component\+::$\sim$\+Collide\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_collide_component}{Collide\+Component}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collide_component_aca153c8197cfc7fd4337e0aff1146489}\label{class_collide_component_aca153c8197cfc7fd4337e0aff1146489}} 
+\index{CollideComponent@{CollideComponent}!anyCollision@{anyCollision}}
+\index{anyCollision@{anyCollision}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{anyCollision()}{anyCollision()}}
+{\footnotesize\ttfamily bool Collide\+Component\+::any\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{game\+Object }\end{DoxyParamCaption})}
+
+
+
+Checks if the object is colliding with another object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Object} & The object to check collisions against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the object is colliding with the other object, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collide_component_a392d64dae07ad1212b6ce3d42d6ceb34}\label{class_collide_component_a392d64dae07ad1212b6ce3d42d6ceb34}} 
+\index{CollideComponent@{CollideComponent}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Collide\+Component\+::check\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{game\+Object,  }\item[{\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$}]{gameplay\+State }\end{DoxyParamCaption})}
+
+
+
+Checks if the object is colliding with another object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Object} & The object to check collisions against. \\
+\hline
+{\em gameplay\+State} & The current game play state. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the object is colliding with the other object, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collide_component_a8ac31089525d0c835a6b237772833de8}\label{class_collide_component_a8ac31089525d0c835a6b237772833de8}} 
+\index{CollideComponent@{CollideComponent}!getCompoName@{getCompoName}}
+\index{getCompoName@{getCompoName}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{getCompoName()}{getCompoName()}}
+{\footnotesize\ttfamily std\+::string Collide\+Component\+::get\+Compo\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the name of the component. 
+
+\begin{DoxyReturn}{Returns}
+The name of the component. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a3e332247b92e2a9c8a83147042366ef2}{Component}}.
+
+\mbox{\Hypertarget{class_collide_component_ab8fe82938684c62caad3d57fc3b52ef1}\label{class_collide_component_ab8fe82938684c62caad3d57fc3b52ef1}} 
+\index{CollideComponent@{CollideComponent}!getTag@{getTag}}
+\index{getTag@{getTag}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{getTag()}{getTag()}}
+{\footnotesize\ttfamily std\+::string Collide\+Component\+::get\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the tag of the component. 
+
+\begin{DoxyReturn}{Returns}
+The tag of the component. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ae6fbfde624d231c1219eeb4928581ae5}{Component}}.
+
+\mbox{\Hypertarget{class_collide_component_a1f02de7c0954af9102c1a9ad1ca47e81}\label{class_collide_component_a1f02de7c0954af9102c1a9ad1ca47e81}} 
+\index{CollideComponent@{CollideComponent}!isCollidingTileMap@{isCollidingTileMap}}
+\index{isCollidingTileMap@{isCollidingTileMap}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{isCollidingTileMap()}{isCollidingTileMap()}}
+{\footnotesize\ttfamily bool Collide\+Component\+::is\+Colliding\+Tile\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the object is colliding with the tile map. 
+
+\begin{DoxyReturn}{Returns}
+True if the object is colliding with the tile map, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collide_component_af696923f381d1dd9483cc58499136106}\label{class_collide_component_af696923f381d1dd9483cc58499136106}} 
+\index{CollideComponent@{CollideComponent}!Render@{Render}}
+\index{Render@{Render}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Collide\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Renders the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ren} & The renderer to use. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ab856bdb8c4357a080d7abcf99871a573}{Component}}.
+
+\mbox{\Hypertarget{class_collide_component_aee018b01a40cd8e4abfd81f57d96d8bb}\label{class_collide_component_aee018b01a40cd8e4abfd81f57d96d8bb}} 
+\index{CollideComponent@{CollideComponent}!setCompoName@{setCompoName}}
+\index{setCompoName@{setCompoName}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{setCompoName()}{setCompoName()}}
+{\footnotesize\ttfamily void Collide\+Component\+::set\+Compo\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the name of the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to set the component to. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a84ca105bfdbcf1a1e5be47058c20ed1f}{Component}}.
+
+\mbox{\Hypertarget{class_collide_component_ac50c1e905ae202524e065b3934f04b96}\label{class_collide_component_ac50c1e905ae202524e065b3934f04b96}} 
+\index{CollideComponent@{CollideComponent}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Collide\+Component\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Shuts down the component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a224de96d8a743af69a4a980683449cfa}{Component}}.
+
+\mbox{\Hypertarget{class_collide_component_acf3823aeefcc6a891bfbbe1c388a9900}\label{class_collide_component_acf3823aeefcc6a891bfbbe1c388a9900}} 
+\index{CollideComponent@{CollideComponent}!Start@{Start}}
+\index{Start@{Start}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Collide\+Component\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Starts the component. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ad13ee8ec7dd72811a24d52b4844ab014}{Component}}.
+
+\mbox{\Hypertarget{class_collide_component_adf12d6a961f97062ccab0e2dce96ea08}\label{class_collide_component_adf12d6a961f97062ccab0e2dce96ea08}} 
+\index{CollideComponent@{CollideComponent}!Update@{Update}}
+\index{Update@{Update}!CollideComponent@{CollideComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Collide\+Component\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$}]{game\+Play\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Play\+State} & The current game play state. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aba5bbd35c5c812077b996c46e6d194d9}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_collide_component_8hpp}{Collide\+Component.\+hpp}}\item 
+src/\mbox{\hyperlink{_collide_component_8cpp}{Collide\+Component.\+cpp}}\end{DoxyCompactItemize}

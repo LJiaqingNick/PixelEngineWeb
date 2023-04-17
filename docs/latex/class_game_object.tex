@@ -1,0 +1,260 @@
+\hypertarget{class_game_object}{}\doxysection{Game\+Object Class Reference}
+\label{class_game_object}\index{GameObject@{GameObject}}
+
+
+The base class for all game objects in the game engine.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Object.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}{Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_game_object}{Game\+Object}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object_a544168150e198bc0a543ad767e0403b0}{Game\+Object}} (\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$obj\+State, std\+::string object\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_game_object}{Game\+Object}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}{$\sim$\+Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_game_object}{Game\+Object}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_a9133166d889c90c5cde293ecb73431c9}{Update}} (\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$game\+Play\+State)
+\begin{DoxyCompactList}\small\item\em Updates the game object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_a4018df48b4df0fc4b1db520fcad1ba6c}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Renders the game object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_a882c58278316acdfb2db43570133bb3d}{Add\+Component}} (\mbox{\hyperlink{class_component}{Component}} $\ast$comp)
+\begin{DoxyCompactList}\small\item\em Adds a component to the game object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_aa8b2125901960bf3596449ac48f6beab}{Remove\+Component}} (std\+::string tag)
+\begin{DoxyCompactList}\small\item\em Removes a component from the game object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_aa27714b4172ebff2f7cddcf63b325ac7}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the game object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_ac1f32e116be7bff9d7933963b8856601}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the game object. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_game_object_a7201a5dd856f712774e237002713a97c}{get\+Tag}} ()
+\begin{DoxyCompactList}\small\item\em Gets the tag of the game object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_component}{Component}} $\ast$ \mbox{\hyperlink{class_game_object_aa1cfd654029d35832c374774d251c9fe}{get\+Component}} (std\+::string tag)
+\begin{DoxyCompactList}\small\item\em Sets the tag of the game object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$ \mbox{\hyperlink{class_game_object_a4911b5c06bfde9ab03ce3ba4b5b17f4b}{get\+Obj\+State}} ()
+\begin{DoxyCompactList}\small\item\em Gets the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} of the game object. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_game_object_a0e3e91412c890523836d59702e6d0c5a}{get\+Obj\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Sets the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} of the game object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_a718380b6b9bd024cdf3d872567eacca4}{set\+Obj\+Name}} (std\+::string object\+Name)
+\begin{DoxyCompactList}\small\item\em Gets the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} of the game object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_aac7ff7bbfeea6a50e8e2a0aa0daff8b0}{set\+Tag}} (std\+::string tag\+Name)
+\begin{DoxyCompactList}\small\item\em Sets the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} of the game object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for all game objects in the game engine. 
+
+This class provides the foundation for creating various game objects that can be attached to game objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}\label{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}} 
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_game_object}{Game\+Object}} class. 
+
+\mbox{\Hypertarget{class_game_object_a544168150e198bc0a543ad767e0403b0}\label{class_game_object_a544168150e198bc0a543ad767e0403b0}} 
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$}]{obj\+State,  }\item[{std\+::string}]{object\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_game_object}{Game\+Object}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+State} & The \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} to use. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}\label{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}} 
+\index{GameObject@{GameObject}!````~GameObject@{$\sim$GameObject}}
+\index{````~GameObject@{$\sim$GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$GameObject()}{~GameObject()}}
+{\footnotesize\ttfamily Game\+Object\+::$\sim$\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{class_game_object}{Game\+Object}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_object_a882c58278316acdfb2db43570133bb3d}\label{class_game_object_a882c58278316acdfb2db43570133bb3d}} 
+\index{GameObject@{GameObject}!AddComponent@{AddComponent}}
+\index{AddComponent@{AddComponent}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{AddComponent()}{AddComponent()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Add\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_component}{Component}} $\ast$}]{comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a component to the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comp} & The component to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_aa1cfd654029d35832c374774d251c9fe}\label{class_game_object_aa1cfd654029d35832c374774d251c9fe}} 
+\index{GameObject@{GameObject}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_component}{Component}} $\ast$ Game\+Object\+::get\+Component (\begin{DoxyParamCaption}\item[{std\+::string}]{tag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the tag of the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag} & The tag to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a0e3e91412c890523836d59702e6d0c5a}\label{class_game_object_a0e3e91412c890523836d59702e6d0c5a}} 
+\index{GameObject@{GameObject}!getObjName@{getObjName}}
+\index{getObjName@{getObjName}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{getObjName()}{getObjName()}}
+{\footnotesize\ttfamily std\+::string Game\+Object\+::get\+Obj\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} of the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+State} & The \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a4911b5c06bfde9ab03ce3ba4b5b17f4b}\label{class_game_object_a4911b5c06bfde9ab03ce3ba4b5b17f4b}} 
+\index{GameObject@{GameObject}!getObjState@{getObjState}}
+\index{getObjState@{getObjState}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{getObjState()}{getObjState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} $\ast$ Game\+Object\+::get\+Obj\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} of the game object. 
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} of the game object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_a7201a5dd856f712774e237002713a97c}\label{class_game_object_a7201a5dd856f712774e237002713a97c}} 
+\index{GameObject@{GameObject}!getTag@{getTag}}
+\index{getTag@{getTag}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{getTag()}{getTag()}}
+{\footnotesize\ttfamily std\+::string Game\+Object\+::get\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the tag of the game object. 
+
+\begin{DoxyReturn}{Returns}
+The tag of the game object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_aa8b2125901960bf3596449ac48f6beab}\label{class_game_object_aa8b2125901960bf3596449ac48f6beab}} 
+\index{GameObject@{GameObject}!RemoveComponent@{RemoveComponent}}
+\index{RemoveComponent@{RemoveComponent}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{RemoveComponent()}{RemoveComponent()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Remove\+Component (\begin{DoxyParamCaption}\item[{std\+::string}]{tag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes a component from the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag} & The tag of the component to remove. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a4018df48b4df0fc4b1db520fcad1ba6c}\label{class_game_object_a4018df48b4df0fc4b1db520fcad1ba6c}} 
+\index{GameObject@{GameObject}!Render@{Render}}
+\index{Render@{Render}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renders the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ren} & The renderer to use. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a718380b6b9bd024cdf3d872567eacca4}\label{class_game_object_a718380b6b9bd024cdf3d872567eacca4}} 
+\index{GameObject@{GameObject}!setObjName@{setObjName}}
+\index{setObjName@{setObjName}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{setObjName()}{setObjName()}}
+{\footnotesize\ttfamily void Game\+Object\+::set\+Obj\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} of the game object. 
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} of the game object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_aac7ff7bbfeea6a50e8e2a0aa0daff8b0}\label{class_game_object_aac7ff7bbfeea6a50e8e2a0aa0daff8b0}} 
+\index{GameObject@{GameObject}!setTag@{setTag}}
+\index{setTag@{setTag}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{setTag()}{setTag()}}
+{\footnotesize\ttfamily void Game\+Object\+::set\+Tag (\begin{DoxyParamCaption}\item[{std\+::string}]{tag\+Name }\end{DoxyParamCaption})}
+
+
+
+Sets the \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} of the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+State} & The \mbox{\hyperlink{class_game_object_state}{Game\+Object\+State}} to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_ac1f32e116be7bff9d7933963b8856601}\label{class_game_object_ac1f32e116be7bff9d7933963b8856601}} 
+\index{GameObject@{GameObject}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Shuts down the game object. 
+
+\mbox{\Hypertarget{class_game_object_aa27714b4172ebff2f7cddcf63b325ac7}\label{class_game_object_aa27714b4172ebff2f7cddcf63b325ac7}} 
+\index{GameObject@{GameObject}!Start@{Start}}
+\index{Start@{Start}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Starts the game object. 
+
+\mbox{\Hypertarget{class_game_object_a9133166d889c90c5cde293ecb73431c9}\label{class_game_object_a9133166d889c90c5cde293ecb73431c9}} 
+\index{GameObject@{GameObject}!Update@{Update}}
+\index{Update@{Update}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_play_state}{Game\+Play\+State}} $\ast$}]{game\+Play\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Play\+State} & The current game play state. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_game_object_8hpp}{Game\+Object.\+hpp}}\item 
+src/\mbox{\hyperlink{_game_object_8cpp}{Game\+Object.\+cpp}}\end{DoxyCompactItemize}

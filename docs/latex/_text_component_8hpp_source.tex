@@ -1,0 +1,46 @@
+\hypertarget{_text_component_8hpp_source}{}\doxysection{Text\+Component.\+hpp}
+\label{_text_component_8hpp_source}\index{include/TextComponent.hpp@{include/TextComponent.hpp}}
+\mbox{\hyperlink{_text_component_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TEXTCOMPONENT}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TEXTCOMPONENT}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <SDL\_ttf.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8hpp}{Component.hpp}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_text_component}{TextComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_text_component_a6c0c9cd054dee20308180eb4cfa2fbe0}{TextComponent}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_text_component_a6c0c9cd054dee20308180eb4cfa2fbe0}{TextComponent}}(\mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ gameObjectState);}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_text_component_aa9e9e0b269eb8c59e286a64cb1dd0578}{\string~TextComponent}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_component_ae3ecc6e64aa513a2acd604c709b63100}{Update}}(\mbox{\hyperlink{class_game_play_state}{GamePlayState}}*\ gamePlayState)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_component_a1f6f0aa5a8a26ef2e5f82ce349f1b4a8}{Render}}(SDL\_Renderer*\ ren)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_component_a90403e58108c87856c336eee04c85f3b}{Start}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_component_af49ca15ccbf779266caa091792ae8b9b}{Shutdown}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_text_component_a4176f0f3eff89812e51c066143f5bd8e}{getTag}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_text_component_a96c5ef2914a05ca9033c922069e1cab3}{getCompoName}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_component_a77aa1e2e9997505b1f7a6b049ccd5bbf}{setCompoName}}(std::string\ name)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_component_a9168b24b84f2db5c22648409761101d7}{updateTextContent}}(std::string\ content,\ SDL\_Renderer*\ ren,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_text_component_a79e8783d354acae44bf2fd79194f40fc}{tag}};\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_text_component_a17b3ae4554b8c8d4ed06459936919767}{compoName}};\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ \mbox{\hyperlink{class_text_component_aab408306772ac1774703f8a36d54261c}{gameObjectStatePtr}};\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_text_component_aa8f50bf9e64991ce0bd69f530432290b}{textContent}};\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ SDL\_Color\ \mbox{\hyperlink{class_text_component_a3b217f1db113b1c26cd5afe48cddc85e}{textColor}};\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{class_text_component_ae46dec9c20444fadd5cd8e5471282656}{textureText}};\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{class_text_component_a1d3f370043cee94847f8a86f71092910}{rect}};\ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ TTF\_Font*\ \mbox{\hyperlink{class_text_component_aef8e46f1fac65406df40244cfa373113}{currFont}};\ }
+\DoxyCodeLine{00082\ \};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

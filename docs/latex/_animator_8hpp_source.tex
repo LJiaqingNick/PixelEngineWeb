@@ -1,0 +1,56 @@
+\hypertarget{_animator_8hpp_source}{}\doxysection{Animator.\+hpp}
+\label{_animator_8hpp_source}\index{include/Animator.hpp@{include/Animator.hpp}}
+\mbox{\hyperlink{_animator_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Animator.hpp}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8hpp}{Component.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_animation_info}{AnimationInfo}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_animation_info_a4bfab57c263d73d3494c64c98f3e2c11}{startRow}};\ \ \ \ \ \ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_animation_info_a4a965e4c17f99def357cc3c0767d5150}{endRow}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_animation_info_ae91f7f4807c680ead33899aa43f65cfa}{startColumn}};\ \ \ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_animation_info_a4cfe7564fe2d839b12f78e809137c626}{endColumn}};\ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_animation_info_af61678af7ff18db049f3aa3ff1345933}{frameTime}};\ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_animation_info_ab95cab664ac332424d4dae3037fb9d07}{currentRow}};\ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_animation_info_a97b85f413bbd93b2528a1fa9e7747f76}{currentColumn}};\ }
+\DoxyCodeLine{00019\ \};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_animator}{Animator}}\ \ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_animator}{Animator}}(\textcolor{keywordtype}{int}\ frameWidth,\ \textcolor{keywordtype}{int}\ frameHeight);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_animator_a5af4797549f9f466a88657899e17c6ab}{\string~Animator}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animator_aa0652884fb0ce07a0d443a997bce5cad}{Update}}(\textcolor{keywordtype}{float}\ deltaTime);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animator_ab44f677e391a3cbcccbeef8e8e421de2}{SetCurrentRow}}(\textcolor{keywordtype}{int}\ row);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animator_ac9ce75d03636726d5b2fe890b8f6bd99}{SetCurrentColumn}}(\textcolor{keywordtype}{int}\ column);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animator_ab5f7212f0baf6e067329b928f5e70aba}{AddAnimation}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{int}\ startRow,\ \textcolor{keywordtype}{int}\ endRow,\ \textcolor{keywordtype}{int}\ startColumn,\ \textcolor{keywordtype}{int}\ endColumn,\ \textcolor{keywordtype}{float}\ frameTime);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animator_a087a36fb071023cfca6250a0901a9c4e}{SetCurrentAnimation}}(\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_animator_aba47bc5e158f03355dbcb10e083c6858}{GetCurrentRow}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_animator_a5a33f98df879e814b36081ffc6377c22}{GetCurrentColumn}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_animator_ac908164cdbf035a94a6e6c84fc0a2bc7}{GetFrameWidth}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_animator_a2ad0bfa6b9951c65525c8e9ee7757a5c}{GetFrameHeight}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{int}\ frameWidth;\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{int}\ frameHeight;\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{int}\ numRows;\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{int}\ numColumns;\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{float}\ frameTime;\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{float}\ currentFrameTime;\ }
+\DoxyCodeLine{00105\ \ \ \ \ std::string\ currentAnimation;\ }
+\DoxyCodeLine{00106\ \ \ \ \ std::map<std::string,\ AnimationInfo>\ animations;\ }
+\DoxyCodeLine{00107\ \};}
+
+\end{DoxyCode}

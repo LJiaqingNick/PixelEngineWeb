@@ -1,0 +1,52 @@
+\hypertarget{_rectangle_component_8hpp_source}{}\doxysection{Rectangle\+Component.\+hpp}
+\label{_rectangle_component_8hpp_source}\index{include/RectangleComponent.hpp@{include/RectangleComponent.hpp}}
+\mbox{\hyperlink{_rectangle_component_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RECTCOMPONENT}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RECTCOMPONENT}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8hpp}{Component.hpp}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rectangle_component}{RectangleComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rectangle_component_a4166960d24bf29db7d43dea2913677d5}{RectangleComponent}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rectangle_component_a4166960d24bf29db7d43dea2913677d5}{RectangleComponent}}(\mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ gameObjectState);}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rectangle_component_a7c13625c6b262739064529c340e6c024}{\string~RectangleComponent}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rectangle_component_a1066ed2039fff5515471a287da89072e}{Update}}(\mbox{\hyperlink{class_game_play_state}{GamePlayState}}*\ gamePlayState)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rectangle_component_a301f9025c77a6ccbee71274bb9528f67}{Render}}(SDL\_Renderer*\ ren)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rectangle_component_ad2b64aec508e840f74fa029bb9f75e11}{Start}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rectangle_component_af68de60df2ac61068ae2ddd1e6f8ee2e}{Shutdown}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_rectangle_component_ada304023610a7393105b843275bdb44d}{getTag}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_rectangle_component_aec5f13ea5a961bfd88dbeddd0d1007d0}{getCompoName}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rectangle_component_a3cb2aa412a2dfd23adf9d7fed575797f}{setCompoName}}(std::string\ name)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rectangle_component_ada94b79952cf6cd5cc5dcecc41d1b139}{setUpRectangle}}(\textcolor{keywordtype}{int}\ x\_pos\_val,\ \textcolor{keywordtype}{int}\ y\_pos\_val,\ \textcolor{keywordtype}{int}\ width\_val,\ \textcolor{keywordtype}{int}\ height\_val,\ \textcolor{keywordtype}{int}\ red\_val,\ \textcolor{keywordtype}{int}\ green\_val,\ \textcolor{keywordtype}{int}\ blue\_val,\ \textcolor{keywordtype}{int}\ alpha\_val,\ SDL\_Rect\ rectBoard);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_rectangle_component_a83fecbf96291fc959a72c532d8fcdc3a}{tag}};\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_rectangle_component_a6dd0f4141d166a66dcec30ae7cd81c08}{compoName}};\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_object_state}{GameObjectState}}*\ \mbox{\hyperlink{class_rectangle_component_ad89974eb9c2f355586ead1135b18dc9d}{gameObjectStatePtr}};\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_rectangle_component_a22213c082aec2e5807cc512038675dc8}{textContent}};\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ SDL\_Color\ \mbox{\hyperlink{class_rectangle_component_afbe657283c810b7f33110b0331a34c4d}{textColor}};\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{class_rectangle_component_ad251c14f1056a7def327ca2864ee8d4a}{textureText}};\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{class_rectangle_component_af611765e7ff4c15dbffa3b11446a960a}{rect}};\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_rectangle_component_ac442effe02bfbfc095e58229bacfbea0}{x\_pos}};\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_rectangle_component_ae50fd2ad1ada0f4186ee36600acce625}{y\_pos}};\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_rectangle_component_a6d8450e91c1f98934035dbebdbd3e649}{width}};\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_rectangle_component_a43e28a5a631469e7c8196c6f18ffe7fe}{height}};\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_rectangle_component_a80e530712d0422c0d08dc95f31522c8b}{red}};\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_rectangle_component_a069aec293e97e951cff0442cfd6807b9}{green}};\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_rectangle_component_a36ac09fe7859c53c131596a8ac49c809}{blue}};\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_rectangle_component_a1c506ac58abf6c25cf67ffdd912b32af}{alpha}};\ }
+\DoxyCodeLine{00096\ \};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
