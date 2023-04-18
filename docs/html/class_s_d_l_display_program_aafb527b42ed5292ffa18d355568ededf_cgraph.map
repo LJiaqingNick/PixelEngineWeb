@@ -1,0 +1,5 @@
+<map id="SDLDisplayProgram::PyChooseSpriteAnimation" name="SDLDisplayProgram::PyChooseSpriteAnimation">
+<area shape="rect" id="node1" title="Chooses the sprite animation." alt="" coords="5,23,180,63"/>
+<area shape="rect" id="node2" href="$class_sprite_component.html#a931d0535fbf71079297ce7c650fbeefd" title="Gets the animator." alt="" coords="228,5,432,31"/>
+<area shape="rect" id="node3" href="$class_animator.html#a087a36fb071023cfca6250a0901a9c4e" title="Set the current animation by name." alt="" coords="229,55,431,80"/>
+</map>

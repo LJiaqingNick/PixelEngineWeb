@@ -1,0 +1,10 @@
+<map id="GUI_tilemap_editor.load_tilemap" name="GUI_tilemap_editor.load_tilemap">
+<area shape="rect" id="node1" title=" " alt="" coords="5,152,167,192"/>
+<area shape="rect" id="node2" href="$namespace_g_u_i__tilemap__editor.html#a2f0ea1e6c224f4e40ef30549a4d006ca" title=" " alt="" coords="224,5,392,45"/>
+<area shape="rect" id="node3" href="$namespace_g_u_i__tilemap__editor.html#acb722e1c520f95c17bafed63d36a1c34" title=" " alt="" coords="449,42,664,67"/>
+<area shape="rect" id="node4" href="$namespace_g_u_i__tilemap__editor.html#ab27e03e5fecac80c023b69befa376104" title=" " alt="" coords="223,120,393,160"/>
+<area shape="rect" id="node5" href="$namespace_g_u_i__tilemap__editor.html#a5b8280400e6256bb999d68723f997581" title=" " alt="" coords="215,184,401,224"/>
+<area shape="rect" id="node6" href="$namespace_g_u_i__tilemap__editor.html#ad33fd9f2f28971e890bc8d2b2504a0d1" title=" " alt="" coords="215,248,401,288"/>
+<area shape="rect" id="node7" href="$namespace_g_u_i__tilemap__editor.html#a1f13b0c4b46ca596b26b3d86f97713ed" title=" " alt="" coords="227,312,389,352"/>
+<area shape="rect" id="node8" href="$namespace_g_u_i__tilemap__editor.html#a032fcebd508577f729eb09afaeffa195" title=" " alt="" coords="481,312,632,352"/>
+</map>

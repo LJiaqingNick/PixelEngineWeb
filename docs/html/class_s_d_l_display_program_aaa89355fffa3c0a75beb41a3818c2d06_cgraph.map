@@ -1,0 +1,5 @@
+<map id="SDLDisplayProgram::PyAddNewAnimation" name="SDLDisplayProgram::PyAddNewAnimation">
+<area shape="rect" id="node1" title="Adds a new animation to the game object." alt="" coords="5,23,155,63"/>
+<area shape="rect" id="node2" href="$class_animator.html#ab5f7212f0baf6e067329b928f5e70aba" title="Add a new animation with the given parameters." alt="" coords="223,5,386,31"/>
+<area shape="rect" id="node3" href="$class_sprite_component.html#a931d0535fbf71079297ce7c650fbeefd" title="Gets the animator." alt="" coords="203,55,407,80"/>
+</map>

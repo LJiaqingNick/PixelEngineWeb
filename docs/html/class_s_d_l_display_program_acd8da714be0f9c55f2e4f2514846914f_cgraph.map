@@ -1,0 +1,6 @@
+<map id="SDLDisplayProgram::PyAddRigidBodyComponent" name="SDLDisplayProgram::PyAddRigidBodyComponent">
+<area shape="rect" id="node1" title="Add rigid body component to the game object." alt="" coords="5,55,193,95"/>
+<area shape="rect" id="node2" href="$class_game_object.html#a882c58278316acdfb2db43570133bb3d" title="Adds a component to the game object." alt="" coords="241,5,435,31"/>
+<area shape="rect" id="node3" href="$class_rigid_body_component.html#a27ff4a072ac440f61eabe939d85b7f8e" title="Gets the name of the component." alt="" coords="263,55,413,95"/>
+<area shape="rect" id="node4" href="$class_game_object.html#a4911b5c06bfde9ab03ce3ba4b5b17f4b" title="Gets the GameObjectState of the game object." alt="" coords="252,120,424,145"/>
+</map>

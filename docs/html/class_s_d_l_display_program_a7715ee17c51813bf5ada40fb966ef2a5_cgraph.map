@@ -1,0 +1,12 @@
+<map id="SDLDisplayProgram::PySetupRigidBodyComponent" name="SDLDisplayProgram::PySetupRigidBodyComponent">
+<area shape="rect" id="node1" title="Sets up the rigid body component." alt="" coords="5,215,204,255"/>
+<area shape="rect" id="node2" href="$class_game_object.html#aa1cfd654029d35832c374774d251c9fe" title="Sets the tag of the game object." alt="" coords="252,5,440,31"/>
+<area shape="rect" id="node4" href="$class_rigid_body_component.html#afe819d07099b259345869ec6e0c19b41" title=" " alt="" coords="271,55,421,95"/>
+<area shape="rect" id="node5" href="$class_rigid_body_component.html#a90bb632d45984ca8ad36b8f1ea168aba" title=" " alt="" coords="271,119,421,159"/>
+<area shape="rect" id="node6" href="$class_rigid_body_component.html#aab569c1004ce9699b790a892c4893b08" title=" " alt="" coords="271,183,421,223"/>
+<area shape="rect" id="node7" href="$class_rigid_body_component.html#a681ba6f4ef8c604c776cfee680435a6e" title=" " alt="" coords="271,247,421,287"/>
+<area shape="rect" id="node8" href="$class_rigid_body_component.html#a1ba711d4e3b74c895b38ed3662266de8" title=" " alt="" coords="271,311,421,351"/>
+<area shape="rect" id="node9" href="$class_rigid_body_component.html#a0f7d0d15f678ff7d4fbd2947e19dea29" title=" " alt="" coords="271,375,421,415"/>
+<area shape="rect" id="node10" href="$class_rigid_body_component.html#a8ffe1d78091bf2a4ec27bfafa3a3c445" title=" " alt="" coords="271,439,421,479"/>
+<area shape="rect" id="node3" href="$class_game_object.html#a7201a5dd856f712774e237002713a97c" title="Gets the tag of the game object." alt="" coords="488,5,631,31"/>
+</map>

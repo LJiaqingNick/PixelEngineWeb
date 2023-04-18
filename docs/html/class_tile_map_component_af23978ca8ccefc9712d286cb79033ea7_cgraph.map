@@ -1,0 +1,5 @@
+<map id="TileMapComponent::Start" name="TileMapComponent::Start">
+<area shape="rect" id="node1" title="Start the TileMapComponent." alt="" coords="5,5,176,31"/>
+<area shape="rect" id="node2" href="$class_tile_map_component.html#ad74bd890fb494d89958b4bc67686bdc6" title="Print the tile map to the console." alt="" coords="224,5,419,31"/>
+<area shape="rect" id="node3" href="$class_tile_map_component.html#adb24ff5494a792ccefb9b2cf95bc9f28" title="Get the type of a tile at a specific position in the tile map." alt="" coords="467,5,680,31"/>
+</map>

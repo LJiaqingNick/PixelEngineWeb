@@ -1,0 +1,4 @@
+<map id="SDLDisplayProgram::PySetupKeyboardControl" name="SDLDisplayProgram::PySetupKeyboardControl">
+<area shape="rect" id="node1" title="Sets up the Keyboard Control Component." alt="" coords="5,5,175,45"/>
+<area shape="rect" id="node2" href="$class_controller_component.html#a3eb80aa5900636778f1709a1184b01c2" title="Add a keyboard control binding to the ControllerComponent." alt="" coords="223,5,371,45"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="SDLDisplayProgram::RenderStep" name="SDLDisplayProgram::RenderStep">
+<area shape="rect" id="node1" title=" " alt="" coords="5,143,155,183"/>
+<area shape="rect" id="node2" href="$class_camera_item_component.html#a6b28f48de658f6c667d15250047c49df" title="Gets the camera rectangle." alt="" coords="207,47,369,87"/>
+<area shape="rect" id="node6" href="$class_camera_item_component.html#a6a0ee67af6e7395fe17baa66cfa7d16b" title="Sets the camera rectangle." alt="" coords="207,111,369,151"/>
+<area shape="rect" id="node7" href="$class_i_graphics_engine_renderer.html#a33dc89efb652168680736dc4871df48e" title=" " alt="" coords="203,175,373,215"/>
+<area shape="rect" id="node8" href="$class_i_graphics_engine_renderer.html#acf62a15fc0e1c52356b09c57e2628529" title=" " alt="" coords="203,239,373,279"/>
+<area shape="rect" id="node3" href="$class_game_object.html#a4911b5c06bfde9ab03ce3ba4b5b17f4b" title="Gets the GameObjectState of the game object." alt="" coords="429,5,601,31"/>
+<area shape="rect" id="node4" href="$class_game_object_state.html#ad3d487403e3777200752138a8c89c36d" title=" " alt="" coords="421,55,608,80"/>
+<area shape="rect" id="node5" href="$class_game_object_state.html#aa892eaac5b9c8d6ce08334898d2f9cf6" title=" " alt="" coords="421,104,608,129"/>
+</map>

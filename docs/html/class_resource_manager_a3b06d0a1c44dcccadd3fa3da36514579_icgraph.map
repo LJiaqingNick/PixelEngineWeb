@@ -1,0 +1,11 @@
+<map id="ResourceManager::LoadResource" name="ResourceManager::LoadResource">
+<area shape="rect" id="node1" title="Load a resource." alt="" coords="911,70,1131,95"/>
+<area shape="rect" id="node2" href="$class_resource_manager.html#a02db32275477bd91425cb5dddedd935f" title="Get an SDL_Surface resource by its image filename." alt="" coords="649,70,863,95"/>
+<area shape="rect" id="node3" href="$class_tile_map_component.html#acf95bb17b363953209149203b72cdbd5" title="Add tile map information to the component." alt="" coords="408,5,595,45"/>
+<area shape="rect" id="node7" href="$class_resource_manager.html#a3f0b7c7cc575e0e6cfad146123d01c30" title="Get an SDL_Texture resource by its image filename." alt="" coords="401,70,601,95"/>
+<area shape="rect" id="node8" href="$class_sprite_component.html#a4a8c8df868aeccbc76c8b4c985c8ed19" title="Loads the image for the sprite." alt="" coords="404,119,599,145"/>
+<area shape="rect" id="node4" href="$class_s_d_l_display_program.html#aad2e9c83b7903f488f961175bf64adf3" title="Sets up the Tile Map component." alt="" coords="204,16,353,56"/>
+<area shape="rect" id="node5" href="$binding__funcs_8cpp.html#a8af2d9fb86e90b33eace2723918f17fc" title=" " alt="" coords="5,83,156,109"/>
+<area shape="rect" id="node6" href="$class_s_d_l_display_program.html#ab24c703179ac7614d5524ef00a8c92a4" title="Sets up the Tile Map component." alt="" coords="6,16,155,56"/>
+<area shape="rect" id="node9" href="$class_s_d_l_display_program.html#a319d03efea9bea11c1bc06d2e6f1993c" title="Sets up the sprite component." alt="" coords="204,91,353,131"/>
+</map>

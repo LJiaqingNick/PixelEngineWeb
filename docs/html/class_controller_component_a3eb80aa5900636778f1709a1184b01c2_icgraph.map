@@ -1,0 +1,6 @@
+<map id="ControllerComponent::addKeyboardControl" name="ControllerComponent::addKeyboardControl">
+<area shape="rect" id="node1" title="Add a keyboard control binding to the ControllerComponent." alt="" coords="619,5,767,45"/>
+<area shape="rect" id="node2" href="$class_s_d_l_display_program.html#ae2e71a8638f4c88b3ecac314a5bac15b" title="Sets up the Keyboard Control Component." alt="" coords="401,5,571,45"/>
+<area shape="rect" id="node3" href="$binding__funcs_8cpp.html#a8af2d9fb86e90b33eace2723918f17fc" title=" " alt="" coords="5,13,156,38"/>
+<area shape="rect" id="node4" href="$class_s_d_l_display_program.html#a6283d4393ff61c8e6dd6d6f5a3caede5" title="Sets up the Development Mode." alt="" coords="204,33,353,73"/>
+</map>

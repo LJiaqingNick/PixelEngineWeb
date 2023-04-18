@@ -1,0 +1,9 @@
+<map id="GameObject::getTag" name="GameObject::getTag">
+<area shape="rect" id="node1" title="Gets the tag of the game object." alt="" coords="717,87,860,113"/>
+<area shape="rect" id="node2" href="$class_game_object.html#aa1cfd654029d35832c374774d251c9fe" title="Sets the tag of the game object." alt="" coords="466,13,654,38"/>
+<area shape="rect" id="node5" href="$class_game_object.html#aa8b2125901960bf3596449ac48f6beab" title="Removes a component from the game object." alt="" coords="451,62,669,87"/>
+<area shape="rect" id="node6" href="$class_game_object.html#a4018df48b4df0fc4b1db520fcad1ba6c" title="Renders the game object." alt="" coords="487,111,633,137"/>
+<area shape="rect" id="node7" href="$class_game_object.html#a9133166d889c90c5cde293ecb73431c9" title="Updates the game object." alt="" coords="487,161,633,186"/>
+<area shape="rect" id="node3" href="$class_s_d_l_display_program.html#a7715ee17c51813bf5ada40fb966ef2a5" title="Sets up the rigid body component." alt="" coords="204,5,403,45"/>
+<area shape="rect" id="node4" href="$binding__funcs_8cpp.html#a8af2d9fb86e90b33eace2723918f17fc" title=" " alt="" coords="5,13,156,38"/>
+</map>

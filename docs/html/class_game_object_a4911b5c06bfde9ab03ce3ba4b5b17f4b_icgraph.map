@@ -1,0 +1,13 @@
+<map id="GameObject::getObjState" name="GameObject::getObjState">
+<area shape="rect" id="node1" title="Gets the GameObjectState of the game object." alt="" coords="921,141,1093,167"/>
+<area shape="rect" id="node2" href="$class_collide_component.html#aca153c8197cfc7fd4337e0aff1146489" title="Checks if the object is colliding with another object." alt="" coords="658,5,866,31"/>
+<area shape="rect" id="node3" href="$class_collide_component.html#a392d64dae07ad1212b6ce3d42d6ceb34" title="Checks if the object is colliding with another object." alt="" coords="651,55,873,80"/>
+<area shape="rect" id="node6" href="$class_camera_item_component.html#a6b28f48de658f6c667d15250047c49df" title="Gets the camera rectangle." alt="" coords="681,105,843,145"/>
+<area shape="rect" id="node9" href="$class_s_d_l_display_program.html#acd8da714be0f9c55f2e4f2514846914f" title="Add rigid body component to the game object." alt="" coords="415,162,603,202"/>
+<area shape="rect" id="node10" href="$class_s_d_l_display_program.html#a6456c7b3e12435f0b6b3edf6c5b23e78" title="Gets the game object state." alt="" coords="204,219,367,259"/>
+<area shape="rect" id="node11" href="$class_s_d_l_display_program.html#a6283d4393ff61c8e6dd6d6f5a3caede5" title="Sets up the Development Mode." alt="" coords="211,283,360,323"/>
+<area shape="rect" id="node4" href="$class_s_d_l_display_program.html#a5ca67219318ca527ed79328dc0bc8cd1" title="Checks if the game object is colliding with another game object." alt="" coords="434,15,583,55"/>
+<area shape="rect" id="node5" href="$binding__funcs_8cpp.html#a8af2d9fb86e90b33eace2723918f17fc" title=" " alt="" coords="5,141,156,167"/>
+<area shape="rect" id="node7" href="$class_s_d_l_display_program.html#abbe0824464d35be089507de1f543220a" title=" " alt="" coords="434,98,583,138"/>
+<area shape="rect" id="node8" href="$class_s_d_l_display_program.html#aca1a82954483266599bcf28970295986" title=" " alt="" coords="211,105,360,145"/>
+</map>

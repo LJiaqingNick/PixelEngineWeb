@@ -1,0 +1,4 @@
+<map id="CollideComponent" name="CollideComponent">
+<area shape="rect" id="node1" title="A component for handling collisions." alt="" coords="5,277,163,516"/>
+<area shape="rect" id="node2" href="$class_component.html" title="The base class for all components in the game engine." alt="" coords="9,5,159,229"/>
+</map>

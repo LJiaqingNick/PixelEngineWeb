@@ -1,0 +1,4 @@
+<map id="Animator::GetFrameHeight" name="Animator::GetFrameHeight">
+<area shape="rect" id="node1" title="Get the frame height of the animation." alt="" coords="227,5,405,31"/>
+<area shape="rect" id="node2" href="$class_sprite_component.html#a272e061203fbc6cdd6cd6c53e1ca7d64" title="Updates the component." alt="" coords="5,5,179,31"/>
+</map>

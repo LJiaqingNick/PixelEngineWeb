@@ -1,0 +1,4 @@
+<map id="GameObject::Update" name="GameObject::Update">
+<area shape="rect" id="node1" title="Updates the game object." alt="" coords="5,5,151,31"/>
+<area shape="rect" id="node2" href="$class_game_object.html#a7201a5dd856f712774e237002713a97c" title="Gets the tag of the game object." alt="" coords="199,5,341,31"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="GameObject::getObjName" name="GameObject::getObjName">
+<area shape="rect" id="node1" title="Sets the GameObjectState of the game object." alt="" coords="672,31,848,56"/>
+<area shape="rect" id="node2" href="$class_collide_component.html#aca153c8197cfc7fd4337e0aff1146489" title="Checks if the object is colliding with another object." alt="" coords="409,5,617,31"/>
+<area shape="rect" id="node3" href="$class_collide_component.html#a392d64dae07ad1212b6ce3d42d6ceb34" title="Checks if the object is colliding with another object." alt="" coords="401,55,624,80"/>
+<area shape="rect" id="node4" href="$class_s_d_l_display_program.html#a5ca67219318ca527ed79328dc0bc8cd1" title="Checks if the game object is colliding with another game object." alt="" coords="204,47,353,87"/>
+<area shape="rect" id="node5" href="$binding__funcs_8cpp.html#a8af2d9fb86e90b33eace2723918f17fc" title=" " alt="" coords="5,55,156,80"/>
+</map>

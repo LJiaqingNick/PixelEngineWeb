@@ -1,0 +1,4 @@
+<map id="SDLDisplayProgram::PyUserInterfaceSetText" name="SDLDisplayProgram::PyUserInterfaceSetText">
+<area shape="rect" id="node1" title="Sets up the text component." alt="" coords="5,5,168,45"/>
+<area shape="rect" id="node2" href="$class_text_component.html#a917ed71ab84596d6559c368ac334dc06" title="Update the text content of the component." alt="" coords="216,5,403,45"/>
+</map>

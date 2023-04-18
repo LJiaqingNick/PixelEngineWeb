@@ -1,0 +1,4 @@
+<map id="TileMapComponent::Render" name="TileMapComponent::Render">
+<area shape="rect" id="node1" title="Render the tile map using the specified SDL_Renderer." alt="" coords="5,5,191,31"/>
+<area shape="rect" id="node2" href="$class_tile_map_component.html#adb24ff5494a792ccefb9b2cf95bc9f28" title="Get the type of a tile at a specific position in the tile map." alt="" coords="239,5,452,31"/>
+</map>

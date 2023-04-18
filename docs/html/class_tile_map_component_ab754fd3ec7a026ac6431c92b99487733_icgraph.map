@@ -1,0 +1,8 @@
+<map id="TileMapComponent::getOneTileWidth" name="TileMapComponent::getOneTileWidth">
+<area shape="rect" id="node1" title="Get the number of rows in the tile map sprite sheet." alt="" coords="917,31,1103,71"/>
+<area shape="rect" id="node2" href="$class_collide_component.html#a1f02de7c0954af9102c1a9ad1ca47e81" title="Checks if the object is colliding with the tile map." alt="" coords="672,31,869,71"/>
+<area shape="rect" id="node3" href="$class_collide_component.html#a392d64dae07ad1212b6ce3d42d6ceb34" title="Checks if the object is colliding with another object." alt="" coords="401,13,624,38"/>
+<area shape="rect" id="node6" href="$class_collide_component.html#adf12d6a961f97062ccab0e2dce96ea08" title="Updates the component." alt="" coords="423,62,602,87"/>
+<area shape="rect" id="node4" href="$class_s_d_l_display_program.html#a5ca67219318ca527ed79328dc0bc8cd1" title="Checks if the game object is colliding with another game object." alt="" coords="204,5,353,45"/>
+<area shape="rect" id="node5" href="$binding__funcs_8cpp.html#a8af2d9fb86e90b33eace2723918f17fc" title=" " alt="" coords="5,13,156,38"/>
+</map>

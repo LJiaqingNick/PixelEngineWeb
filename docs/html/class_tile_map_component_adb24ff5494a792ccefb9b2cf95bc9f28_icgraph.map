@@ -1,0 +1,9 @@
+<map id="TileMapComponent::GetTileType" name="TileMapComponent::GetTileType">
+<area shape="rect" id="node1" title="Get the type of a tile at a specific position in the tile map." alt="" coords="665,89,879,115"/>
+<area shape="rect" id="node2" href="$class_tile_map_component.html#ad74bd890fb494d89958b4bc67686bdc6" title="Print the tile map to the console." alt="" coords="423,64,617,89"/>
+<area shape="rect" id="node7" href="$class_tile_map_component.html#a76dc9312b1d3c4b0193598e55661749f" title="Render the tile map using the specified SDL_Renderer." alt="" coords="427,113,613,139"/>
+<area shape="rect" id="node3" href="$class_s_d_l_display_program.html#aad2e9c83b7903f488f961175bf64adf3" title="Sets up the Tile Map component." alt="" coords="215,27,364,67"/>
+<area shape="rect" id="node6" href="$class_tile_map_component.html#af23978ca8ccefc9712d286cb79033ea7" title="Start the TileMapComponent." alt="" coords="204,92,375,117"/>
+<area shape="rect" id="node4" href="$binding__funcs_8cpp.html#a8af2d9fb86e90b33eace2723918f17fc" title=" " alt="" coords="5,5,156,31"/>
+<area shape="rect" id="node5" href="$class_s_d_l_display_program.html#ab24c703179ac7614d5524ef00a8c92a4" title="Sets up the Tile Map component." alt="" coords="6,55,155,95"/>
+</map>

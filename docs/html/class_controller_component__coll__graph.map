@@ -1,0 +1,4 @@
+<map id="ControllerComponent" name="ControllerComponent">
+<area shape="rect" id="node1" title="A component for handling user input and controlling game objects." alt="" coords="5,277,179,487"/>
+<area shape="rect" id="node2" href="$class_component.html" title="The base class for all components in the game engine." alt="" coords="17,5,167,229"/>
+</map>

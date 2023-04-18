@@ -1,0 +1,6 @@
+<map id="SpriteComponent::GetAnimator" name="SpriteComponent::GetAnimator">
+<area shape="rect" id="node1" title="Gets the animator." alt="" coords="427,45,631,70"/>
+<area shape="rect" id="node2" href="$class_s_d_l_display_program.html#aaa89355fffa3c0a75beb41a3818c2d06" title="Adds a new animation to the game object." alt="" coords="217,5,366,45"/>
+<area shape="rect" id="node4" href="$class_s_d_l_display_program.html#aafb527b42ed5292ffa18d355568ededf" title="Chooses the sprite animation." alt="" coords="204,69,379,109"/>
+<area shape="rect" id="node3" href="$binding__funcs_8cpp.html#a8af2d9fb86e90b33eace2723918f17fc" title=" " alt="" coords="5,45,156,70"/>
+</map>

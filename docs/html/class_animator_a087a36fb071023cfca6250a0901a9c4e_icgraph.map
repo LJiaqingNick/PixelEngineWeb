@@ -1,0 +1,6 @@
+<map id="Animator::SetCurrentAnimation" name="Animator::SetCurrentAnimation">
+<area shape="rect" id="node1" title="Set the current animation by name." alt="" coords="427,45,629,70"/>
+<area shape="rect" id="node2" href="$class_s_d_l_display_program.html#aafb527b42ed5292ffa18d355568ededf" title="Chooses the sprite animation." alt="" coords="204,5,379,45"/>
+<area shape="rect" id="node4" href="$class_s_d_l_display_program.html#a319d03efea9bea11c1bc06d2e6f1993c" title="Sets up the sprite component." alt="" coords="217,69,366,109"/>
+<area shape="rect" id="node3" href="$binding__funcs_8cpp.html#a8af2d9fb86e90b33eace2723918f17fc" title=" " alt="" coords="5,45,156,70"/>
+</map>

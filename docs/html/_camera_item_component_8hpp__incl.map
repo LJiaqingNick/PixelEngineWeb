@@ -1,0 +1,16 @@
+<map id="include/CameraItemComponent.hpp" name="include/CameraItemComponent.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="510,5,741,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="648,372,707,397"/>
+<area shape="rect" id="node3" title=" " alt="" coords="970,372,1025,397"/>
+<area shape="rect" id="node4" title=" " alt="" coords="435,79,539,104"/>
+<area shape="rect" id="node5" title=" " alt="" coords="91,372,202,397"/>
+<area shape="rect" id="node6" title=" " alt="" coords="43,299,109,324"/>
+<area shape="rect" id="node7" href="$_game_object_state_8hpp.html" title=" " alt="" coords="489,225,639,251"/>
+<area shape="rect" id="node10" href="$_component_8hpp.html" title=" " alt="" coords="715,152,829,177"/>
+<area shape="rect" id="node14" href="$_game_object_8hpp.html" title=" " alt="" coords="615,79,735,104"/>
+<area shape="rect" id="node8" href="$_i_graphics_engine_renderer_8hpp.html" title=" " alt="" coords="765,299,960,324"/>
+<area shape="rect" id="node9" href="$_resource_manager_8hpp.html" title=" " alt="" coords="437,299,589,324"/>
+<area shape="rect" id="node11" href="$_game_play_state_8hpp.html" title=" " alt="" coords="168,225,307,251"/>
+<area shape="rect" id="node12" title=" " alt="" coords="235,299,330,324"/>
+<area shape="rect" id="node13" title=" " alt="" coords="355,299,413,324"/>
+</map>

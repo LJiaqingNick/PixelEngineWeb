@@ -1,0 +1,4 @@
+<map id="SoundComponent::~SoundComponent" name="SoundComponent::~SoundComponent">
+<area shape="rect" id="node1" title="Default destructor for the SoundComponent class." alt="" coords="5,5,252,31"/>
+<area shape="rect" id="node2" href="$class_sound_component.html#a0b944782ac2195e2aab3986dfefda1d0" title="Shuts down the component." alt="" coords="300,5,492,31"/>
+</map>

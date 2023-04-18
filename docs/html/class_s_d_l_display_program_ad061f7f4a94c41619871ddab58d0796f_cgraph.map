@@ -1,0 +1,6 @@
+<map id="SDLDisplayProgram::PyAttachCamera" name="SDLDisplayProgram::PyAttachCamera">
+<area shape="rect" id="node1" title="Attach a camera to the game object." alt="" coords="5,55,155,95"/>
+<area shape="rect" id="node2" href="$class_game_object.html#a882c58278316acdfb2db43570133bb3d" title="Adds a component to the game object." alt="" coords="203,5,396,31"/>
+<area shape="rect" id="node3" href="$class_camera_item_component.html#a6fabae21049858d59de7f69f497e73d9" title="Sets the camera rectangle." alt="" coords="211,55,388,95"/>
+<area shape="rect" id="node4" href="$class_camera_item_component.html#a828c72589470a1ece506fba3fe54c165" title="Sets the camera rectangle." alt="" coords="219,119,380,159"/>
+</map>

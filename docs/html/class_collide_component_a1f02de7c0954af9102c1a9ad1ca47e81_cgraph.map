@@ -1,0 +1,13 @@
+<map id="CollideComponent::isCollidingTileMap" name="CollideComponent::isCollidingTileMap">
+<area shape="rect" id="node1" title="Checks if the object is colliding with the tile map." alt="" coords="5,251,203,291"/>
+<area shape="rect" id="node2" href="$class_game_object_state.html#a3e87d06d25826a0259e1b5b38e8bf278" title=" " alt="" coords="262,5,455,31"/>
+<area shape="rect" id="node3" href="$class_tile_map_component.html#a207b57cce51fa420865f25d0bec5f164" title="Get the number of columns in the tile map sprite sheet." alt="" coords="266,55,451,95"/>
+<area shape="rect" id="node4" href="$class_tile_map_component.html#ab754fd3ec7a026ac6431c92b99487733" title="Get the number of rows in the tile map sprite sheet." alt="" coords="266,119,451,159"/>
+<area shape="rect" id="node5" href="$class_game_object_state.html#ad3d487403e3777200752138a8c89c36d" title=" " alt="" coords="265,184,452,209"/>
+<area shape="rect" id="node6" href="$class_game_object_state.html#aa892eaac5b9c8d6ce08334898d2f9cf6" title=" " alt="" coords="265,233,452,259"/>
+<area shape="rect" id="node7" href="$class_game_object_state.html#a1808a45ae3b97ae0402c5eccfbf4019b" title=" " alt="" coords="266,283,451,308"/>
+<area shape="rect" id="node8" href="$class_tile_map_component.html#a920efc3a1ffb518857c9b31def3c8f02" title="Get the width of a single tile." alt="" coords="251,332,467,357"/>
+<area shape="rect" id="node9" href="$class_tile_map_component.html#a61a8ecd92c7c3e90195a12280c12894f" title="Get the height of a single tile." alt="" coords="251,381,467,407"/>
+<area shape="rect" id="node10" href="$class_tile_map_component.html#a6b46609f51a0537d767939b20d9af0f8" title="Get the tile map sprite sheet." alt="" coords="264,431,453,456"/>
+<area shape="rect" id="node11" href="$class_game_object_state.html#a4b6bd8d73c0d3e78ef911ff3e2c50307" title=" " alt="" coords="264,480,453,505"/>
+</map>

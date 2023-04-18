@@ -1,0 +1,4 @@
+<map id="ResourceManager::GetInstance" name="ResourceManager::GetInstance">
+<area shape="rect" id="node1" title="Get the singleton instance of the ResourceManager." alt="" coords="203,13,409,38"/>
+<area shape="rect" id="node2" href="$class_s_d_l_display_program.html#ad74d9e0f895808aa7cbabfe457c47b2f" title="Constructor for the SDLDisplayProgram class." alt="" coords="5,5,155,45"/>
+</map>

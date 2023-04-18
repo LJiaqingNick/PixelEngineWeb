@@ -1,0 +1,6 @@
+<map id="CameraItemComponent::getCamX" name="CameraItemComponent::getCamX">
+<area shape="rect" id="node1" title="Gets the camera rectangle." alt="" coords="5,47,167,87"/>
+<area shape="rect" id="node2" href="$class_game_object.html#a4911b5c06bfde9ab03ce3ba4b5b17f4b" title="Gets the GameObjectState of the game object." alt="" coords="222,5,394,31"/>
+<area shape="rect" id="node3" href="$class_game_object_state.html#ad3d487403e3777200752138a8c89c36d" title=" " alt="" coords="215,55,401,80"/>
+<area shape="rect" id="node4" href="$class_game_object_state.html#aa892eaac5b9c8d6ce08334898d2f9cf6" title=" " alt="" coords="215,104,401,129"/>
+</map>

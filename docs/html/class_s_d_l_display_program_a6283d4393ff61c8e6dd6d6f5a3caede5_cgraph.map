@@ -1,0 +1,12 @@
+<map id="SDLDisplayProgram::SetUpDevMode" name="SDLDisplayProgram::SetUpDevMode">
+<area shape="rect" id="node1" title="Sets up the Development Mode." alt="" coords="5,138,155,178"/>
+<area shape="rect" id="node2" href="$class_game_object.html#a882c58278316acdfb2db43570133bb3d" title="Adds a component to the game object." alt="" coords="441,5,635,31"/>
+<area shape="rect" id="node3" href="$class_game_object.html#a4911b5c06bfde9ab03ce3ba4b5b17f4b" title="Gets the GameObjectState of the game object." alt="" coords="212,56,384,81"/>
+<area shape="rect" id="node4" href="$class_s_d_l_display_program.html#ad061f7f4a94c41619871ddab58d0796f" title="Attach a camera to the game object." alt="" coords="223,106,373,146"/>
+<area shape="rect" id="node7" href="$class_s_d_l_display_program.html#ae2e71a8638f4c88b3ecac314a5bac15b" title="Sets up the Keyboard Control Component." alt="" coords="213,170,383,210"/>
+<area shape="rect" id="node9" href="$class_game_object_state.html#ad3bec0130fef91984e04a08074e06cec" title=" " alt="" coords="203,235,393,260"/>
+<area shape="rect" id="node10" href="$class_game_object_state.html#a47719b3d84b35bf3c8b9991c8ca9e5f0" title=" " alt="" coords="205,284,391,309"/>
+<area shape="rect" id="node5" href="$class_camera_item_component.html#a6fabae21049858d59de7f69f497e73d9" title="Sets the camera rectangle." alt="" coords="449,55,627,95"/>
+<area shape="rect" id="node6" href="$class_camera_item_component.html#a828c72589470a1ece506fba3fe54c165" title="Sets the camera rectangle." alt="" coords="457,119,619,159"/>
+<area shape="rect" id="node8" href="$class_controller_component.html#a3eb80aa5900636778f1709a1184b01c2" title="Add a keyboard control binding to the ControllerComponent." alt="" coords="464,183,612,223"/>
+</map>

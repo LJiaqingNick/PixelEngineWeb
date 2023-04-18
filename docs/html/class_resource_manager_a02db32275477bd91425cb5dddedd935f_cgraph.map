@@ -1,0 +1,4 @@
+<map id="ResourceManager::GetResource" name="ResourceManager::GetResource">
+<area shape="rect" id="node1" title="Get an SDL_Surface resource by its image filename." alt="" coords="5,5,219,31"/>
+<area shape="rect" id="node2" href="$class_resource_manager.html#a3b06d0a1c44dcccadd3fa3da36514579" title="Load a resource." alt="" coords="267,5,487,31"/>
+</map>

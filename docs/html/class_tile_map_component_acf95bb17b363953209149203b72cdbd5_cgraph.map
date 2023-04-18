@@ -1,0 +1,5 @@
+<map id="TileMapComponent::AddTileMapInfo" name="TileMapComponent::AddTileMapInfo">
+<area shape="rect" id="node1" title="Add tile map information to the component." alt="" coords="5,5,192,45"/>
+<area shape="rect" id="node2" href="$class_resource_manager.html#a02db32275477bd91425cb5dddedd935f" title="Get an SDL_Surface resource by its image filename." alt="" coords="240,13,453,38"/>
+<area shape="rect" id="node3" href="$class_resource_manager.html#a3b06d0a1c44dcccadd3fa3da36514579" title="Load a resource." alt="" coords="501,13,721,38"/>
+</map>

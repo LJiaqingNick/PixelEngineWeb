@@ -1,0 +1,8 @@
+<map id="SDLDisplayProgram::PySetupTileMap" name="SDLDisplayProgram::PySetupTileMap">
+<area shape="rect" id="node1" title="Sets up the Tile Map component." alt="" coords="5,35,155,75"/>
+<area shape="rect" id="node2" href="$class_tile_map_component.html#acf95bb17b363953209149203b72cdbd5" title="Add tile map information to the component." alt="" coords="207,5,393,45"/>
+<area shape="rect" id="node5" href="$class_tile_map_component.html#ad74bd890fb494d89958b4bc67686bdc6" title="Print the tile map to the console." alt="" coords="203,70,397,95"/>
+<area shape="rect" id="node3" href="$class_resource_manager.html#a02db32275477bd91425cb5dddedd935f" title="Get an SDL_Surface resource by its image filename." alt="" coords="445,13,659,38"/>
+<area shape="rect" id="node4" href="$class_resource_manager.html#a3b06d0a1c44dcccadd3fa3da36514579" title="Load a resource." alt="" coords="707,13,927,38"/>
+<area shape="rect" id="node6" href="$class_tile_map_component.html#adb24ff5494a792ccefb9b2cf95bc9f28" title="Get the type of a tile at a specific position in the tile map." alt="" coords="445,70,659,95"/>
+</map>

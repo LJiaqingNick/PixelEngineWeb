@@ -1,0 +1,4 @@
+<map id="GameObjectState::setVelocityY" name="GameObjectState::setVelocityY">
+<area shape="rect" id="node1" title=" " alt="" coords="232,5,440,31"/>
+<area shape="rect" id="node2" href="$class_collide_component.html#adf12d6a961f97062ccab0e2dce96ea08" title="Updates the component." alt="" coords="5,5,184,31"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="CollideComponent::Update" name="CollideComponent::Update">
+<area shape="rect" id="node1" title="Updates the component." alt="" coords="5,316,184,341"/>
+<area shape="rect" id="node2" href="$class_game_object_state.html#a1e57e22880d4f84a8413afae55490ed6" title=" " alt="" coords="243,152,433,177"/>
+<area shape="rect" id="node3" href="$class_game_object_state.html#a87d2cf2050b649811dfafc9fc4d01b40" title=" " alt="" coords="243,201,433,227"/>
+<area shape="rect" id="node4" href="$class_collide_component.html#a1f02de7c0954af9102c1a9ad1ca47e81" title="Checks if the object is colliding with the tile map." alt="" coords="239,251,437,291"/>
+<area shape="rect" id="node15" href="$class_game_object_state.html#afb63c640c70433f9502838f747f8baad" title=" " alt="" coords="232,316,444,341"/>
+<area shape="rect" id="node16" href="$class_game_object_state.html#a628ccfad634c4e3de8de2a440785de4c" title=" " alt="" coords="246,365,430,391"/>
+<area shape="rect" id="node17" href="$class_game_object_state.html#a610dd2a87b4bcb7c1ad96bf0fed469ca" title=" " alt="" coords="246,415,430,440"/>
+<area shape="rect" id="node18" href="$class_game_object_state.html#a33d170671c44531ca0deacc2ab81c295" title=" " alt="" coords="234,464,442,489"/>
+<area shape="rect" id="node5" href="$class_game_object_state.html#a3e87d06d25826a0259e1b5b38e8bf278" title=" " alt="" coords="503,5,697,31"/>
+<area shape="rect" id="node6" href="$class_tile_map_component.html#a207b57cce51fa420865f25d0bec5f164" title="Get the number of columns in the tile map sprite sheet." alt="" coords="507,55,693,95"/>
+<area shape="rect" id="node7" href="$class_tile_map_component.html#ab754fd3ec7a026ac6431c92b99487733" title="Get the number of rows in the tile map sprite sheet." alt="" coords="507,119,693,159"/>
+<area shape="rect" id="node8" href="$class_game_object_state.html#ad3d487403e3777200752138a8c89c36d" title=" " alt="" coords="507,184,693,209"/>
+<area shape="rect" id="node9" href="$class_game_object_state.html#aa892eaac5b9c8d6ce08334898d2f9cf6" title=" " alt="" coords="507,233,693,259"/>
+<area shape="rect" id="node10" href="$class_game_object_state.html#a1808a45ae3b97ae0402c5eccfbf4019b" title=" " alt="" coords="507,283,693,308"/>
+<area shape="rect" id="node11" href="$class_tile_map_component.html#a920efc3a1ffb518857c9b31def3c8f02" title="Get the width of a single tile." alt="" coords="492,332,708,357"/>
+<area shape="rect" id="node12" href="$class_tile_map_component.html#a61a8ecd92c7c3e90195a12280c12894f" title="Get the height of a single tile." alt="" coords="492,381,708,407"/>
+<area shape="rect" id="node13" href="$class_tile_map_component.html#a6b46609f51a0537d767939b20d9af0f8" title="Get the tile map sprite sheet." alt="" coords="505,431,695,456"/>
+<area shape="rect" id="node14" href="$class_game_object_state.html#a4b6bd8d73c0d3e78ef911ff3e2c50307" title=" " alt="" coords="505,480,695,505"/>
+</map>

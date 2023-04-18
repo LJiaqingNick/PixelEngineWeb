@@ -1,0 +1,4 @@
+<map id="RectangleComponent" name="RectangleComponent">
+<area shape="rect" id="node1" title="Component for rendering a rectangle." alt="" coords="5,277,181,707"/>
+<area shape="rect" id="node2" href="$class_component.html" title="The base class for all components in the game engine." alt="" coords="18,5,169,229"/>
+</map>

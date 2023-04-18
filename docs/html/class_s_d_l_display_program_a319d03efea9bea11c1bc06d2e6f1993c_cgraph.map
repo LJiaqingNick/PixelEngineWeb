@@ -1,0 +1,10 @@
+<map id="SDLDisplayProgram::PySetupSpriteInitial" name="SDLDisplayProgram::PySetupSpriteInitial">
+<area shape="rect" id="node1" title="Sets up the sprite component." alt="" coords="5,97,155,137"/>
+<area shape="rect" id="node2" href="$class_animator.html#ab5f7212f0baf6e067329b928f5e70aba" title="Add a new animation with the given parameters." alt="" coords="233,5,395,31"/>
+<area shape="rect" id="node3" href="$class_sprite_component.html#a4a8c8df868aeccbc76c8b4c985c8ed19" title="Loads the image for the sprite." alt="" coords="217,55,411,80"/>
+<area shape="rect" id="node6" href="$class_sprite_component.html#abd7c699b228854d7b44ba7b76aadbf60" title="Sets the animator for the sprite." alt="" coords="213,104,415,129"/>
+<area shape="rect" id="node7" href="$class_animator.html#a087a36fb071023cfca6250a0901a9c4e" title="Set the current animation by name." alt="" coords="213,153,415,179"/>
+<area shape="rect" id="node8" href="$class_sprite_component.html#a7650e1bceae98b7fb4bfe7032efd4713" title="Sets the sprite info." alt="" coords="203,203,425,228"/>
+<area shape="rect" id="node4" href="$class_resource_manager.html#a02db32275477bd91425cb5dddedd935f" title="Get an SDL_Surface resource by its image filename." alt="" coords="473,55,687,80"/>
+<area shape="rect" id="node5" href="$class_resource_manager.html#a3b06d0a1c44dcccadd3fa3da36514579" title="Load a resource." alt="" coords="735,55,955,80"/>
+</map>

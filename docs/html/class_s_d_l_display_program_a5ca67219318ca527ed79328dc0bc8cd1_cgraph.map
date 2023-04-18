@@ -1,0 +1,17 @@
+<map id="SDLDisplayProgram::PyCheckCollision" name="SDLDisplayProgram::PyCheckCollision">
+<area shape="rect" id="node1" title="Checks if the game object is colliding with another game object." alt="" coords="5,247,155,287"/>
+<area shape="rect" id="node2" href="$class_collide_component.html#a392d64dae07ad1212b6ce3d42d6ceb34" title="Checks if the object is colliding with another object." alt="" coords="203,255,425,280"/>
+<area shape="rect" id="node3" href="$class_game_object_state.html#a3e87d06d25826a0259e1b5b38e8bf278" title=" " alt="" coords="730,5,923,31"/>
+<area shape="rect" id="node4" href="$class_game_object.html#a0e3e91412c890523836d59702e6d0c5a" title="Sets the GameObjectState of the game object." alt="" coords="484,384,660,409"/>
+<area shape="rect" id="node5" href="$class_game_object.html#a4911b5c06bfde9ab03ce3ba4b5b17f4b" title="Gets the GameObjectState of the game object." alt="" coords="486,433,658,459"/>
+<area shape="rect" id="node6" href="$class_game_object_state.html#ad3d487403e3777200752138a8c89c36d" title=" " alt="" coords="733,55,920,80"/>
+<area shape="rect" id="node7" href="$class_game_object_state.html#aa892eaac5b9c8d6ce08334898d2f9cf6" title=" " alt="" coords="733,104,920,129"/>
+<area shape="rect" id="node8" href="$class_game_object_state.html#a1808a45ae3b97ae0402c5eccfbf4019b" title=" " alt="" coords="734,431,919,456"/>
+<area shape="rect" id="node9" href="$class_game_object_state.html#a4b6bd8d73c0d3e78ef911ff3e2c50307" title=" " alt="" coords="732,480,921,505"/>
+<area shape="rect" id="node10" href="$class_collide_component.html#a1f02de7c0954af9102c1a9ad1ca47e81" title="Checks if the object is colliding with the tile map." alt="" coords="473,218,671,258"/>
+<area shape="rect" id="node11" href="$class_tile_map_component.html#a207b57cce51fa420865f25d0bec5f164" title="Get the number of columns in the tile map sprite sheet." alt="" coords="734,154,919,194"/>
+<area shape="rect" id="node12" href="$class_tile_map_component.html#ab754fd3ec7a026ac6431c92b99487733" title="Get the number of rows in the tile map sprite sheet." alt="" coords="734,218,919,258"/>
+<area shape="rect" id="node13" href="$class_tile_map_component.html#a920efc3a1ffb518857c9b31def3c8f02" title="Get the width of a single tile." alt="" coords="719,283,935,308"/>
+<area shape="rect" id="node14" href="$class_tile_map_component.html#a61a8ecd92c7c3e90195a12280c12894f" title="Get the height of a single tile." alt="" coords="719,332,935,357"/>
+<area shape="rect" id="node15" href="$class_tile_map_component.html#a6b46609f51a0537d767939b20d9af0f8" title="Get the tile map sprite sheet." alt="" coords="732,381,921,407"/>
+</map>

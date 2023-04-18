@@ -1,0 +1,4 @@
+<map id="GameObject::getComponent" name="GameObject::getComponent">
+<area shape="rect" id="node1" title="Sets the tag of the game object." alt="" coords="5,5,193,31"/>
+<area shape="rect" id="node2" href="$class_game_object.html#a7201a5dd856f712774e237002713a97c" title="Gets the tag of the game object." alt="" coords="241,5,384,31"/>
+</map>

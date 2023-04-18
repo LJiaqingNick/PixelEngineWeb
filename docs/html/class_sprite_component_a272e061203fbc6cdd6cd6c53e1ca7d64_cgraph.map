@@ -1,0 +1,13 @@
+<map id="SpriteComponent::Update" name="SpriteComponent::Update">
+<area shape="rect" id="node1" title="Updates the component." alt="" coords="5,228,179,253"/>
+<area shape="rect" id="node2" href="$class_animator.html#a5a33f98df879e814b36081ffc6377c22" title="Get the current column of the animation." alt="" coords="240,5,431,31"/>
+<area shape="rect" id="node3" href="$class_animator.html#aba47bc5e158f03355dbcb10e083c6858" title="Get the current row of the animation." alt="" coords="249,55,422,80"/>
+<area shape="rect" id="node4" href="$class_game_play_state.html#a4b445b96b788ab26253313f9ff805663" title=" " alt="" coords="234,104,437,129"/>
+<area shape="rect" id="node5" href="$class_animator.html#a2ad0bfa6b9951c65525c8e9ee7757a5c" title="Get the frame height of the animation." alt="" coords="246,153,425,179"/>
+<area shape="rect" id="node6" href="$class_game_object_state.html#a938f59b51dc25f4a577d33fa560d7647" title=" " alt="" coords="227,203,444,228"/>
+<area shape="rect" id="node7" href="$class_animator.html#ac908164cdbf035a94a6e6c84fc0a2bc7" title="Get the frame width of the animation." alt="" coords="248,252,423,277"/>
+<area shape="rect" id="node8" href="$class_game_object_state.html#ad3d487403e3777200752138a8c89c36d" title=" " alt="" coords="242,301,429,327"/>
+<area shape="rect" id="node9" href="$class_game_object_state.html#aa892eaac5b9c8d6ce08334898d2f9cf6" title=" " alt="" coords="242,351,429,376"/>
+<area shape="rect" id="node10" href="$class_sprite_component.html#a856577214b1e0ef889ab97915c6f3dc8" title="Sets the position of the sprite." alt="" coords="236,400,435,425"/>
+<area shape="rect" id="node11" href="$class_animator.html#aa0652884fb0ce07a0d443a997bce5cad" title="Update the Animator with the given time delta." alt="" coords="273,449,397,475"/>
+</map>

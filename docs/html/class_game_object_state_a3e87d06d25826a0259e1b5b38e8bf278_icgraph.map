@@ -1,0 +1,12 @@
+<map id="GameObjectState::GetHeight" name="GameObjectState::GetHeight">
+<area shape="rect" id="node1" title=" " alt="" coords="941,145,1135,171"/>
+<area shape="rect" id="node2" href="$class_collide_component.html#aca153c8197cfc7fd4337e0aff1146489" title="Checks if the object is colliding with another object." alt="" coords="685,5,893,31"/>
+<area shape="rect" id="node3" href="$class_collide_component.html#a392d64dae07ad1212b6ce3d42d6ceb34" title="Checks if the object is colliding with another object." alt="" coords="415,132,637,157"/>
+<area shape="rect" id="node6" href="$class_transform_component.html#a8357d4a361c2380d82d9aaf41511bedc" title=" " alt="" coords="715,106,863,146"/>
+<area shape="rect" id="node7" href="$class_collide_component.html#a1f02de7c0954af9102c1a9ad1ca47e81" title="Checks if the object is colliding with the tile map." alt="" coords="691,170,888,210"/>
+<area shape="rect" id="node9" href="$class_s_d_l_display_program.html#a6456c7b3e12435f0b6b3edf6c5b23e78" title="Gets the game object state." alt="" coords="204,210,367,250"/>
+<area shape="rect" id="node10" href="$class_controller_component.html#adf8368acefc92ad7e69a6e4037f11347" title="Updates the component." alt="" coords="717,285,862,325"/>
+<area shape="rect" id="node4" href="$class_s_d_l_display_program.html#a5ca67219318ca527ed79328dc0bc8cd1" title="Checks if the game object is colliding with another game object." alt="" coords="211,137,360,177"/>
+<area shape="rect" id="node5" href="$binding__funcs_8cpp.html#a8af2d9fb86e90b33eace2723918f17fc" title=" " alt="" coords="5,185,156,211"/>
+<area shape="rect" id="node8" href="$class_collide_component.html#adf12d6a961f97062ccab0e2dce96ea08" title="Updates the component." alt="" coords="437,181,615,207"/>
+</map>

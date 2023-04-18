@@ -1,0 +1,6 @@
+<map id="SDLDisplayProgram::PyAddNewGameObject" name="SDLDisplayProgram::PyAddNewGameObject">
+<area shape="rect" id="node1" title="Adds new game object to the game." alt="" coords="5,47,167,87"/>
+<area shape="rect" id="node2" href="$class_game_object.html#a882c58278316acdfb2db43570133bb3d" title="Adds a component to the game object." alt="" coords="222,5,415,31"/>
+<area shape="rect" id="node3" href="$class_game_object.html#a718380b6b9bd024cdf3d872567eacca4" title="Gets the GameObjectState of the game object." alt="" coords="231,55,407,80"/>
+<area shape="rect" id="node4" href="$class_game_object_state.html#a83173bb3d709e544fe25f88537c53fba" title=" " alt="" coords="215,105,423,145"/>
+</map>

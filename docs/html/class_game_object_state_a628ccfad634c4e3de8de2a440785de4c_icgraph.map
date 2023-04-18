@@ -1,0 +1,10 @@
+<map id="GameObjectState::setPosX" name="GameObjectState::setPosX">
+<area shape="rect" id="node1" title=" " alt="" coords="232,198,416,223"/>
+<area shape="rect" id="node2" href="$class_transform_component.html#a000a6f09b1bd34c98d896a3e8ac78bfa" title=" " alt="" coords="21,5,169,45"/>
+<area shape="rect" id="node3" href="$class_transform_component.html#ac8a7a3fe1ea7bd74dbb0c69cb2611cc1" title=" " alt="" coords="21,69,169,109"/>
+<area shape="rect" id="node4" href="$class_transform_component.html#a675bfce5251f82a0f775d455a1195b27" title="Construct a TransformComponent with given position and object name." alt="" coords="17,133,173,173"/>
+<area shape="rect" id="node5" href="$class_collide_component.html#adf12d6a961f97062ccab0e2dce96ea08" title="Updates the component." alt="" coords="5,198,184,223"/>
+<area shape="rect" id="node6" href="$class_controller_component.html#adf8368acefc92ad7e69a6e4037f11347" title="Updates the component." alt="" coords="22,248,167,288"/>
+<area shape="rect" id="node7" href="$class_rigid_body_component.html#a64b8ce08bf59ce4712921848dc0dc408" title="Updates the rigid body component." alt="" coords="20,312,169,352"/>
+<area shape="rect" id="node8" href="$class_transform_component.html#a9f754d018fa44456e7778b29f48f8b63" title="Updates the component." alt="" coords="21,376,169,416"/>
+</map>

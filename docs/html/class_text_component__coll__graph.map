@@ -1,0 +1,5 @@
+<map id="TextComponent" name="TextComponent">
+<area shape="rect" id="node1" title="Component for rendering text." alt="" coords="93,292,245,604"/>
+<area shape="rect" id="node2" href="$class_component.html" title="The base class for all components in the game engine." alt="" coords="5,5,156,229"/>
+<area shape="rect" id="node3" href="$class_game_object_state.html" title="The base class for all game object states in the game engine." alt="" coords="181,5,335,229"/>
+</map>

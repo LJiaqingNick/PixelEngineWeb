@@ -1,0 +1,10 @@
+<map id="CollideComponent::anyCollision" name="CollideComponent::anyCollision">
+<area shape="rect" id="node1" title="Checks if the object is colliding with another object." alt="" coords="5,153,213,179"/>
+<area shape="rect" id="node2" href="$class_game_object_state.html#a3e87d06d25826a0259e1b5b38e8bf278" title=" " alt="" coords="261,5,455,31"/>
+<area shape="rect" id="node3" href="$class_game_object.html#a0e3e91412c890523836d59702e6d0c5a" title="Sets the GameObjectState of the game object." alt="" coords="270,55,446,80"/>
+<area shape="rect" id="node4" href="$class_game_object.html#a4911b5c06bfde9ab03ce3ba4b5b17f4b" title="Gets the GameObjectState of the game object." alt="" coords="272,104,444,129"/>
+<area shape="rect" id="node5" href="$class_game_object_state.html#ad3d487403e3777200752138a8c89c36d" title=" " alt="" coords="265,153,451,179"/>
+<area shape="rect" id="node6" href="$class_game_object_state.html#aa892eaac5b9c8d6ce08334898d2f9cf6" title=" " alt="" coords="265,203,451,228"/>
+<area shape="rect" id="node7" href="$class_game_object_state.html#a1808a45ae3b97ae0402c5eccfbf4019b" title=" " alt="" coords="265,252,451,277"/>
+<area shape="rect" id="node8" href="$class_game_object_state.html#a4b6bd8d73c0d3e78ef911ff3e2c50307" title=" " alt="" coords="263,301,453,327"/>
+</map>

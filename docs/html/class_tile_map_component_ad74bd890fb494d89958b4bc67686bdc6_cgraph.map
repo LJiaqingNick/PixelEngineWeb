@@ -1,0 +1,4 @@
+<map id="TileMapComponent::PrintMap" name="TileMapComponent::PrintMap">
+<area shape="rect" id="node1" title="Print the tile map to the console." alt="" coords="5,5,200,31"/>
+<area shape="rect" id="node2" href="$class_tile_map_component.html#adb24ff5494a792ccefb9b2cf95bc9f28" title="Get the type of a tile at a specific position in the tile map." alt="" coords="248,5,461,31"/>
+</map>

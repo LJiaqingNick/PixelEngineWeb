@@ -1,0 +1,4 @@
+<map id="CameraItemComponent" name="CameraItemComponent">
+<area shape="rect" id="node1" title="Component for managing the camera in relation to a specific GameObject." alt="" coords="5,277,195,501"/>
+<area shape="rect" id="node2" href="$class_component.html" title="The base class for all components in the game engine." alt="" coords="25,5,175,229"/>
+</map>

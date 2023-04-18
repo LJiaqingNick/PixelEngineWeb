@@ -1,0 +1,4 @@
+<map id="SoundComponent" name="SoundComponent">
+<area shape="rect" id="node1" title="Component for playing sound effects and background music." alt="" coords="5,277,160,545"/>
+<area shape="rect" id="node2" href="$class_component.html" title="The base class for all components in the game engine." alt="" coords="7,5,158,229"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="SpriteComponent::LoadImage" name="SpriteComponent::LoadImage">
+<area shape="rect" id="node1" title="Loads the image for the sprite." alt="" coords="5,5,200,31"/>
+<area shape="rect" id="node2" href="$class_resource_manager.html#a02db32275477bd91425cb5dddedd935f" title="Get an SDL_Surface resource by its image filename." alt="" coords="248,5,461,31"/>
+<area shape="rect" id="node3" href="$class_resource_manager.html#a3b06d0a1c44dcccadd3fa3da36514579" title="Load a resource." alt="" coords="509,5,729,31"/>
+</map>

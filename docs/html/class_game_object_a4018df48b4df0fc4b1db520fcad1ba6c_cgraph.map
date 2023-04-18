@@ -1,0 +1,5 @@
+<map id="GameObject::Render" name="GameObject::Render">
+<area shape="rect" id="node1" title="Renders the game object." alt="" coords="5,31,151,56"/>
+<area shape="rect" id="node2" href="$class_game_object.html#a7201a5dd856f712774e237002713a97c" title="Gets the tag of the game object." alt="" coords="219,5,362,31"/>
+<area shape="rect" id="node3" href="$class_game_object_state.html#a9f7071f4bfc3b5b3092551f23eba1b82" title=" " alt="" coords="199,55,383,80"/>
+</map>

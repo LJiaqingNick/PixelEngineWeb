@@ -1,0 +1,6 @@
+<map id="GameObjectState::setScale" name="GameObjectState::setScale">
+<area shape="rect" id="node1" title=" " alt="" coords="209,77,395,102"/>
+<area shape="rect" id="node2" href="$class_transform_component.html#a3d119262d43d0c75573f5a1ed5deff39" title=" " alt="" coords="9,5,157,45"/>
+<area shape="rect" id="node3" href="$class_transform_component.html#a675bfce5251f82a0f775d455a1195b27" title="Construct a TransformComponent with given position and object name." alt="" coords="5,69,161,109"/>
+<area shape="rect" id="node4" href="$class_controller_component.html#adf8368acefc92ad7e69a6e4037f11347" title="Updates the component." alt="" coords="11,133,156,173"/>
+</map>
