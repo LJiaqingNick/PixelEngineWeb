@@ -84,6 +84,12 @@ section {
   font-size: 1.0rem;
   padding: 20px 0;
 }
+.post-mortem-paragraph {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
 img {
   max-width: 100%;
