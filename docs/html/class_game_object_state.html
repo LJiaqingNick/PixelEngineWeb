@@ -125,6 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3aa7e8da5067b4c7557be9ada5669b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f7071f4bfc3b5b3092551f23eba1b82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_state.html#a9f7071f4bfc3b5b3092551f23eba1b82">IsVisible</a> ()</td></tr>
 <tr class="separator:a9f7071f4bfc3b5b3092551f23eba1b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353763f53560b047b5e24c0b32d6606d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_state.html#a353763f53560b047b5e24c0b32d6606d">IsFlipSpriteNeeded</a> ()</td></tr>
+<tr class="separator:a353763f53560b047b5e24c0b32d6606d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af332ff20726d6fba0164ec9524584ac2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_state.html#af332ff20726d6fba0164ec9524584ac2">setVelocityX</a> (int x)</td></tr>
 <tr class="separator:af332ff20726d6fba0164ec9524584ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33d170671c44531ca0deacc2ab81c295"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_state.html#a33d170671c44531ca0deacc2ab81c295">setVelocityY</a> (int y)</td></tr>
@@ -165,6 +167,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af4c8cb3a0feee44ae52fe7082e79d6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a49da5a388868df7b1ee920239b7be3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_state.html#a5a49da5a388868df7b1ee920239b7be3">SetDeltaTime</a> (float delta_time)</td></tr>
 <tr class="separator:a5a49da5a388868df7b1ee920239b7be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b3b281f9352f5ed81404e07c863e2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_state.html#ae9b3b281f9352f5ed81404e07c863e2b">SetSpriteNeedFlipping</a> (bool needFlip)</td></tr>
+<tr class="separator:ae9b3b281f9352f5ed81404e07c863e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base class for all game object states in the game engine. </p>
@@ -494,6 +498,23 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get the dynamic status of the game object. </p>
+
+</div>
+</div>
+<a id="a353763f53560b047b5e24c0b32d6606d" name="a353763f53560b047b5e24c0b32d6606d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a353763f53560b047b5e24c0b32d6606d">&#9670;&#160;</a></span>IsFlipSpriteNeeded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameObjectState::IsFlipSpriteNeeded </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -855,6 +876,25 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae9b3b281f9352f5ed81404e07c863e2b" name="ae9b3b281f9352f5ed81404e07c863e2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9b3b281f9352f5ed81404e07c863e2b">&#9670;&#160;</a></span>SetSpriteNeedFlipping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectState::SetSpriteNeedFlipping </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>needFlip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the sprite flipping status of the game object. </p>
+
+</div>
+</div>
 <a id="af332ff20726d6fba0164ec9524584ac2" name="af332ff20726d6fba0164ec9524584ac2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af332ff20726d6fba0164ec9524584ac2">&#9670;&#160;</a></span>setVelocityX()</h2>
 
@@ -870,7 +910,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the X velocity of the game object. </p>
+<p>&lt; Determine if the sprite needs to be flipped. Set the X velocity of the game object. </p>
 
 </div>
 </div>

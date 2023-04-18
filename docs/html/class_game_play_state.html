@@ -116,6 +116,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afe5612adb1baae3ec011a90f86e9a6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45e2631dd625f779760f491c52056d2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_play_state.html#a45e2631dd625f779760f491c52056d2e">recordKeyActivity</a> (Uint8 key)</td></tr>
 <tr class="separator:a45e2631dd625f779760f491c52056d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee3d935442d2d754c648bcbe5f908d8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_play_state.html#a5ee3d935442d2d754c648bcbe5f908d8">getRecentKeyInputStrings</a> ()</td></tr>
+<tr class="separator:a5ee3d935442d2d754c648bcbe5f908d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41b1e0127bff482b363ba9d551c6d0cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_play_state.html#a41b1e0127bff482b363ba9d551c6d0cf">clearKeyEventQueue</a> ()</td></tr>
+<tr class="separator:a41b1e0127bff482b363ba9d551c6d0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for managing the game play state. </p>
@@ -223,6 +227,24 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a41b1e0127bff482b363ba9d551c6d0cf" name="a41b1e0127bff482b363ba9d551c6d0cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41b1e0127bff482b363ba9d551c6d0cf">&#9670;&#160;</a></span>clearKeyEventQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GamePlayState::clearKeyEventQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>&lt; Gets the recent key input strings. </p>
+
+</div>
+</div>
 <a id="a7488be3bacad3126b5c09e72b0052ba6" name="a7488be3bacad3126b5c09e72b0052ba6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7488be3bacad3126b5c09e72b0052ba6">&#9670;&#160;</a></span>getCurrentKeyPressed()</h2>
 
@@ -291,6 +313,24 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>&lt; Gets the current key pressed. </p>
+
+</div>
+</div>
+<a id="a5ee3d935442d2d754c648bcbe5f908d8" name="a5ee3d935442d2d754c648bcbe5f908d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ee3d935442d2d754c648bcbe5f908d8">&#9670;&#160;</a></span>getRecentKeyInputStrings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; GamePlayState::getRecentKeyInputStrings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>&lt; Records key activity. </p>
 
 </div>
 </div>

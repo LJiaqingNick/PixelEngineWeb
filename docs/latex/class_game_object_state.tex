@@ -52,6 +52,8 @@ std\+::string \mbox{\hyperlink{class_game_object_state_a4e4130a21856f87def1e9344
 \item 
 bool \mbox{\hyperlink{class_game_object_state_a9f7071f4bfc3b5b3092551f23eba1b82}{Is\+Visible}} ()
 \item 
+bool \mbox{\hyperlink{class_game_object_state_a353763f53560b047b5e24c0b32d6606d}{Is\+Flip\+Sprite\+Needed}} ()
+\item 
 void \mbox{\hyperlink{class_game_object_state_af332ff20726d6fba0164ec9524584ac2}{set\+VelocityX}} (int x)
 \item 
 void \mbox{\hyperlink{class_game_object_state_a33d170671c44531ca0deacc2ab81c295}{set\+VelocityY}} (int y)
@@ -91,6 +93,8 @@ void \mbox{\hyperlink{class_game_object_state_aa21fe293e2459b37913504a8d42428f0}
 float \mbox{\hyperlink{class_game_object_state_af4c8cb3a0feee44ae52fe7082e79d6ce}{Get\+Delta\+Time}} () const
 \item 
 void \mbox{\hyperlink{class_game_object_state_a5a49da5a388868df7b1ee920239b7be3}{Set\+Delta\+Time}} (float delta\+\_\+time)
+\item 
+void \mbox{\hyperlink{class_game_object_state_ae9b3b281f9352f5ed81404e07c863e2b}{Set\+Sprite\+Need\+Flipping}} (bool need\+Flip)
 \end{DoxyCompactItemize}
 
 
@@ -219,7 +223,13 @@ Get the being attacked status of the game object. \mbox{\Hypertarget{class_game_
 \doxysubsubsection{\texorpdfstring{IsDynamic()}{IsDynamic()}}
 {\footnotesize\ttfamily bool Game\+Object\+State\+::\+Is\+Dynamic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Get the dynamic status of the game object. \mbox{\Hypertarget{class_game_object_state_ae6dc47fe03d6a967a6d8ae858de18b99}\label{class_game_object_state_ae6dc47fe03d6a967a6d8ae858de18b99}} 
+Get the dynamic status of the game object. \mbox{\Hypertarget{class_game_object_state_a353763f53560b047b5e24c0b32d6606d}\label{class_game_object_state_a353763f53560b047b5e24c0b32d6606d}} 
+\index{GameObjectState@{GameObjectState}!IsFlipSpriteNeeded@{IsFlipSpriteNeeded}}
+\index{IsFlipSpriteNeeded@{IsFlipSpriteNeeded}!GameObjectState@{GameObjectState}}
+\doxysubsubsection{\texorpdfstring{IsFlipSpriteNeeded()}{IsFlipSpriteNeeded()}}
+{\footnotesize\ttfamily bool Game\+Object\+State\+::\+Is\+Flip\+Sprite\+Needed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_object_state_ae6dc47fe03d6a967a6d8ae858de18b99}\label{class_game_object_state_ae6dc47fe03d6a967a6d8ae858de18b99}} 
 \index{GameObjectState@{GameObjectState}!IsInteracting@{IsInteracting}}
 \index{IsInteracting@{IsInteracting}!GameObjectState@{GameObjectState}}
 \doxysubsubsection{\texorpdfstring{IsInteracting()}{IsInteracting()}}
@@ -333,13 +343,19 @@ Set the scale of the game object. \mbox{\Hypertarget{class_game_object_state_ab2
 \doxysubsubsection{\texorpdfstring{setSpriteFilePath()}{setSpriteFilePath()}}
 {\footnotesize\ttfamily void Game\+Object\+State\+::set\+Sprite\+File\+Path (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Path }\end{DoxyParamCaption})}
 
-Set the sprite file path of the game object. \mbox{\Hypertarget{class_game_object_state_af332ff20726d6fba0164ec9524584ac2}\label{class_game_object_state_af332ff20726d6fba0164ec9524584ac2}} 
+Set the sprite file path of the game object. \mbox{\Hypertarget{class_game_object_state_ae9b3b281f9352f5ed81404e07c863e2b}\label{class_game_object_state_ae9b3b281f9352f5ed81404e07c863e2b}} 
+\index{GameObjectState@{GameObjectState}!SetSpriteNeedFlipping@{SetSpriteNeedFlipping}}
+\index{SetSpriteNeedFlipping@{SetSpriteNeedFlipping}!GameObjectState@{GameObjectState}}
+\doxysubsubsection{\texorpdfstring{SetSpriteNeedFlipping()}{SetSpriteNeedFlipping()}}
+{\footnotesize\ttfamily void Game\+Object\+State\+::\+Set\+Sprite\+Need\+Flipping (\begin{DoxyParamCaption}\item[{bool}]{need\+Flip }\end{DoxyParamCaption})}
+
+Set the sprite flipping status of the game object. \mbox{\Hypertarget{class_game_object_state_af332ff20726d6fba0164ec9524584ac2}\label{class_game_object_state_af332ff20726d6fba0164ec9524584ac2}} 
 \index{GameObjectState@{GameObjectState}!setVelocityX@{setVelocityX}}
 \index{setVelocityX@{setVelocityX}!GameObjectState@{GameObjectState}}
 \doxysubsubsection{\texorpdfstring{setVelocityX()}{setVelocityX()}}
 {\footnotesize\ttfamily void Game\+Object\+State\+::set\+VelocityX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
 
-Set the X velocity of the game object. \mbox{\Hypertarget{class_game_object_state_a33d170671c44531ca0deacc2ab81c295}\label{class_game_object_state_a33d170671c44531ca0deacc2ab81c295}} 
+\texorpdfstring{$<$}{<} Determine if the sprite needs to be flipped. Set the X velocity of the game object. \mbox{\Hypertarget{class_game_object_state_a33d170671c44531ca0deacc2ab81c295}\label{class_game_object_state_a33d170671c44531ca0deacc2ab81c295}} 
 \index{GameObjectState@{GameObjectState}!setVelocityY@{setVelocityY}}
 \index{setVelocityY@{setVelocityY}!GameObjectState@{GameObjectState}}
 \doxysubsubsection{\texorpdfstring{setVelocityY()}{setVelocityY()}}

@@ -41,6 +41,10 @@ std\+::string \mbox{\hyperlink{class_game_play_state_aa50fb572bda79509b5c5fe3429
 bool \mbox{\hyperlink{class_game_play_state_afe5612adb1baae3ec011a90f86e9a6d0}{Recent\+Key\+Input\+Contains}} (Uint8 keycode)
 \item 
 void \mbox{\hyperlink{class_game_play_state_a45e2631dd625f779760f491c52056d2e}{record\+Key\+Activity}} (Uint8 key)
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_game_play_state_a5ee3d935442d2d754c648bcbe5f908d8}{get\+Recent\+Key\+Input\+Strings}} ()
+\item 
+void \mbox{\hyperlink{class_game_play_state_a41b1e0127bff482b363ba9d551c6d0cf}{clear\+Key\+Event\+Queue}} ()
 \end{DoxyCompactItemize}
 
 
@@ -98,7 +102,13 @@ Default destructor for the \mbox{\hyperlink{class_game_play_state}{Game\+Play\+S
 \doxysubsubsection{\texorpdfstring{checkInsideColliderList()}{checkInsideColliderList()}}
 {\footnotesize\ttfamily bool Game\+Play\+State\+::check\+Inside\+Collider\+List (\begin{DoxyParamCaption}\item[{std\+::string}]{gameobj }\end{DoxyParamCaption})}
 
-\texorpdfstring{$<$}{<} Adds a game object to the collider list. \mbox{\Hypertarget{class_game_play_state_a7488be3bacad3126b5c09e72b0052ba6}\label{class_game_play_state_a7488be3bacad3126b5c09e72b0052ba6}} 
+\texorpdfstring{$<$}{<} Adds a game object to the collider list. \mbox{\Hypertarget{class_game_play_state_a41b1e0127bff482b363ba9d551c6d0cf}\label{class_game_play_state_a41b1e0127bff482b363ba9d551c6d0cf}} 
+\index{GamePlayState@{GamePlayState}!clearKeyEventQueue@{clearKeyEventQueue}}
+\index{clearKeyEventQueue@{clearKeyEventQueue}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{clearKeyEventQueue()}{clearKeyEventQueue()}}
+{\footnotesize\ttfamily void Game\+Play\+State\+::clear\+Key\+Event\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Gets the recent key input strings. \mbox{\Hypertarget{class_game_play_state_a7488be3bacad3126b5c09e72b0052ba6}\label{class_game_play_state_a7488be3bacad3126b5c09e72b0052ba6}} 
 \index{GamePlayState@{GamePlayState}!getCurrentKeyPressed@{getCurrentKeyPressed}}
 \index{getCurrentKeyPressed@{getCurrentKeyPressed}!GamePlayState@{GamePlayState}}
 \doxysubsubsection{\texorpdfstring{getCurrentKeyPressed()}{getCurrentKeyPressed()}}
@@ -122,7 +132,13 @@ Default destructor for the \mbox{\hyperlink{class_game_play_state}{Game\+Play\+S
 \doxysubsubsection{\texorpdfstring{getRecentKeyInputs()}{getRecentKeyInputs()}}
 {\footnotesize\ttfamily std\+::vector$<$ Uint8 $>$ Game\+Play\+State\+::get\+Recent\+Key\+Inputs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\texorpdfstring{$<$}{<} Gets the current key pressed. \mbox{\Hypertarget{class_game_play_state_aa50fb572bda79509b5c5fe3429b17ea3}\label{class_game_play_state_aa50fb572bda79509b5c5fe3429b17ea3}} 
+\texorpdfstring{$<$}{<} Gets the current key pressed. \mbox{\Hypertarget{class_game_play_state_a5ee3d935442d2d754c648bcbe5f908d8}\label{class_game_play_state_a5ee3d935442d2d754c648bcbe5f908d8}} 
+\index{GamePlayState@{GamePlayState}!getRecentKeyInputStrings@{getRecentKeyInputStrings}}
+\index{getRecentKeyInputStrings@{getRecentKeyInputStrings}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{getRecentKeyInputStrings()}{getRecentKeyInputStrings()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Game\+Play\+State\+::get\+Recent\+Key\+Input\+Strings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Records key activity. \mbox{\Hypertarget{class_game_play_state_aa50fb572bda79509b5c5fe3429b17ea3}\label{class_game_play_state_aa50fb572bda79509b5c5fe3429b17ea3}} 
 \index{GamePlayState@{GamePlayState}!keyCodeToString@{keyCodeToString}}
 \index{keyCodeToString@{keyCodeToString}!GamePlayState@{GamePlayState}}
 \doxysubsubsection{\texorpdfstring{keyCodeToString()}{keyCodeToString()}}

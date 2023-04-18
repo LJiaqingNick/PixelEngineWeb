@@ -31,14 +31,16 @@
 \DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_game_play_state_aa50fb572bda79509b5c5fe3429b17ea3}{keyCodeToString}}(Uint8\ keycode);\ }
 \DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_play_state_afe5612adb1baae3ec011a90f86e9a6d0}{RecentKeyInputContains}}(Uint8\ keycode);\ }
 \DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_play_state_a45e2631dd625f779760f491c52056d2e}{recordKeyActivity}}(Uint8\ key);\ }
-\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ Uint8\ key\_input;\ }
-\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ Uint32\ mCurrentTime;\ }
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ Uint32\ mLastUpdateTime;\ }
-\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ std::vector<std::string>\ colliderList;\ }
-\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ std::unordered\_map<Uint8,\ std::string>\ codeToKeyStrMap;\ }
-\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ std::vector<Uint8>\ key\_input\_event\_queue;\ }
-\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ key\_event\_queue\_limit;\ }
-\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_game_play_state_a5ee3d935442d2d754c648bcbe5f908d8}{getRecentKeyInputStrings}}();\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_play_state_a41b1e0127bff482b363ba9d551c6d0cf}{clearKeyEventQueue}}();\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ Uint8\ key\_input;\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ Uint32\ mCurrentTime;\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ Uint32\ mLastUpdateTime;\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ std::vector<std::string>\ colliderList;\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ std::unordered\_map<Uint8,\ std::string>\ codeToKeyStrMap;\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ std::vector<Uint8>\ key\_input\_event\_queue;\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ key\_event\_queue\_limit;\ }
+\DoxyCodeLine{00057\ \};}
 
 \end{DoxyCode}

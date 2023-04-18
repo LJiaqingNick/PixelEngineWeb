@@ -82,9 +82,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af4d1e8e7c68d590a3592921baf37783b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_display_program.html#af4d1e8e7c68d590a3592921baf37783b">SDLDisplayProgram</a> (int width, int height, std::string titleStr)</td></tr>
-<tr class="memdesc:af4d1e8e7c68d590a3592921baf37783b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="class_s_d_l_display_program.html" title="Main class for managing the SDL display and game loop.">SDLDisplayProgram</a> class.  <br /></td></tr>
-<tr class="separator:af4d1e8e7c68d590a3592921baf37783b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74d9e0f895808aa7cbabfe457c47b2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_display_program.html#ad74d9e0f895808aa7cbabfe457c47b2f">SDLDisplayProgram</a> (int width, int height, std::string titleStr, int eventQueueSize)</td></tr>
+<tr class="memdesc:ad74d9e0f895808aa7cbabfe457c47b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="class_s_d_l_display_program.html" title="Main class for managing the SDL display and game loop.">SDLDisplayProgram</a> class.  <br /></td></tr>
+<tr class="separator:ad74d9e0f895808aa7cbabfe457c47b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67b978c5880d9452fe70944da1c65470"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_display_program.html#a67b978c5880d9452fe70944da1c65470">~SDLDisplayProgram</a> ()</td></tr>
 <tr class="memdesc:a67b978c5880d9452fe70944da1c65470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="class_s_d_l_display_program.html" title="Main class for managing the SDL display and game loop.">SDLDisplayProgram</a> class.  <br /></td></tr>
 <tr class="separator:a67b978c5880d9452fe70944da1c65470"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,9 +165,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abe4c6d4c78785f9dae5e6d3383e2157e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_display_program.html#abe4c6d4c78785f9dae5e6d3383e2157e">getKeyPressed</a> ()</td></tr>
 <tr class="memdesc:abe4c6d4c78785f9dae5e6d3383e2157e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the key pressed.  <br /></td></tr>
 <tr class="separator:abe4c6d4c78785f9dae5e6d3383e2157e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8065b52204c5185cc9fdbc346410920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_display_program.html#ad8065b52204c5185cc9fdbc346410920">PyUserInterfaceSetText</a> (std::string objName, std::string contentText, int x, int y, int width, int height, bool isUI)</td></tr>
-<tr class="memdesc:ad8065b52204c5185cc9fdbc346410920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the text component.  <br /></td></tr>
-<tr class="separator:ad8065b52204c5185cc9fdbc346410920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8356bedf4f5cb4127a0ea9b1e57d3708"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_display_program.html#a8356bedf4f5cb4127a0ea9b1e57d3708">PyUserInterfaceSetText</a> (std::string objName, std::string contentText, int x, int y, int width, int height, bool isUI, int red, int green, int blue)</td></tr>
+<tr class="memdesc:a8356bedf4f5cb4127a0ea9b1e57d3708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the text component.  <br /></td></tr>
+<tr class="separator:a8356bedf4f5cb4127a0ea9b1e57d3708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafb527b42ed5292ffa18d355568ededf"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_display_program.html#aafb527b42ed5292ffa18d355568ededf">PyChooseSpriteAnimation</a> (std::string objectName, std::string anime)</td></tr>
 <tr class="memdesc:aafb527b42ed5292ffa18d355568ededf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Chooses the sprite animation.  <br /></td></tr>
 <tr class="separator:aafb527b42ed5292ffa18d355568ededf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,6 +183,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaa89355fffa3c0a75beb41a3818c2d06"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_display_program.html#aaa89355fffa3c0a75beb41a3818c2d06">PyAddNewAnimation</a> (std::string objectName, std::string name, int startFrameX, int startFrameY, int endFrameX, int endFrameY, float frameDuration)</td></tr>
 <tr class="memdesc:aaa89355fffa3c0a75beb41a3818c2d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new animation to the game object.  <br /></td></tr>
 <tr class="separator:aaa89355fffa3c0a75beb41a3818c2d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01933be8e2f2887d0fed76caf95a6da"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_display_program.html#aa01933be8e2f2887d0fed76caf95a6da">PyGetRecentKeyInputStrings</a> ()</td></tr>
+<tr class="memdesc:aa01933be8e2f2887d0fed76caf95a6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets Get the recent key input strings.  <br /></td></tr>
+<tr class="separator:aa01933be8e2f2887d0fed76caf95a6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500ff6ee8546e5545789f79914bd9a29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_display_program.html#a500ff6ee8546e5545789f79914bd9a29">PyClearKeyEventQueue</a> ()</td></tr>
+<tr class="memdesc:a500ff6ee8546e5545789f79914bd9a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the key event queue.  <br /></td></tr>
+<tr class="separator:a500ff6ee8546e5545789f79914bd9a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6283d4393ff61c8e6dd6d6f5a3caede5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_display_program.html#a6283d4393ff61c8e6dd6d6f5a3caede5">SetUpDevMode</a> (int blockSize, int viewSpeed)</td></tr>
+<tr class="memdesc:a6283d4393ff61c8e6dd6d6f5a3caede5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the Development Mode.  <br /></td></tr>
+<tr class="separator:a6283d4393ff61c8e6dd6d6f5a3caede5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -193,8 +202,8 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Main class for managing the SDL display and game loop. </p>
 <p>This class is responsible for managing the SDL display and game loop. It also provides methods for managing game objects and their components. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af4d1e8e7c68d590a3592921baf37783b" name="af4d1e8e7c68d590a3592921baf37783b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4d1e8e7c68d590a3592921baf37783b">&#9670;&#160;</a></span>SDLDisplayProgram()</h2>
+<a id="ad74d9e0f895808aa7cbabfe457c47b2f" name="ad74d9e0f895808aa7cbabfe457c47b2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad74d9e0f895808aa7cbabfe457c47b2f">&#9670;&#160;</a></span>SDLDisplayProgram()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -215,7 +224,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>titleStr</em>&#160;</td>
+          <td class="paramname"><em>titleStr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventQueueSize</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -231,6 +246,7 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramname">width</td><td>The width of the display. </td></tr>
     <tr><td class="paramname">height</td><td>The height of the display. </td></tr>
     <tr><td class="paramname">titleStr</td><td>The title of the display. </td></tr>
+    <tr><td class="paramname">eventQueueSize</td><td>The size of the event queue. </td></tr>
   </table>
   </dd>
 </dl>
@@ -814,6 +830,25 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a500ff6ee8546e5545789f79914bd9a29" name="a500ff6ee8546e5545789f79914bd9a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a500ff6ee8546e5545789f79914bd9a29">&#9670;&#160;</a></span>PyClearKeyEventQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SDLDisplayProgram::PyClearKeyEventQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears the key event queue. </p>
+
+</div>
+</div>
 <a id="a6456c7b3e12435f0b6b3edf6c5b23e78" name="a6456c7b3e12435f0b6b3edf6c5b23e78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6456c7b3e12435f0b6b3edf6c5b23e78">&#9670;&#160;</a></span>PyGetGameObjectState()</h2>
 
@@ -875,6 +910,25 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aa01933be8e2f2887d0fed76caf95a6da" name="aa01933be8e2f2887d0fed76caf95a6da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa01933be8e2f2887d0fed76caf95a6da">&#9670;&#160;</a></span>PyGetRecentKeyInputStrings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; SDLDisplayProgram::PyGetRecentKeyInputStrings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets Get the recent key input strings. </p>
 
 </div>
 </div>
@@ -1443,8 +1497,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad8065b52204c5185cc9fdbc346410920" name="ad8065b52204c5185cc9fdbc346410920"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8065b52204c5185cc9fdbc346410920">&#9670;&#160;</a></span>PyUserInterfaceSetText()</h2>
+<a id="a8356bedf4f5cb4127a0ea9b1e57d3708" name="a8356bedf4f5cb4127a0ea9b1e57d3708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8356bedf4f5cb4127a0ea9b1e57d3708">&#9670;&#160;</a></span>PyUserInterfaceSetText()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1489,7 +1543,25 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isUI</em>&#160;</td>
+          <td class="paramname"><em>isUI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>red</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>green</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blue</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1508,9 +1580,14 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramname">y</td><td>The y position of the text. </td></tr>
     <tr><td class="paramname">width</td><td>The width of the text. </td></tr>
     <tr><td class="paramname">height</td><td>The height of the text. </td></tr>
+    <tr><td class="paramname">isUI</td><td>Whether the text is UI. </td></tr>
+    <tr><td class="paramname">red</td><td>The red value of the text. </td></tr>
+    <tr><td class="paramname">green</td><td>The green value of the text. </td></tr>
+    <tr><td class="paramname">blue</td><td>The blue value of the text. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The name of the component. </dd></dl>
 
 </div>
 </div>
@@ -1529,6 +1606,43 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Renders the game. </p>
+
+</div>
+</div>
+<a id="a6283d4393ff61c8e6dd6d6f5a3caede5" name="a6283d4393ff61c8e6dd6d6f5a3caede5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6283d4393ff61c8e6dd6d6f5a3caede5">&#9670;&#160;</a></span>SetUpDevMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SDLDisplayProgram::SetUpDevMode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>viewSpeed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets up the Development Mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blockSize</td><td>The size of the block. </td></tr>
+    <tr><td class="paramname">viewSpeed</td><td>The speed of the view. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

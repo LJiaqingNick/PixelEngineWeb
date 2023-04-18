@@ -8,7 +8,8 @@ var searchData=
   ['isbeingattacked_5',['IsBeingAttacked',['../class_game_object_state.html#a6555d18a30faa0f45b659a58be652337',1,'GameObjectState']]],
   ['iscollidingtilemap_6',['isCollidingTileMap',['../class_collide_component.html#a1f02de7c0954af9102c1a9ad1ca47e81',1,'CollideComponent']]],
   ['isdynamic_7',['IsDynamic',['../class_game_object_state.html#a63c7002a33899fc0cca8dfd86ac4c06f',1,'GameObjectState']]],
-  ['isinteracting_8',['IsInteracting',['../class_game_object_state.html#ae6dc47fe03d6a967a6d8ae858de18b99',1,'GameObjectState']]],
-  ['isjumping_9',['IsJumping',['../class_game_object_state.html#aa80527d030bcbe6605c1db942a028e7e',1,'GameObjectState']]],
-  ['isvisible_10',['IsVisible',['../class_game_object_state.html#a9f7071f4bfc3b5b3092551f23eba1b82',1,'GameObjectState']]]
+  ['isflipspriteneeded_8',['IsFlipSpriteNeeded',['../class_game_object_state.html#a353763f53560b047b5e24c0b32d6606d',1,'GameObjectState']]],
+  ['isinteracting_9',['IsInteracting',['../class_game_object_state.html#ae6dc47fe03d6a967a6d8ae858de18b99',1,'GameObjectState']]],
+  ['isjumping_10',['IsJumping',['../class_game_object_state.html#aa80527d030bcbe6605c1db942a028e7e',1,'GameObjectState']]],
+  ['isvisible_11',['IsVisible',['../class_game_object_state.html#a9f7071f4bfc3b5b3092551f23eba1b82',1,'GameObjectState']]]
 ];
